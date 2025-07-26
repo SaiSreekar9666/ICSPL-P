@@ -2131,3 +2131,21 @@
 [2025-07-26 13:31:59] Processing URI: '/'
 [2025-07-26 13:31:59] Attempting to load: /workspace/public/index.html
 [2025-07-26 13:31:59] File found - including: /workspace/public/index.html
+[2025-07-26 13:32:40] === NEW REQUEST ===
+[2025-07-26 13:32:40] REQUEST_URI: /
+[2025-07-26 13:32:40] Processing URI: '/'
+[2025-07-26 13:32:40] Attempting to load: /workspace/public/index.html
+[2025-07-26 13:32:40] File found - including: /workspace/public/index.html
+[2025-07-26 13:32:46] === NEW REQUEST ===
+[2025-07-26 13:32:46] REQUEST_URI: /assets/css/Home.css
+[2025-07-26 13:32:46] Processing URI: '/assets/css/Home.css'
+[2025-07-26 13:32:46] Static file check - Requested: /workspace/public/assets/css/Home.css
+[2025-07-26 13:32:46] Static file check - Resolved: /workspace/public/assets/css/Home.css
+[2025-07-26 13:32:46] Serving static file: /workspace/public/assets/css/Home.css
+[2025-07-26 13:32:53] === NEW REQUEST ===
+[2025-07-26 13:32:53] REQUEST_URI: /public/assets/css/Home.css
+[2025-07-26 13:32:53] Processing URI: '/public/assets/css/Home.css'
+[2025-07-26 13:32:53] Correcting asset URL from '/public/assets/css/Home.css' to '/assets/css/Home.css'
+[2025-07-26 13:32:53] Static file check - Requested: /workspace/public/assets/css/Home.css
+[2025-07-26 13:32:53] Static file check - Resolved: /workspace/public/assets/css/Home.css
+[2025-07-26 13:32:53] Serving static file: /workspace/public/assets/css/Home.css
