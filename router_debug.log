@@ -2126,3 +2126,8 @@
 [2025-07-25 14:58:38] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/services.css
 [2025-07-25 14:58:38] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\services.css
 [2025-07-25 14:58:38] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\services.css
+[2025-07-26 13:31:59] === NEW REQUEST ===
+[2025-07-26 13:31:59] REQUEST_URI: /
+[2025-07-26 13:31:59] Processing URI: '/'
+[2025-07-26 13:31:59] Attempting to load: /workspace/public/index.html
+[2025-07-26 13:31:59] File found - including: /workspace/public/index.html

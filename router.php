@@ -15,6 +15,13 @@ $uri = ($uri === '') ? '/' : $uri;
 
 log_debug("Processing URI: '$uri'");
 
+// Fix URLs that start with /public/assets/ by redirecting to /assets/
+if (str_starts_with($uri, '/public/assets/')) {
+    $corrected_uri = str_replace('/public/assets/', '/assets/', $uri);
+    log_debug("Correcting asset URL from '$uri' to '$corrected_uri'");
+    $uri = $corrected_uri;
+}
+
 // Routing table
 $routes = [
     '/login'             => '/backend/auth/login.php',
