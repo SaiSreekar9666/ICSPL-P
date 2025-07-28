@@ -1,12 +1,11 @@
 <?php
 session_start();
-require_once 'PHPMailer/PHPMailer.php';
-require_once 'PHPMailer/SMTP.php';
-require_once 'PHPMailer/Exception.php';
+
+// Use Composer's autoloader
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
 
 $conn = new mysqli("localhost", "root", "root", "icspl");
 $message = "";
@@ -26,29 +25,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("sss", $otp, $expiry, $email);
         $stmt->execute();
 
-        // Send OTP via Gmail SMTP using PHPMailer
         $mail = new PHPMailer(true);
 
         try {
-            // SMTP settings
+            // SMTP configuration
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'gsreekarr@gmail.com';         // 🔁 Replace with your Gmail
-            $mail->Password   = 'vfqhctwtgtupbvvd';            // 🔁 Replace with App Password
+            $mail->Username   = 'gsreekarr@gmail.com';          // ✅ Replace with your Gmail
+            $mail->Password   = 'vfqhctwtgtupbvvd';             // ✅ Replace with your App Password
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
 
-            // Email content
-            $mail->setFrom('your_email@gmail.com', 'ICSPL Support');
+            $mail->setFrom('gsreekarr@gmail.com', 'ICSPL Support');
             $mail->addAddress($email);
             $mail->isHTML(true);
             $mail->Subject = "Your OTP to reset password";
-            $mail->Body    = "Your OTP is <b>$otp</b>. It is valid for 10 minutes.";
+            $mail->Body    = "Hello, <br><br>Your OTP to reset your password is: <b>$otp</b> <br>This OTP is valid for 10 minutes.<br><br>Regards,<br>ICSPL Team";
 
             $mail->send();
             $_SESSION['reset_email'] = $email;
-            header("Location: verify_otp.php");
+            header("Location: /verify-otp"); // 🔁 Change this to your actual OTP verification path
             exit();
         } catch (Exception $e) {
             $message = "❌ Email sending failed. Error: {$mail->ErrorInfo}";
@@ -65,11 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <title>Forgot Password</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: 'Segoe UI', sans-serif;

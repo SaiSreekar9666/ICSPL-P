@@ -2,11 +2,11 @@
 session_start();
 
 // ⏰ Auto logout after 20 minutes (1200 seconds) of inactivity
-$timeout_duration = 100;
+$timeout_duration = 1200;
 if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity']) > $timeout_duration) {
     session_unset();
     session_destroy();
-    header("Location: login.php?timeout=true");
+    header("Location: login?timeout=true");
     exit();
 }
 $_SESSION['last_activity'] = time(); // Update last activity time
@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $log_stmt->close();
 
             // Redirect to admin page
-            header("Location: /backend/admin.php");
+            header("Location: /admin");
             exit();
         } else {
             $error = "❌ Invalid password.";
@@ -169,7 +169,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <button type="submit">Login</button>
         </form>
         <div class="forgot">
-            <a href="/backend/forgot_password.php">Forgot Password?</a>
+            <a href="/forgot-password">Forgot Password?</a>
         </div>
         <?php if (!empty($error)) echo "<div class='error'>$error</div>"; ?>
     </div>

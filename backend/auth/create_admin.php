@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         try {
             $stmt->execute();
-            header("Location: backend/login.php");
+            header("Location: /login");
             exit();
         } catch (mysqli_sql_exception $e) {
             if (str_contains($e->getMessage(), 'Duplicate entry')) {

@@ -27,13 +27,13 @@ if (
     $domain = substr(strrchr($gmail, "@"), 1);
 
     if (!in_array(strtolower($domain), $allowed_domains)) {
-        header("Location: /public/pages/invalid-email.html");
+        header("Location: /pages/invalid-email.html");
         exit();
     }
 
     // Validate phone number format (+countrycode)
     if (!preg_match('/^\+\d{6,15}$/', $phone)) {
-        header("Location: /public/pages/invalid-phone.html");
+        header("Location: /pages/invalid-phone.html");
         exit();
     }
 
@@ -43,17 +43,17 @@ if (
 
     if ($stmt->execute()) {
         $stmt->close();
-        header("Location: /public/pages/thank-you.html");
+        header("Location: /pages/thank-you.html");
         exit();
     } else {
         error_log("Database error: " . $stmt->error);
         $stmt->close();
-        header("Location: /public/pages/error.html");
+        header("Location: /pages/error.html");
         exit();
     }
 } else {
     // Required fields missing
-    header("Location: /public/pages/error.html");
+    header("Location: /pages/error.html");
     exit();
 }
 

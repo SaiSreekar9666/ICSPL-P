@@ -1,7 +1,9 @@
 <?php
+// Display all errors for debugging
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+// Debug logging function
 function log_debug($message) {
     file_put_contents('router_debug.log', date('[Y-m-d H:i:s]') . " $message\n", FILE_APPEND);
 }
@@ -15,20 +17,24 @@ $uri = ($uri === '') ? '/' : $uri;
 
 log_debug("Processing URI: '$uri'");
 
-// Routing table
+// Routing table for custom endpoints
 $routes = [
+    // Auth routes
     '/login'             => '/backend/auth/login.php',
     '/logout'            => '/backend/auth/logout.php',
     '/register'          => '/backend/auth/create_admin.php',
     '/forgot-password'   => '/backend/reset/forgot_password.php',
     '/reset-password'    => '/backend/reset/reset_password.php',
     '/verify-otp'        => '/backend/reset/verify_otp.php',
+    
+    // Admin and user routes
     '/admin'             => '/backend/admin/admin.php',
     '/upload'            => '/backend/upload/Upload_Files.php',
     '/submit'            => '/backend/upload/submit.php',
-    '/users'             => '/backend/data/Users_list.php',
-
-    // Public HTML Pages
+    '/users'             => '/backend/admin/Users_list.php',
+    '/admin-users'       => '/backend/admin/admin_users.php',
+ 
+    // Static HTML pages
     '/'                  => '/public/index.html',
     '/about'             => '/public/pages/about.html',
     '/contact'           => '/public/pages/contact.html',
@@ -38,7 +44,7 @@ $routes = [
     '/error'             => '/public/pages/error.html',
 ];
 
-// Handle routes
+// Handle routes to PHP/HTML pages
 if (array_key_exists($uri, $routes)) {
     $filePath = __DIR__ . $routes[$uri];
     log_debug("Attempting to load: $filePath");
@@ -59,7 +65,6 @@ if (array_key_exists($uri, $routes)) {
 $staticFile = realpath(__DIR__ . '/public' . $uri);
 $publicRoot = realpath(__DIR__ . '/public');
 
-// Log static file path resolution
 log_debug("Static file check - Requested: " . __DIR__ . '/public' . $uri);
 log_debug("Static file check - Resolved: " . ($staticFile ?: 'NOT FOUND'));
 
@@ -70,17 +75,36 @@ if (
 ) {
     log_debug("Serving static file: $staticFile");
 
+    // Get mime type using fallback method
+    $ext = pathinfo($staticFile, PATHINFO_EXTENSION);
+    $mimeFallbacks = [
+        'css'   => 'text/css',
+        'js'    => 'application/javascript',
+        'png'   => 'image/png',
+        'jpg'   => 'image/jpeg',
+        'jpeg'  => 'image/jpeg',
+        'svg'   => 'image/svg+xml',
+        'gif'   => 'image/gif',
+        'ico'   => 'image/x-icon',
+        'woff'  => 'font/woff',
+        'woff2' => 'font/woff2',
+        'ttf'   => 'font/ttf',
+        'eot'   => 'application/vnd.ms-fontobject',
+        'json'  => 'application/json',
+        'pdf'   => 'application/pdf',
+    ];
+
     $mimeType = mime_content_type($staticFile);
-    if ($mimeType) {
-        header('Content-Type: ' . $mimeType);
+    if (!$mimeType || $mimeType === 'text/plain') {
+        $mimeType = $mimeFallbacks[$ext] ?? 'application/octet-stream';
     }
 
+    header('Content-Type: ' . $mimeType);
     readfile($staticFile);
     exit;
 }
 
-
-// 404 fallback
+// No route matched → show 404
 log_debug("404 - No route found for: $uri");
 http_response_code(404);
 require __DIR__ . '/public/pages/error.html';

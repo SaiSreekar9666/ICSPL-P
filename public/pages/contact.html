@@ -109,8 +109,8 @@
   <header class="fixed w-full bg-black text-white z-50 shadow-md">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center">
-        <a href="/index.html">
-          <img src="/public/pages/images/Header--Transparent.png" alt="ICSPL Logo" class="logo mr-2">
+        <a href="/">
+          <img src="/pages/images/Header--Transparent.png" alt="ICSPL Logo" class="logo mr-2">
         </a>
       </div>
       <button class="md:hidden text-white focus:outline-none" onclick="toggleMenu()" aria-label="Toggle navigation menu">
@@ -119,19 +119,19 @@
         </svg>
       </button>
       <nav class="hidden md:flex space-x-6 text-sm md:text-base">
-        <a href="/index.html" class="hover:text-gray-300">Home</a>
-        <a href="/public/pages/about.html" class="hover:text-gray-300">About</a>
-        <a href="/public/pages/services.html" class="hover:text-gray-300">Services</a>
-        <a href="/public/pages/sectors.html" class="hover:text-gray-300">Sectors</a>
-        <a href="/public/pages/contact.html" class="hover:text-gray-300">Contact</a>
+        <a href="/" class="hover:text-gray-300">Home</a>
+        <a href="/pages/about.html" class="hover:text-gray-300">About</a>
+        <a href="/pages/services.html" class="hover:text-gray-300">Services</a>
+        <a href="/pages/sectors.html" class="hover:text-gray-300">Sectors</a>
+        <a href="/pages/contact.html" class="hover:text-gray-300">Contact</a>
       </nav>
     </div>
     <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-black">
-      <a href="/index.html" class="block py-2 hover:bg-gray-900">Home</a>
-      <a href="/public/pages/about.html" class="block py-2 hover:bg-gray-900">About</a>
-      <a href="/public/pages/services.html" class="block py-2 hover:bg-gray-900">Services</a>
-      <a href="/public/pages/sectors.html" class="block py-2 hover:bg-gray-900">Sectors</a>
-      <a href="/public/pages/contact.html" class="block py-2 hover:bg-gray-900">Contact</a>
+      <a href="/" class="block py-2 hover:bg-gray-900">Home</a>
+      <a href="/pages/about.html" class="block py-2 hover:bg-gray-900">About</a>
+      <a href="/pages/services.html" class="block py-2 hover:bg-gray-900">Services</a>
+      <a href="/pages/sectors.html" class="block py-2 hover:bg-gray-900">Sectors</a>
+      <a href="/pages/contact.html" class="block py-2 hover:bg-gray-900">Contact</a>
     </div>
   </header>
 
@@ -140,7 +140,7 @@
       <h2 class="text-4xl font-semibold mb-8 border-b border-gray-700 pb-3">Contact Us</h2>
       <p class="mb-8 text-lg text-gray-300 max-w-3xl mx-auto">We'd love to hear from you! Fill out the form below or reach out through our contact details.</p>
 
-      <form class="max-w-xl mx-auto bg-gray-700 p-8 rounded-lg space-y-6" action="/backend/submit.php" method="post">
+      <form class="max-w-xl mx-auto bg-gray-700 p-8 rounded-lg space-y-6" action="/submit" method="post">
         <div>
           <label class="block font-medium mb-2">Name</label>
           <input type="text" name="name" class="w-full bg-gray-800 border border-gray-600 p-3 rounded-lg focus:outline-none focus:border-white" placeholder="Your Name" required />
@@ -284,7 +284,7 @@
   <footer class="p-8 bg-black text-white mt-20">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
       <div class="flex items-center mb-4 md:mb-0">
-        <img src="/public/pages/images/Header--Transparent.png" alt="ICSPL Logo" class="footer-logo mr-3">
+        <img src="/pages/images/Header--Transparent.png" alt="ICSPL Logo" class="footer-logo mr-3">
       </div>
       <div class="text-gray-400">
         &copy; <span id="year"></span> All rights reserved.

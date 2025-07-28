@@ -2,5 +2,5 @@
 session_start();
 session_unset();
 session_destroy();
-header("Location: login.php"); // redirect back to login
+header("Location: /login"); // redirect back to login
 exit();

@@ -3,7 +3,7 @@ session_start();
 $conn = new mysqli("localhost", "root", "root", "icspl");
 
 if (!isset($_SESSION['reset_email']) || !isset($_SESSION['otp_verified'])) {
-    header("Location: forgot_password.php");
+    header("Location: /forgot-password");
     exit();
 }
 

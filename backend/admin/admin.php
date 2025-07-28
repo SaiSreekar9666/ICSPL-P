@@ -2,23 +2,23 @@
 session_start();
 
 // Auto logout logic
-$timeout_duration = 1200; //20minutes
+$timeout_duration = 1200; //20 minutes
 if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY']) > $timeout_duration) {
     session_unset();
     session_destroy();
-    header("Location: backend/login.php?timeout=1");
+    header("Location: /login?timeout=1");
     exit();
 }
 $_SESSION['LAST_ACTIVITY'] = time();
 
 // Check login
 if (!isset($_SESSION["admin"])) {
-    header("Location: backend/login.php");
+    header("Location: /login");
     exit();
 }
 if (isset($_GET["logout"])) {
     session_destroy();
-    header("Location: logout.php");
+    header("Location: /logout");
     exit();
 }
 
@@ -74,7 +74,7 @@ $result_logs = $conn->query($sql_logs);
         }
         .nav-links {
             display: flex;
-            gap: 25px;
+            gap: 20px;
             align-items: center;
             flex-wrap: wrap;
         }
@@ -122,6 +122,8 @@ $result_logs = $conn->query($sql_logs);
             display: flex;
             justify-content: center;
             margin-bottom: 20px;
+            flex-wrap: wrap;
+            padding: 0 20px;
         }
         #searchInput, #logDatePicker {
             padding: 12px 16px;
@@ -132,6 +134,7 @@ $result_logs = $conn->query($sql_logs);
             background-color: #1e293b;
             color: white;
             transition: all 0.3s;
+            margin: 10px;
         }
         #searchInput:focus, #logDatePicker:focus {
             outline: none;
@@ -149,6 +152,7 @@ $result_logs = $conn->query($sql_logs);
         table {
             width: 100%;
             border-collapse: collapse;
+            min-width: 800px;
         }
         th, td {
             padding: 16px;
@@ -167,9 +171,33 @@ $result_logs = $conn->query($sql_logs);
         td {
             color: #f1f5f9;
         }
-        @media screen and (max-width: 600px) {
-            #searchInput, #logDatePicker { width: 90%; }
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                justify-content: center;
+                gap: 12px;
+            }
             h1, h2 { font-size: 24px; }
+            .admin-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            table {
+                font-size: 14px;
+                min-width: 100%;
+            }
+            th, td {
+                padding: 10px;
+            }
+            #searchInput, #logDatePicker {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -181,9 +209,10 @@ $result_logs = $conn->query($sql_logs);
         <strong>Welcome, <?php echo htmlspecialchars($_SESSION["admin"] ?? 'Admin'); ?></strong>
     </div>
     <nav class="nav-links">
-        <a href="./admin.php">Dashboard</a>
-        <a href="./Upload_Files.php">Uploaded Files</a>
-        <a href="./Users_list.php">User List</a>
+        <a href="/admin">Dashboard</a>
+        <a href="/upload">Upload Files</a>
+        <a href="/users">User List</a>
+        <a href="/admin-users">Admin Users</a> <!-- ✅ Added Admin Users link -->
         <a href="?logout=true" class="logout-btn">Logout</a>
     </nav>
 </div>

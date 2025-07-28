@@ -2126,3 +2126,2143 @@
 [2025-07-25 14:58:38] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/services.css
 [2025-07-25 14:58:38] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\services.css
 [2025-07-25 14:58:38] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\services.css
+[2025-07-25 17:43:14] === NEW REQUEST ===
+[2025-07-25 17:43:14] REQUEST_URI: /
+[2025-07-25 17:43:14] Processing URI: '/'
+[2025-07-25 17:43:14] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-25 17:43:14] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-25 17:43:14] === NEW REQUEST ===
+[2025-07-25 17:43:14] REQUEST_URI: /backend/login.php
+[2025-07-25 17:43:14] Processing URI: '/backend/login.php'
+[2025-07-25 17:43:14] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/login.php
+[2025-07-25 17:43:14] Static file check - Resolved: NOT FOUND
+[2025-07-25 17:43:14] 404 - No route found for: /backend/login.php
+[2025-07-25 17:43:15] === NEW REQUEST ===
+[2025-07-25 17:43:15] REQUEST_URI: /assets/css/Home.css
+[2025-07-25 17:43:15] Processing URI: '/assets/css/Home.css'
+[2025-07-25 17:43:15] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-25 17:43:15] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-25 17:43:15] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-25 17:43:15] === NEW REQUEST ===
+[2025-07-25 17:43:15] REQUEST_URI: /assets/js/Home.js
+[2025-07-25 17:43:15] Processing URI: '/assets/js/Home.js'
+[2025-07-25 17:43:15] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-25 17:43:15] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-25 17:43:15] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-25 17:43:15] === NEW REQUEST ===
+[2025-07-25 17:43:15] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-25 17:43:15] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-25 17:43:15] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-25 17:43:15] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-25 17:43:15] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-25 18:06:09] === NEW REQUEST ===
+[2025-07-25 18:06:09] REQUEST_URI: /
+[2025-07-25 18:06:09] Processing URI: '/'
+[2025-07-25 18:06:09] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-25 18:06:09] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-25 18:06:09] === NEW REQUEST ===
+[2025-07-25 18:06:09] REQUEST_URI: /assets/css/Home.css
+[2025-07-25 18:06:09] Processing URI: '/assets/css/Home.css'
+[2025-07-25 18:06:09] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-25 18:06:09] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-25 18:06:09] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-25 18:06:09] === NEW REQUEST ===
+[2025-07-25 18:06:09] REQUEST_URI: /assets/js/Home.js
+[2025-07-25 18:06:09] Processing URI: '/assets/js/Home.js'
+[2025-07-25 18:06:09] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-25 18:06:09] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-25 18:06:09] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-25 18:06:09] === NEW REQUEST ===
+[2025-07-25 18:06:09] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-25 18:06:09] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-25 18:06:09] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-25 18:06:09] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-25 18:06:09] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-25 18:06:14] === NEW REQUEST ===
+[2025-07-25 18:06:14] REQUEST_URI: /contact
+[2025-07-25 18:06:14] Processing URI: '/contact'
+[2025-07-25 18:06:14] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/pages/contact.html
+[2025-07-25 18:06:14] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/pages/contact.html
+[2025-07-25 18:06:14] === NEW REQUEST ===
+[2025-07-25 18:06:14] REQUEST_URI: /public/pages/images/Header--Transparent.png
+[2025-07-25 18:06:14] Processing URI: '/public/pages/images/Header--Transparent.png'
+[2025-07-25 18:06:14] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/images/Header--Transparent.png
+[2025-07-25 18:06:14] Static file check - Resolved: NOT FOUND
+[2025-07-25 18:06:14] 404 - No route found for: /public/pages/images/Header--Transparent.png
+[2025-07-25 18:06:16] === NEW REQUEST ===
+[2025-07-25 18:06:16] REQUEST_URI: /public/pages/sectors.html
+[2025-07-25 18:06:16] Processing URI: '/public/pages/sectors.html'
+[2025-07-25 18:06:16] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/sectors.html
+[2025-07-25 18:06:16] Static file check - Resolved: NOT FOUND
+[2025-07-25 18:06:16] 404 - No route found for: /public/pages/sectors.html
+[2025-07-25 18:06:25] === NEW REQUEST ===
+[2025-07-25 18:06:25] REQUEST_URI: /sectors
+[2025-07-25 18:06:25] Processing URI: '/sectors'
+[2025-07-25 18:06:25] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/pages/sectors.html
+[2025-07-25 18:06:25] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/pages/sectors.html
+[2025-07-25 18:06:25] === NEW REQUEST ===
+[2025-07-25 18:06:25] REQUEST_URI: /public/pages/images/Header--Transparent.png
+[2025-07-25 18:06:25] Processing URI: '/public/pages/images/Header--Transparent.png'
+[2025-07-25 18:06:25] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/images/Header--Transparent.png
+[2025-07-25 18:06:25] Static file check - Resolved: NOT FOUND
+[2025-07-25 18:06:25] 404 - No route found for: /public/pages/images/Header--Transparent.png
+[2025-07-25 18:06:25] === NEW REQUEST ===
+[2025-07-25 18:06:25] REQUEST_URI: /images/Header--Transparent.png
+[2025-07-25 18:06:25] Processing URI: '/images/Header--Transparent.png'
+[2025-07-25 18:06:25] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/images/Header--Transparent.png
+[2025-07-25 18:06:25] Static file check - Resolved: NOT FOUND
+[2025-07-25 18:06:25] 404 - No route found for: /images/Header--Transparent.png
+[2025-07-25 18:06:28] === NEW REQUEST ===
+[2025-07-25 18:06:28] REQUEST_URI: /index.html
+[2025-07-25 18:06:28] Processing URI: '/index.html'
+[2025-07-25 18:06:28] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-25 18:06:28] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\index.html
+[2025-07-25 18:06:28] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\index.html
+[2025-07-25 18:06:28] === NEW REQUEST ===
+[2025-07-25 18:06:28] REQUEST_URI: /assets/css/Home.css
+[2025-07-25 18:06:28] Processing URI: '/assets/css/Home.css'
+[2025-07-25 18:06:28] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-25 18:06:28] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-25 18:06:28] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-25 18:06:28] === NEW REQUEST ===
+[2025-07-25 18:06:28] REQUEST_URI: /assets/js/Home.js
+[2025-07-25 18:06:28] Processing URI: '/assets/js/Home.js'
+[2025-07-25 18:06:28] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-25 18:06:28] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-25 18:06:28] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-25 18:06:28] === NEW REQUEST ===
+[2025-07-25 18:06:28] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-25 18:06:28] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-25 18:06:28] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-25 18:06:28] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-25 18:06:28] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-25 18:06:37] === NEW REQUEST ===
+[2025-07-25 18:06:37] REQUEST_URI: /
+[2025-07-25 18:06:37] Processing URI: '/'
+[2025-07-25 18:06:37] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-25 18:06:37] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-25 18:06:38] === NEW REQUEST ===
+[2025-07-25 18:06:38] REQUEST_URI: /assets/css/Home.css
+[2025-07-25 18:06:38] Processing URI: '/assets/css/Home.css'
+[2025-07-25 18:06:38] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-25 18:06:38] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-25 18:06:38] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-25 18:06:38] === NEW REQUEST ===
+[2025-07-25 18:06:38] REQUEST_URI: /assets/js/Home.js
+[2025-07-25 18:06:38] Processing URI: '/assets/js/Home.js'
+[2025-07-25 18:06:38] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-25 18:06:38] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-25 18:06:38] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-25 18:06:38] === NEW REQUEST ===
+[2025-07-25 18:06:38] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-25 18:06:38] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-25 18:06:38] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-25 18:06:38] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-25 18:06:38] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-25 18:09:00] === NEW REQUEST ===
+[2025-07-25 18:09:00] REQUEST_URI: /
+[2025-07-25 18:09:00] Processing URI: '/'
+[2025-07-25 18:09:00] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-25 18:09:00] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-25 18:09:00] === NEW REQUEST ===
+[2025-07-25 18:09:00] REQUEST_URI: /assets/css/Home.css
+[2025-07-25 18:09:00] Processing URI: '/assets/css/Home.css'
+[2025-07-25 18:09:00] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-25 18:09:00] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-25 18:09:00] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-25 18:09:00] === NEW REQUEST ===
+[2025-07-25 18:09:00] REQUEST_URI: /assets/js/Home.js
+[2025-07-25 18:09:00] Processing URI: '/assets/js/Home.js'
+[2025-07-25 18:09:00] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-25 18:09:00] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-25 18:09:00] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-25 18:09:00] === NEW REQUEST ===
+[2025-07-25 18:09:00] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-25 18:09:00] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-25 18:09:00] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-25 18:09:00] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-25 18:09:00] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-25 18:09:00] === NEW REQUEST ===
+[2025-07-25 18:09:00] REQUEST_URI: /apple-touch-icon.png
+[2025-07-25 18:09:00] Processing URI: '/apple-touch-icon.png'
+[2025-07-25 18:09:00] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/apple-touch-icon.png
+[2025-07-25 18:09:00] Static file check - Resolved: NOT FOUND
+[2025-07-25 18:09:00] 404 - No route found for: /apple-touch-icon.png
+[2025-07-25 18:09:00] === NEW REQUEST ===
+[2025-07-25 18:09:00] REQUEST_URI: /favicon-32x32.png
+[2025-07-25 18:09:00] Processing URI: '/favicon-32x32.png'
+[2025-07-25 18:09:00] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/favicon-32x32.png
+[2025-07-25 18:09:00] Static file check - Resolved: NOT FOUND
+[2025-07-25 18:09:00] 404 - No route found for: /favicon-32x32.png
+[2025-07-25 18:11:44] === NEW REQUEST ===
+[2025-07-25 18:11:44] REQUEST_URI: /
+[2025-07-25 18:11:44] Processing URI: '/'
+[2025-07-25 18:11:44] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-25 18:11:44] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-25 18:11:44] === NEW REQUEST ===
+[2025-07-25 18:11:44] REQUEST_URI: /assets/css/Home.css
+[2025-07-25 18:11:44] Processing URI: '/assets/css/Home.css'
+[2025-07-25 18:11:44] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-25 18:11:44] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-25 18:11:44] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-25 18:11:44] === NEW REQUEST ===
+[2025-07-25 18:11:44] REQUEST_URI: /assets/js/Home.js
+[2025-07-25 18:11:44] Processing URI: '/assets/js/Home.js'
+[2025-07-25 18:11:44] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-25 18:11:44] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-25 18:11:44] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-25 18:11:44] === NEW REQUEST ===
+[2025-07-25 18:11:44] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-25 18:11:44] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-25 18:11:44] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-25 18:11:44] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-25 18:11:44] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-25 19:09:17] === NEW REQUEST ===
+[2025-07-25 19:09:17] REQUEST_URI: /
+[2025-07-25 19:09:17] Processing URI: '/'
+[2025-07-25 19:09:17] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-25 19:09:17] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-25 19:09:17] === NEW REQUEST ===
+[2025-07-25 19:09:17] REQUEST_URI: /assets/css/Home.css
+[2025-07-25 19:09:17] Processing URI: '/assets/css/Home.css'
+[2025-07-25 19:09:17] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-25 19:09:17] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-25 19:09:17] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-25 19:09:17] === NEW REQUEST ===
+[2025-07-25 19:09:17] REQUEST_URI: /assets/js/Home.js
+[2025-07-25 19:09:17] Processing URI: '/assets/js/Home.js'
+[2025-07-25 19:09:17] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-25 19:09:17] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-25 19:09:17] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-25 19:09:17] === NEW REQUEST ===
+[2025-07-25 19:09:17] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-25 19:09:17] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-25 19:09:17] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-25 19:09:17] Static file check - Resolved: NOT FOUND
+[2025-07-25 19:09:17] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-25 19:09:17] === NEW REQUEST ===
+[2025-07-25 19:09:17] REQUEST_URI: /favicon-32x32.png
+[2025-07-25 19:09:17] Processing URI: '/favicon-32x32.png'
+[2025-07-25 19:09:17] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/favicon-32x32.png
+[2025-07-25 19:09:17] Static file check - Resolved: NOT FOUND
+[2025-07-25 19:09:17] 404 - No route found for: /favicon-32x32.png
+[2025-07-25 19:09:58] === NEW REQUEST ===
+[2025-07-25 19:09:58] REQUEST_URI: /contact
+[2025-07-25 19:09:58] Processing URI: '/contact'
+[2025-07-25 19:09:58] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/pages/contact.html
+[2025-07-25 19:09:58] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/pages/contact.html
+[2025-07-25 19:09:58] === NEW REQUEST ===
+[2025-07-25 19:09:58] REQUEST_URI: /public/pages/images/Header--Transparent.png
+[2025-07-25 19:09:58] Processing URI: '/public/pages/images/Header--Transparent.png'
+[2025-07-25 19:09:58] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/images/Header--Transparent.png
+[2025-07-25 19:09:58] Static file check - Resolved: NOT FOUND
+[2025-07-25 19:09:58] 404 - No route found for: /public/pages/images/Header--Transparent.png
+[2025-07-25 19:09:59] === NEW REQUEST ===
+[2025-07-25 19:09:59] REQUEST_URI: /public/pages/sectors.html
+[2025-07-25 19:09:59] Processing URI: '/public/pages/sectors.html'
+[2025-07-25 19:09:59] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/sectors.html
+[2025-07-25 19:09:59] Static file check - Resolved: NOT FOUND
+[2025-07-25 19:09:59] 404 - No route found for: /public/pages/sectors.html
+[2025-07-26 00:17:01] === NEW REQUEST ===
+[2025-07-26 00:17:01] REQUEST_URI: /
+[2025-07-26 00:17:01] Processing URI: '/'
+[2025-07-26 00:17:01] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-26 00:17:01] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-26 00:17:01] === NEW REQUEST ===
+[2025-07-26 00:17:01] REQUEST_URI: /public/assets/css/Home.css
+[2025-07-26 00:17:01] Processing URI: '/public/assets/css/Home.css'
+[2025-07-26 00:17:01] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/css/Home.css
+[2025-07-26 00:17:01] Static file check - Resolved: NOT FOUND
+[2025-07-26 00:17:01] 404 - No route found for: /public/assets/css/Home.css
+[2025-07-26 00:17:01] === NEW REQUEST ===
+[2025-07-26 00:17:01] REQUEST_URI: /public/assets/js/Home.js
+[2025-07-26 00:17:01] Processing URI: '/public/assets/js/Home.js'
+[2025-07-26 00:17:01] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/js/Home.js
+[2025-07-26 00:17:01] Static file check - Resolved: NOT FOUND
+[2025-07-26 00:17:01] 404 - No route found for: /public/assets/js/Home.js
+[2025-07-26 00:17:01] === NEW REQUEST ===
+[2025-07-26 00:17:01] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-26 00:17:01] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-26 00:17:01] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-26 00:17:01] Static file check - Resolved: NOT FOUND
+[2025-07-26 00:17:01] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-26 00:17:05] === NEW REQUEST ===
+[2025-07-26 00:17:05] REQUEST_URI: /public/pages/contact.html
+[2025-07-26 00:17:05] Processing URI: '/public/pages/contact.html'
+[2025-07-26 00:17:05] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/contact.html
+[2025-07-26 00:17:05] Static file check - Resolved: NOT FOUND
+[2025-07-26 00:17:05] 404 - No route found for: /public/pages/contact.html
+[2025-07-26 13:42:37] === NEW REQUEST ===
+[2025-07-26 13:42:37] REQUEST_URI: /
+[2025-07-26 13:42:37] Processing URI: '/'
+[2025-07-26 13:42:37] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-26 13:42:37] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-26 13:42:37] === NEW REQUEST ===
+[2025-07-26 13:42:37] REQUEST_URI: /public/assets/css/Home.css
+[2025-07-26 13:42:37] Processing URI: '/public/assets/css/Home.css'
+[2025-07-26 13:42:37] Correcting asset URL from '/public/assets/css/Home.css' to '/assets/css/Home.css'
+[2025-07-26 13:42:37] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-26 13:42:37] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-26 13:42:37] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-26 13:42:37] === NEW REQUEST ===
+[2025-07-26 13:42:37] REQUEST_URI: /public/assets/js/Home.js
+[2025-07-26 13:42:37] Processing URI: '/public/assets/js/Home.js'
+[2025-07-26 13:42:37] Correcting asset URL from '/public/assets/js/Home.js' to '/assets/js/Home.js'
+[2025-07-26 13:42:37] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-26 13:42:37] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-26 13:42:37] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-26 13:42:37] === NEW REQUEST ===
+[2025-07-26 13:42:37] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-26 13:42:37] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-26 13:42:37] Correcting asset URL from '/public/assets/images/Header--Transparent.png' to '/assets/images/Header--Transparent.png'
+[2025-07-26 13:42:37] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-26 13:42:37] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-26 13:42:37] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-26 13:42:37] === NEW REQUEST ===
+[2025-07-26 13:42:37] REQUEST_URI: /apple-touch-icon.png
+[2025-07-26 13:42:37] Processing URI: '/apple-touch-icon.png'
+[2025-07-26 13:42:37] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/apple-touch-icon.png
+[2025-07-26 13:42:37] Static file check - Resolved: NOT FOUND
+[2025-07-26 13:42:37] 404 - No route found for: /apple-touch-icon.png
+[2025-07-26 13:42:42] === NEW REQUEST ===
+[2025-07-26 13:42:42] REQUEST_URI: /public/pages/contact.html
+[2025-07-26 13:42:42] Processing URI: '/public/pages/contact.html'
+[2025-07-26 13:42:42] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/contact.html
+[2025-07-26 13:42:42] Static file check - Resolved: NOT FOUND
+[2025-07-26 13:42:42] 404 - No route found for: /public/pages/contact.html
+[2025-07-26 13:42:42] === NEW REQUEST ===
+[2025-07-26 13:42:42] REQUEST_URI: /favicon.ico
+[2025-07-26 13:42:42] Processing URI: '/favicon.ico'
+[2025-07-26 13:42:42] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/favicon.ico
+[2025-07-26 13:42:42] Static file check - Resolved: NOT FOUND
+[2025-07-26 13:42:42] 404 - No route found for: /favicon.ico
+[2025-07-26 13:59:37] === NEW REQUEST ===
+[2025-07-26 13:59:37] REQUEST_URI: /
+[2025-07-26 13:59:37] Processing URI: '/'
+[2025-07-26 13:59:37] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-26 13:59:37] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-26 13:59:37] === NEW REQUEST ===
+[2025-07-26 13:59:37] REQUEST_URI: /public/assets/css/Home.css
+[2025-07-26 13:59:37] Processing URI: '/public/assets/css/Home.css'
+[2025-07-26 13:59:37] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/css/Home.css
+[2025-07-26 13:59:37] Static file check - Resolved: NOT FOUND
+[2025-07-26 13:59:37] 404 - No route found for: /public/assets/css/Home.css
+[2025-07-26 13:59:37] === NEW REQUEST ===
+[2025-07-26 13:59:37] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-26 13:59:37] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-26 13:59:37] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-26 13:59:37] Static file check - Resolved: NOT FOUND
+[2025-07-26 13:59:37] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-26 13:59:37] === NEW REQUEST ===
+[2025-07-26 13:59:37] REQUEST_URI: /public/assets/js/Home.js
+[2025-07-26 13:59:37] Processing URI: '/public/assets/js/Home.js'
+[2025-07-26 13:59:37] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/js/Home.js
+[2025-07-26 13:59:37] Static file check - Resolved: NOT FOUND
+[2025-07-26 13:59:37] 404 - No route found for: /public/assets/js/Home.js
+[2025-07-26 14:07:18] === NEW REQUEST ===
+[2025-07-26 14:07:18] REQUEST_URI: /
+[2025-07-26 14:07:18] Processing URI: '/'
+[2025-07-26 14:07:18] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-26 14:07:18] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-26 14:07:19] === NEW REQUEST ===
+[2025-07-26 14:07:19] REQUEST_URI: /public/assets/css/Home.css
+[2025-07-26 14:07:19] Processing URI: '/public/assets/css/Home.css'
+[2025-07-26 14:07:19] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/css/Home.css
+[2025-07-26 14:07:19] Static file check - Resolved: NOT FOUND
+[2025-07-26 14:07:19] 404 - No route found for: /public/assets/css/Home.css
+[2025-07-26 14:07:19] === NEW REQUEST ===
+[2025-07-26 14:07:19] REQUEST_URI: /assets/js/Home.js
+[2025-07-26 14:07:19] Processing URI: '/assets/js/Home.js'
+[2025-07-26 14:07:19] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-26 14:07:19] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-26 14:07:19] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-26 14:07:19] === NEW REQUEST ===
+[2025-07-26 14:07:19] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-26 14:07:19] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-26 14:07:19] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-26 14:07:19] Static file check - Resolved: NOT FOUND
+[2025-07-26 14:07:19] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-26 14:07:36] === NEW REQUEST ===
+[2025-07-26 14:07:36] REQUEST_URI: /
+[2025-07-26 14:07:36] Processing URI: '/'
+[2025-07-26 14:07:36] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-26 14:07:36] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-26 14:07:37] === NEW REQUEST ===
+[2025-07-26 14:07:37] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-26 14:07:37] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-26 14:07:37] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-26 14:07:37] Static file check - Resolved: NOT FOUND
+[2025-07-26 14:07:37] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-26 14:07:37] === NEW REQUEST ===
+[2025-07-26 14:07:37] REQUEST_URI: /assets/js/Home.js
+[2025-07-26 14:07:37] Processing URI: '/assets/js/Home.js'
+[2025-07-26 14:07:37] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-26 14:07:37] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-26 14:07:37] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-26 14:07:37] === NEW REQUEST ===
+[2025-07-26 14:07:37] REQUEST_URI: /assets/css/Home.css
+[2025-07-26 14:07:37] Processing URI: '/assets/css/Home.css'
+[2025-07-26 14:07:37] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-26 14:07:37] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-26 14:07:37] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-26 14:09:29] === NEW REQUEST ===
+[2025-07-26 14:09:29] REQUEST_URI: /pages/services.html
+[2025-07-26 14:09:29] Processing URI: '/pages/services.html'
+[2025-07-26 14:09:29] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/services.html
+[2025-07-26 14:09:29] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\pages\services.html
+[2025-07-26 14:09:29] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\pages\services.html
+[2025-07-26 14:09:29] === NEW REQUEST ===
+[2025-07-26 14:09:29] REQUEST_URI: /assets/css/services.css
+[2025-07-26 14:09:29] Processing URI: '/assets/css/services.css'
+[2025-07-26 14:09:29] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/services.css
+[2025-07-26 14:09:29] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\services.css
+[2025-07-26 14:09:29] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\services.css
+[2025-07-26 14:09:29] === NEW REQUEST ===
+[2025-07-26 14:09:29] REQUEST_URI: /public/assets/js/services.js
+[2025-07-26 14:09:29] Processing URI: '/public/assets/js/services.js'
+[2025-07-26 14:09:29] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/js/services.js
+[2025-07-26 14:09:29] Static file check - Resolved: NOT FOUND
+[2025-07-26 14:09:29] 404 - No route found for: /public/assets/js/services.js
+[2025-07-26 14:09:29] === NEW REQUEST ===
+[2025-07-26 14:09:29] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-26 14:09:29] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-26 14:09:29] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-26 14:09:29] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-26 14:09:29] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-26 14:09:29] === NEW REQUEST ===
+[2025-07-26 14:09:29] REQUEST_URI: /public/assets/js/services.js
+[2025-07-26 14:09:29] Processing URI: '/public/assets/js/services.js'
+[2025-07-26 14:09:29] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/js/services.js
+[2025-07-26 14:09:29] Static file check - Resolved: NOT FOUND
+[2025-07-26 14:09:29] 404 - No route found for: /public/assets/js/services.js
+[2025-07-28 08:01:29] === NEW REQUEST ===
+[2025-07-28 08:01:29] REQUEST_URI: /
+[2025-07-28 08:01:29] Processing URI: '/'
+[2025-07-28 08:01:29] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:01:29] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:01:29] === NEW REQUEST ===
+[2025-07-28 08:01:29] REQUEST_URI: /public/assets/css/Home.css
+[2025-07-28 08:01:29] Processing URI: '/public/assets/css/Home.css'
+[2025-07-28 08:01:29] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/css/Home.css
+[2025-07-28 08:01:29] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:01:29] 404 - No route found for: /public/assets/css/Home.css
+[2025-07-28 08:01:29] === NEW REQUEST ===
+[2025-07-28 08:01:29] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:01:29] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-28 08:01:29] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-28 08:01:29] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:01:29] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:01:29] === NEW REQUEST ===
+[2025-07-28 08:01:29] REQUEST_URI: /public/assets/js/Home.js
+[2025-07-28 08:01:29] Processing URI: '/public/assets/js/Home.js'
+[2025-07-28 08:01:29] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/js/Home.js
+[2025-07-28 08:01:29] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:01:29] 404 - No route found for: /public/assets/js/Home.js
+[2025-07-28 08:02:13] === NEW REQUEST ===
+[2025-07-28 08:02:13] REQUEST_URI: /public/pages/contact.html
+[2025-07-28 08:02:13] Processing URI: '/public/pages/contact.html'
+[2025-07-28 08:02:13] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/contact.html
+[2025-07-28 08:02:13] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:02:13] 404 - No route found for: /public/pages/contact.html
+[2025-07-28 08:03:30] === NEW REQUEST ===
+[2025-07-28 08:03:30] REQUEST_URI: /
+[2025-07-28 08:03:30] Processing URI: '/'
+[2025-07-28 08:03:30] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:03:30] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:03:30] === NEW REQUEST ===
+[2025-07-28 08:03:30] REQUEST_URI: /public/assets/css/Home.css
+[2025-07-28 08:03:30] Processing URI: '/public/assets/css/Home.css'
+[2025-07-28 08:03:30] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/css/Home.css
+[2025-07-28 08:03:30] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:03:30] 404 - No route found for: /public/assets/css/Home.css
+[2025-07-28 08:03:30] === NEW REQUEST ===
+[2025-07-28 08:03:30] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:03:30] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-28 08:03:30] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-28 08:03:30] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:03:30] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:03:30] === NEW REQUEST ===
+[2025-07-28 08:03:30] REQUEST_URI: /public/assets/js/Home.js
+[2025-07-28 08:03:30] Processing URI: '/public/assets/js/Home.js'
+[2025-07-28 08:03:30] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/js/Home.js
+[2025-07-28 08:03:30] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:03:30] 404 - No route found for: /public/assets/js/Home.js
+[2025-07-28 08:06:31] === NEW REQUEST ===
+[2025-07-28 08:06:31] REQUEST_URI: /
+[2025-07-28 08:06:31] Processing URI: '/'
+[2025-07-28 08:06:31] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:06:31] ERROR: File not found - C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:06:47] === NEW REQUEST ===
+[2025-07-28 08:06:47] REQUEST_URI: /
+[2025-07-28 08:06:47] Processing URI: '/'
+[2025-07-28 08:06:47] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:06:47] ERROR: File not found - C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:07:07] === NEW REQUEST ===
+[2025-07-28 08:07:07] REQUEST_URI: /
+[2025-07-28 08:07:07] Processing URI: '/'
+[2025-07-28 08:07:07] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:07:07] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:07:08] === NEW REQUEST ===
+[2025-07-28 08:07:08] REQUEST_URI: /public/assets/css/Home.css
+[2025-07-28 08:07:08] Processing URI: '/public/assets/css/Home.css'
+[2025-07-28 08:07:08] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/css/Home.css
+[2025-07-28 08:07:08] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:07:08] 404 - No route found for: /public/assets/css/Home.css
+[2025-07-28 08:07:08] === NEW REQUEST ===
+[2025-07-28 08:07:08] REQUEST_URI: /public/assets/js/Home.js
+[2025-07-28 08:07:08] Processing URI: '/public/assets/js/Home.js'
+[2025-07-28 08:07:08] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/js/Home.js
+[2025-07-28 08:07:08] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:07:08] 404 - No route found for: /public/assets/js/Home.js
+[2025-07-28 08:07:08] === NEW REQUEST ===
+[2025-07-28 08:07:08] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:07:08] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-28 08:07:08] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-28 08:07:08] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:07:08] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:07:21] === NEW REQUEST ===
+[2025-07-28 08:07:21] REQUEST_URI: /public/index.html
+[2025-07-28 08:07:21] Processing URI: '/public/index.html'
+[2025-07-28 08:07:21] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/index.html
+[2025-07-28 08:07:21] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:07:21] 404 - No route found for: /public/index.html
+[2025-07-28 08:07:28] === NEW REQUEST ===
+[2025-07-28 08:07:28] REQUEST_URI: /public/index.html
+[2025-07-28 08:07:28] Processing URI: '/public/index.html'
+[2025-07-28 08:07:28] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/index.html
+[2025-07-28 08:07:28] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:07:28] 404 - No route found for: /public/index.html
+[2025-07-28 08:07:36] === NEW REQUEST ===
+[2025-07-28 08:07:36] REQUEST_URI: /index.html
+[2025-07-28 08:07:36] Processing URI: '/index.html'
+[2025-07-28 08:07:36] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:07:36] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\index.html
+[2025-07-28 08:07:36] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\index.html
+[2025-07-28 08:07:36] === NEW REQUEST ===
+[2025-07-28 08:07:36] REQUEST_URI: /public/assets/css/Home.css
+[2025-07-28 08:07:36] Processing URI: '/public/assets/css/Home.css'
+[2025-07-28 08:07:36] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/css/Home.css
+[2025-07-28 08:07:36] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:07:36] 404 - No route found for: /public/assets/css/Home.css
+[2025-07-28 08:07:36] === NEW REQUEST ===
+[2025-07-28 08:07:36] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:07:36] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-28 08:07:36] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-28 08:07:36] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:07:36] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:07:36] === NEW REQUEST ===
+[2025-07-28 08:07:36] REQUEST_URI: /public/assets/js/Home.js
+[2025-07-28 08:07:36] Processing URI: '/public/assets/js/Home.js'
+[2025-07-28 08:07:36] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/js/Home.js
+[2025-07-28 08:07:36] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:07:36] 404 - No route found for: /public/assets/js/Home.js
+[2025-07-28 08:07:42] === NEW REQUEST ===
+[2025-07-28 08:07:42] REQUEST_URI: /index
+[2025-07-28 08:07:42] Processing URI: '/index'
+[2025-07-28 08:07:42] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/index
+[2025-07-28 08:07:42] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:07:42] 404 - No route found for: /index
+[2025-07-28 08:07:54] === NEW REQUEST ===
+[2025-07-28 08:07:54] REQUEST_URI: /i
+[2025-07-28 08:07:54] Processing URI: '/i'
+[2025-07-28 08:07:54] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/i
+[2025-07-28 08:07:54] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:07:54] 404 - No route found for: /i
+[2025-07-28 08:07:57] === NEW REQUEST ===
+[2025-07-28 08:07:57] REQUEST_URI: /
+[2025-07-28 08:07:57] Processing URI: '/'
+[2025-07-28 08:07:57] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:07:57] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:07:57] === NEW REQUEST ===
+[2025-07-28 08:07:57] REQUEST_URI: /public/assets/css/Home.css
+[2025-07-28 08:07:57] Processing URI: '/public/assets/css/Home.css'
+[2025-07-28 08:07:57] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/css/Home.css
+[2025-07-28 08:07:57] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:07:57] 404 - No route found for: /public/assets/css/Home.css
+[2025-07-28 08:07:57] === NEW REQUEST ===
+[2025-07-28 08:07:57] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:07:57] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-28 08:07:57] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-28 08:07:57] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:07:57] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:07:57] === NEW REQUEST ===
+[2025-07-28 08:07:57] REQUEST_URI: /public/assets/js/Home.js
+[2025-07-28 08:07:57] Processing URI: '/public/assets/js/Home.js'
+[2025-07-28 08:07:57] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/js/Home.js
+[2025-07-28 08:07:57] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:07:57] 404 - No route found for: /public/assets/js/Home.js
+[2025-07-28 08:08:13] === NEW REQUEST ===
+[2025-07-28 08:08:13] REQUEST_URI: /about
+[2025-07-28 08:08:13] Processing URI: '/about'
+[2025-07-28 08:08:13] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/pages/about.html
+[2025-07-28 08:08:13] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/pages/about.html
+[2025-07-28 08:08:13] === NEW REQUEST ===
+[2025-07-28 08:08:13] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:08:13] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-28 08:08:13] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-28 08:08:13] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:08:13] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:08:13] === NEW REQUEST ===
+[2025-07-28 08:08:13] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:08:13] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:08:13] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:08:13] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:08:13] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:08:35] === NEW REQUEST ===
+[2025-07-28 08:08:35] REQUEST_URI: /
+[2025-07-28 08:08:35] Processing URI: '/'
+[2025-07-28 08:08:35] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:08:35] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:08:35] === NEW REQUEST ===
+[2025-07-28 08:08:35] REQUEST_URI: /public/assets/css/Home.css
+[2025-07-28 08:08:35] Processing URI: '/public/assets/css/Home.css'
+[2025-07-28 08:08:35] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/css/Home.css
+[2025-07-28 08:08:35] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:08:35] 404 - No route found for: /public/assets/css/Home.css
+[2025-07-28 08:08:35] === NEW REQUEST ===
+[2025-07-28 08:08:35] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:08:35] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-28 08:08:35] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-28 08:08:35] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:08:35] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:08:35] === NEW REQUEST ===
+[2025-07-28 08:08:35] REQUEST_URI: /public/assets/js/Home.js
+[2025-07-28 08:08:35] Processing URI: '/public/assets/js/Home.js'
+[2025-07-28 08:08:35] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/js/Home.js
+[2025-07-28 08:08:35] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:08:35] 404 - No route found for: /public/assets/js/Home.js
+[2025-07-28 08:09:00] === NEW REQUEST ===
+[2025-07-28 08:09:00] REQUEST_URI: /
+[2025-07-28 08:09:00] Processing URI: '/'
+[2025-07-28 08:09:00] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:09:00] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:09:00] === NEW REQUEST ===
+[2025-07-28 08:09:00] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:09:00] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-28 08:09:00] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-28 08:09:00] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:09:00] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:09:00] === NEW REQUEST ===
+[2025-07-28 08:09:00] REQUEST_URI: /public/assets/js/Home.js
+[2025-07-28 08:09:00] Processing URI: '/public/assets/js/Home.js'
+[2025-07-28 08:09:00] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/js/Home.js
+[2025-07-28 08:09:00] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:09:00] 404 - No route found for: /public/assets/js/Home.js
+[2025-07-28 08:09:00] === NEW REQUEST ===
+[2025-07-28 08:09:00] REQUEST_URI: /assets/css/Home.css
+[2025-07-28 08:09:00] Processing URI: '/assets/css/Home.css'
+[2025-07-28 08:09:00] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 08:09:00] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:09:00] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:09:23] === NEW REQUEST ===
+[2025-07-28 08:09:23] REQUEST_URI: /
+[2025-07-28 08:09:23] Processing URI: '/'
+[2025-07-28 08:09:23] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:09:23] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:09:23] === NEW REQUEST ===
+[2025-07-28 08:09:23] REQUEST_URI: /assets/css/Home.css
+[2025-07-28 08:09:23] Processing URI: '/assets/css/Home.css'
+[2025-07-28 08:09:23] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 08:09:23] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:09:23] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:09:23] === NEW REQUEST ===
+[2025-07-28 08:09:23] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:09:23] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-28 08:09:23] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-28 08:09:23] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:09:23] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:09:23] === NEW REQUEST ===
+[2025-07-28 08:09:23] REQUEST_URI: /assets/js/Home.js
+[2025-07-28 08:09:23] Processing URI: '/assets/js/Home.js'
+[2025-07-28 08:09:23] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 08:09:23] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:09:23] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:09:42] === NEW REQUEST ===
+[2025-07-28 08:09:42] REQUEST_URI: /
+[2025-07-28 08:09:42] Processing URI: '/'
+[2025-07-28 08:09:42] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:09:42] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:09:43] === NEW REQUEST ===
+[2025-07-28 08:09:43] REQUEST_URI: /assets/css/Home.css
+[2025-07-28 08:09:43] Processing URI: '/assets/css/Home.css'
+[2025-07-28 08:09:43] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 08:09:43] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:09:43] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:09:43] === NEW REQUEST ===
+[2025-07-28 08:09:43] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:09:43] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-28 08:09:43] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-28 08:09:43] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:09:43] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:09:43] === NEW REQUEST ===
+[2025-07-28 08:09:43] REQUEST_URI: /assets/js/Home.js
+[2025-07-28 08:09:43] Processing URI: '/assets/js/Home.js'
+[2025-07-28 08:09:43] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 08:09:43] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:09:43] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:09:43] === NEW REQUEST ===
+[2025-07-28 08:09:43] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:09:43] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:09:43] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:09:43] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:09:43] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:10:03] === NEW REQUEST ===
+[2025-07-28 08:10:03] REQUEST_URI: /
+[2025-07-28 08:10:03] Processing URI: '/'
+[2025-07-28 08:10:03] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:10:03] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:10:03] === NEW REQUEST ===
+[2025-07-28 08:10:03] REQUEST_URI: /assets/css/Home.css
+[2025-07-28 08:10:03] Processing URI: '/assets/css/Home.css'
+[2025-07-28 08:10:03] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 08:10:03] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:10:03] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:10:03] === NEW REQUEST ===
+[2025-07-28 08:10:03] REQUEST_URI: /assets/js/Home.js
+[2025-07-28 08:10:03] Processing URI: '/assets/js/Home.js'
+[2025-07-28 08:10:03] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 08:10:03] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:10:03] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:10:03] === NEW REQUEST ===
+[2025-07-28 08:10:03] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:10:03] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:10:03] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:10:03] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:10:03] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:13:04] === NEW REQUEST ===
+[2025-07-28 08:13:04] REQUEST_URI: /
+[2025-07-28 08:13:04] Processing URI: '/'
+[2025-07-28 08:13:04] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:13:04] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:13:04] === NEW REQUEST ===
+[2025-07-28 08:13:04] REQUEST_URI: /css/Home.css
+[2025-07-28 08:13:04] Processing URI: '/css/Home.css'
+[2025-07-28 08:13:04] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/css/Home.css
+[2025-07-28 08:13:04] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:13:04] 404 - No route found for: /css/Home.css
+[2025-07-28 08:13:04] === NEW REQUEST ===
+[2025-07-28 08:13:04] REQUEST_URI: /assets/js/Home.js
+[2025-07-28 08:13:04] Processing URI: '/assets/js/Home.js'
+[2025-07-28 08:13:04] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 08:13:04] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:13:04] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:13:04] === NEW REQUEST ===
+[2025-07-28 08:13:04] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:13:04] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:13:04] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:13:04] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:13:04] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:13:10] === NEW REQUEST ===
+[2025-07-28 08:13:10] REQUEST_URI: /
+[2025-07-28 08:13:10] Processing URI: '/'
+[2025-07-28 08:13:10] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:13:10] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:13:10] === NEW REQUEST ===
+[2025-07-28 08:13:10] REQUEST_URI: /css/Home.css
+[2025-07-28 08:13:10] Processing URI: '/css/Home.css'
+[2025-07-28 08:13:10] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/css/Home.css
+[2025-07-28 08:13:10] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:13:10] 404 - No route found for: /css/Home.css
+[2025-07-28 08:13:10] === NEW REQUEST ===
+[2025-07-28 08:13:10] REQUEST_URI: /assets/js/Home.js
+[2025-07-28 08:13:10] Processing URI: '/assets/js/Home.js'
+[2025-07-28 08:13:10] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 08:13:10] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:13:10] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:13:10] === NEW REQUEST ===
+[2025-07-28 08:13:10] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:13:10] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:13:10] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:13:10] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:13:10] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:13:24] === NEW REQUEST ===
+[2025-07-28 08:13:24] REQUEST_URI: /
+[2025-07-28 08:13:24] Processing URI: '/'
+[2025-07-28 08:13:24] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:13:24] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:13:25] === NEW REQUEST ===
+[2025-07-28 08:13:25] REQUEST_URI: /assets/css/Home.css
+[2025-07-28 08:13:25] Processing URI: '/assets/css/Home.css'
+[2025-07-28 08:13:25] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 08:13:25] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:13:25] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:13:25] === NEW REQUEST ===
+[2025-07-28 08:13:25] REQUEST_URI: /assets/js/Home.js
+[2025-07-28 08:13:25] Processing URI: '/assets/js/Home.js'
+[2025-07-28 08:13:25] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 08:13:25] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:13:25] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:13:25] === NEW REQUEST ===
+[2025-07-28 08:13:25] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:13:25] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:13:25] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:13:25] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:13:25] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:15:23] === NEW REQUEST ===
+[2025-07-28 08:15:23] REQUEST_URI: /
+[2025-07-28 08:15:23] Processing URI: '/'
+[2025-07-28 08:15:23] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:15:23] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:15:23] === NEW REQUEST ===
+[2025-07-28 08:15:23] REQUEST_URI: /assets/css/Home.css
+[2025-07-28 08:15:23] Processing URI: '/assets/css/Home.css'
+[2025-07-28 08:15:23] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 08:15:23] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:15:23] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:15:23] === NEW REQUEST ===
+[2025-07-28 08:15:23] REQUEST_URI: /assets/js/Home.js
+[2025-07-28 08:15:23] Processing URI: '/assets/js/Home.js'
+[2025-07-28 08:15:23] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 08:15:23] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:15:23] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:15:24] === NEW REQUEST ===
+[2025-07-28 08:15:24] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:15:24] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:15:24] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:15:24] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:15:24] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:15:25] === NEW REQUEST ===
+[2025-07-28 08:15:25] REQUEST_URI: /apple-touch-icon.png
+[2025-07-28 08:15:25] Processing URI: '/apple-touch-icon.png'
+[2025-07-28 08:15:25] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/apple-touch-icon.png
+[2025-07-28 08:15:25] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:15:25] 404 - No route found for: /apple-touch-icon.png
+[2025-07-28 08:15:25] === NEW REQUEST ===
+[2025-07-28 08:15:25] REQUEST_URI: /favicon-32x32.png
+[2025-07-28 08:15:25] Processing URI: '/favicon-32x32.png'
+[2025-07-28 08:15:25] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/favicon-32x32.png
+[2025-07-28 08:15:25] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:15:25] 404 - No route found for: /favicon-32x32.png
+[2025-07-28 08:16:30] === NEW REQUEST ===
+[2025-07-28 08:16:30] REQUEST_URI: /
+[2025-07-28 08:16:30] Processing URI: '/'
+[2025-07-28 08:16:30] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:16:30] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:16:30] === NEW REQUEST ===
+[2025-07-28 08:16:30] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 08:16:30] Processing URI: '/assets/css/Home.css'
+[2025-07-28 08:16:30] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 08:16:30] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:16:30] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:16:30] === NEW REQUEST ===
+[2025-07-28 08:16:30] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:16:30] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:16:30] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:16:30] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:16:30] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:16:30] === NEW REQUEST ===
+[2025-07-28 08:16:30] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 08:16:30] Processing URI: '/assets/js/Home.js'
+[2025-07-28 08:16:30] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 08:16:30] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:16:30] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:16:37] === NEW REQUEST ===
+[2025-07-28 08:16:37] REQUEST_URI: /
+[2025-07-28 08:16:37] Processing URI: '/'
+[2025-07-28 08:16:37] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:16:37] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:16:37] === NEW REQUEST ===
+[2025-07-28 08:16:37] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 08:16:37] Processing URI: '/assets/css/Home.css'
+[2025-07-28 08:16:37] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 08:16:37] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:16:37] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:16:37] === NEW REQUEST ===
+[2025-07-28 08:16:37] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 08:16:37] Processing URI: '/assets/js/Home.js'
+[2025-07-28 08:16:37] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 08:16:37] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:16:37] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:16:37] === NEW REQUEST ===
+[2025-07-28 08:16:37] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:16:37] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:16:37] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:16:37] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:16:37] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:16:56] === NEW REQUEST ===
+[2025-07-28 08:16:56] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 08:16:56] Processing URI: '/assets/css/Home.css'
+[2025-07-28 08:16:56] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 08:16:56] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:16:56] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:21:24] === NEW REQUEST ===
+[2025-07-28 08:21:24] REQUEST_URI: /
+[2025-07-28 08:21:24] Processing URI: '/'
+[2025-07-28 08:21:24] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:21:24] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:21:24] === NEW REQUEST ===
+[2025-07-28 08:21:24] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 08:21:24] Processing URI: '/assets/css/Home.css'
+[2025-07-28 08:21:24] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 08:21:24] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:21:24] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:21:24] === NEW REQUEST ===
+[2025-07-28 08:21:24] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:21:24] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:21:24] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:21:24] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:21:24] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:21:24] === NEW REQUEST ===
+[2025-07-28 08:21:24] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 08:21:24] Processing URI: '/assets/js/Home.js'
+[2025-07-28 08:21:24] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 08:21:24] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:21:24] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:21:28] === NEW REQUEST ===
+[2025-07-28 08:21:28] REQUEST_URI: /public/pages/about.html
+[2025-07-28 08:21:28] Processing URI: '/public/pages/about.html'
+[2025-07-28 08:21:28] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/about.html
+[2025-07-28 08:21:28] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:21:28] 404 - No route found for: /public/pages/about.html
+[2025-07-28 08:21:44] === NEW REQUEST ===
+[2025-07-28 08:21:44] REQUEST_URI: /
+[2025-07-28 08:21:44] Processing URI: '/'
+[2025-07-28 08:21:44] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:21:44] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:21:45] === NEW REQUEST ===
+[2025-07-28 08:21:45] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 08:21:45] Processing URI: '/assets/css/Home.css'
+[2025-07-28 08:21:45] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 08:21:45] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:21:45] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:21:45] === NEW REQUEST ===
+[2025-07-28 08:21:45] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 08:21:45] Processing URI: '/assets/js/Home.js'
+[2025-07-28 08:21:45] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 08:21:45] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:21:45] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:21:45] === NEW REQUEST ===
+[2025-07-28 08:21:45] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:21:45] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:21:45] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:21:45] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:21:45] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:21:50] === NEW REQUEST ===
+[2025-07-28 08:21:50] REQUEST_URI: /public/pages/about.html
+[2025-07-28 08:21:50] Processing URI: '/public/pages/about.html'
+[2025-07-28 08:21:50] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/about.html
+[2025-07-28 08:21:50] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:21:50] 404 - No route found for: /public/pages/about.html
+[2025-07-28 08:22:55] === NEW REQUEST ===
+[2025-07-28 08:22:55] REQUEST_URI: /public/pages/about.html
+[2025-07-28 08:22:55] Processing URI: '/public/pages/about.html'
+[2025-07-28 08:22:55] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/about.html
+[2025-07-28 08:22:55] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:22:55] 404 - No route found for: /public/pages/about.html
+[2025-07-28 08:22:59] === NEW REQUEST ===
+[2025-07-28 08:22:59] REQUEST_URI: /
+[2025-07-28 08:22:59] Processing URI: '/'
+[2025-07-28 08:22:59] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:22:59] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:22:59] === NEW REQUEST ===
+[2025-07-28 08:22:59] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 08:22:59] Processing URI: '/assets/css/Home.css'
+[2025-07-28 08:22:59] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 08:22:59] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:22:59] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:22:59] === NEW REQUEST ===
+[2025-07-28 08:22:59] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 08:22:59] Processing URI: '/assets/js/Home.js'
+[2025-07-28 08:22:59] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 08:22:59] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:22:59] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:22:59] === NEW REQUEST ===
+[2025-07-28 08:22:59] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:22:59] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:22:59] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:22:59] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:22:59] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:23:01] === NEW REQUEST ===
+[2025-07-28 08:23:01] REQUEST_URI: /pages/contact.html
+[2025-07-28 08:23:01] Processing URI: '/pages/contact.html'
+[2025-07-28 08:23:01] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/contact.html
+[2025-07-28 08:23:01] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\pages\contact.html
+[2025-07-28 08:23:01] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\pages\contact.html
+[2025-07-28 08:23:01] === NEW REQUEST ===
+[2025-07-28 08:23:01] REQUEST_URI: /public/pages/images/Header--Transparent.png
+[2025-07-28 08:23:01] Processing URI: '/public/pages/images/Header--Transparent.png'
+[2025-07-28 08:23:01] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/images/Header--Transparent.png
+[2025-07-28 08:23:01] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:23:01] 404 - No route found for: /public/pages/images/Header--Transparent.png
+[2025-07-28 08:23:13] === NEW REQUEST ===
+[2025-07-28 08:23:13] REQUEST_URI: /public/pages/about.html
+[2025-07-28 08:23:13] Processing URI: '/public/pages/about.html'
+[2025-07-28 08:23:13] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/about.html
+[2025-07-28 08:23:13] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:23:13] 404 - No route found for: /public/pages/about.html
+[2025-07-28 08:23:26] === NEW REQUEST ===
+[2025-07-28 08:23:26] REQUEST_URI: /about
+[2025-07-28 08:23:26] Processing URI: '/about'
+[2025-07-28 08:23:26] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/pages/about.html
+[2025-07-28 08:23:26] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/pages/about.html
+[2025-07-28 08:23:26] === NEW REQUEST ===
+[2025-07-28 08:23:26] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:23:26] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-28 08:23:26] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-28 08:23:26] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:23:26] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:23:26] === NEW REQUEST ===
+[2025-07-28 08:23:26] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:23:26] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:23:26] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:23:26] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:23:26] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:23:32] === NEW REQUEST ===
+[2025-07-28 08:23:32] REQUEST_URI: /about
+[2025-07-28 08:23:32] Processing URI: '/about'
+[2025-07-28 08:23:32] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/pages/about.html
+[2025-07-28 08:23:32] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/pages/about.html
+[2025-07-28 08:23:32] === NEW REQUEST ===
+[2025-07-28 08:23:32] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:23:32] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-28 08:23:32] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-28 08:23:32] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:23:32] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:23:32] === NEW REQUEST ===
+[2025-07-28 08:23:32] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:23:32] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:23:32] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:23:32] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:23:32] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:23:33] === NEW REQUEST ===
+[2025-07-28 08:23:33] REQUEST_URI: /favicon.ico
+[2025-07-28 08:23:33] Processing URI: '/favicon.ico'
+[2025-07-28 08:23:33] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/favicon.ico
+[2025-07-28 08:23:33] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:23:33] 404 - No route found for: /favicon.ico
+[2025-07-28 08:26:28] === NEW REQUEST ===
+[2025-07-28 08:26:28] REQUEST_URI: /
+[2025-07-28 08:26:28] Processing URI: '/'
+[2025-07-28 08:26:28] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:26:28] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 08:26:28] === NEW REQUEST ===
+[2025-07-28 08:26:28] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 08:26:28] Processing URI: '/assets/css/Home.css'
+[2025-07-28 08:26:28] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 08:26:28] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:26:28] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 08:26:28] === NEW REQUEST ===
+[2025-07-28 08:26:28] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:26:28] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:26:28] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:26:28] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:26:28] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:26:28] === NEW REQUEST ===
+[2025-07-28 08:26:28] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 08:26:28] Processing URI: '/assets/js/Home.js'
+[2025-07-28 08:26:28] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 08:26:28] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:26:28] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 08:26:35] === NEW REQUEST ===
+[2025-07-28 08:26:35] REQUEST_URI: /pages/about.html
+[2025-07-28 08:26:35] Processing URI: '/pages/about.html'
+[2025-07-28 08:26:35] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/about.html
+[2025-07-28 08:26:35] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\pages\about.html
+[2025-07-28 08:26:35] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\pages\about.html
+[2025-07-28 08:26:35] === NEW REQUEST ===
+[2025-07-28 08:26:35] REQUEST_URI: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:26:35] Processing URI: '/public/assets/images/Header--Transparent.png'
+[2025-07-28 08:26:35] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/images/Header--Transparent.png
+[2025-07-28 08:26:35] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:26:35] 404 - No route found for: /public/assets/images/Header--Transparent.png
+[2025-07-28 08:26:35] === NEW REQUEST ===
+[2025-07-28 08:26:35] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:26:35] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:26:35] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:26:35] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:26:35] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:26:38] === NEW REQUEST ===
+[2025-07-28 08:26:38] REQUEST_URI: /pages/services.html
+[2025-07-28 08:26:38] Processing URI: '/pages/services.html'
+[2025-07-28 08:26:38] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/services.html
+[2025-07-28 08:26:38] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\pages\services.html
+[2025-07-28 08:26:38] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\pages\services.html
+[2025-07-28 08:26:38] === NEW REQUEST ===
+[2025-07-28 08:26:38] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 08:26:38] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 08:26:38] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 08:26:38] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:26:38] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 08:26:38] === NEW REQUEST ===
+[2025-07-28 08:26:38] REQUEST_URI: /assets/css/services.css
+[2025-07-28 08:26:38] Processing URI: '/assets/css/services.css'
+[2025-07-28 08:26:38] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/services.css
+[2025-07-28 08:26:38] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\services.css
+[2025-07-28 08:26:38] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\services.css
+[2025-07-28 08:26:38] === NEW REQUEST ===
+[2025-07-28 08:26:38] REQUEST_URI: /public/assets/js/services.js
+[2025-07-28 08:26:38] Processing URI: '/public/assets/js/services.js'
+[2025-07-28 08:26:38] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/js/services.js
+[2025-07-28 08:26:38] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:26:38] 404 - No route found for: /public/assets/js/services.js
+[2025-07-28 08:26:38] === NEW REQUEST ===
+[2025-07-28 08:26:38] REQUEST_URI: /public/assets/js/services.js
+[2025-07-28 08:26:38] Processing URI: '/public/assets/js/services.js'
+[2025-07-28 08:26:38] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/assets/js/services.js
+[2025-07-28 08:26:38] Static file check - Resolved: NOT FOUND
+[2025-07-28 08:26:38] 404 - No route found for: /public/assets/js/services.js
+[2025-07-28 09:10:41] === NEW REQUEST ===
+[2025-07-28 09:10:41] REQUEST_URI: /
+[2025-07-28 09:10:41] Processing URI: '/'
+[2025-07-28 09:10:41] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:10:41] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:10:41] === NEW REQUEST ===
+[2025-07-28 09:10:41] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 09:10:41] Processing URI: '/assets/css/Home.css'
+[2025-07-28 09:10:41] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 09:10:41] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:10:41] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:10:41] === NEW REQUEST ===
+[2025-07-28 09:10:41] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 09:10:41] Processing URI: '/assets/js/Home.js'
+[2025-07-28 09:10:41] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 09:10:41] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:10:41] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:10:41] === NEW REQUEST ===
+[2025-07-28 09:10:41] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 09:10:41] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 09:10:41] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 09:10:41] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:10:41] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:10:49] === NEW REQUEST ===
+[2025-07-28 09:10:49] REQUEST_URI: /pages/services.html
+[2025-07-28 09:10:49] Processing URI: '/pages/services.html'
+[2025-07-28 09:10:49] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/services.html
+[2025-07-28 09:10:49] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\pages\services.html
+[2025-07-28 09:10:49] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\pages\services.html
+[2025-07-28 09:10:49] === NEW REQUEST ===
+[2025-07-28 09:10:49] REQUEST_URI: /assets/js/services.js
+[2025-07-28 09:10:49] Processing URI: '/assets/js/services.js'
+[2025-07-28 09:10:49] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/services.js
+[2025-07-28 09:10:49] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\services.js
+[2025-07-28 09:10:49] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\services.js
+[2025-07-28 09:10:49] === NEW REQUEST ===
+[2025-07-28 09:10:49] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 09:10:49] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 09:10:49] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 09:10:49] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:10:49] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:10:49] === NEW REQUEST ===
+[2025-07-28 09:10:49] REQUEST_URI: /assets/css/services.css
+[2025-07-28 09:10:49] Processing URI: '/assets/css/services.css'
+[2025-07-28 09:10:49] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/services.css
+[2025-07-28 09:10:49] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\services.css
+[2025-07-28 09:10:49] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\services.css
+[2025-07-28 09:10:49] === NEW REQUEST ===
+[2025-07-28 09:10:49] REQUEST_URI: /assets/data/service.json
+[2025-07-28 09:10:49] Processing URI: '/assets/data/service.json'
+[2025-07-28 09:10:49] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/data/service.json
+[2025-07-28 09:10:49] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\data\service.json
+[2025-07-28 09:10:49] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\data\service.json
+[2025-07-28 09:10:49] === NEW REQUEST ===
+[2025-07-28 09:10:49] REQUEST_URI: /favicon.ico
+[2025-07-28 09:10:49] Processing URI: '/favicon.ico'
+[2025-07-28 09:10:49] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/favicon.ico
+[2025-07-28 09:10:49] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:10:49] 404 - No route found for: /favicon.ico
+[2025-07-28 09:11:00] === NEW REQUEST ===
+[2025-07-28 09:11:00] REQUEST_URI: /pages/contact.html
+[2025-07-28 09:11:00] Processing URI: '/pages/contact.html'
+[2025-07-28 09:11:00] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/contact.html
+[2025-07-28 09:11:00] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\pages\contact.html
+[2025-07-28 09:11:00] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\pages\contact.html
+[2025-07-28 09:11:00] === NEW REQUEST ===
+[2025-07-28 09:11:00] REQUEST_URI: /public/pages/images/Header--Transparent.png
+[2025-07-28 09:11:00] Processing URI: '/public/pages/images/Header--Transparent.png'
+[2025-07-28 09:11:00] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/images/Header--Transparent.png
+[2025-07-28 09:11:00] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:11:00] 404 - No route found for: /public/pages/images/Header--Transparent.png
+[2025-07-28 09:11:02] === NEW REQUEST ===
+[2025-07-28 09:11:02] REQUEST_URI: /public/pages/services.html
+[2025-07-28 09:11:02] Processing URI: '/public/pages/services.html'
+[2025-07-28 09:11:02] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/services.html
+[2025-07-28 09:11:02] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:11:02] 404 - No route found for: /public/pages/services.html
+[2025-07-28 09:11:52] === NEW REQUEST ===
+[2025-07-28 09:11:52] REQUEST_URI: /public/pages/services.html
+[2025-07-28 09:11:52] Processing URI: '/public/pages/services.html'
+[2025-07-28 09:11:52] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/services.html
+[2025-07-28 09:11:52] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:11:52] 404 - No route found for: /public/pages/services.html
+[2025-07-28 09:12:03] === NEW REQUEST ===
+[2025-07-28 09:12:03] REQUEST_URI: /
+[2025-07-28 09:12:03] Processing URI: '/'
+[2025-07-28 09:12:03] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:12:03] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:12:03] === NEW REQUEST ===
+[2025-07-28 09:12:03] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 09:12:03] Processing URI: '/assets/css/Home.css'
+[2025-07-28 09:12:03] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 09:12:03] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:12:03] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:12:03] === NEW REQUEST ===
+[2025-07-28 09:12:03] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 09:12:03] Processing URI: '/assets/js/Home.js'
+[2025-07-28 09:12:03] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 09:12:03] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:12:03] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:12:03] === NEW REQUEST ===
+[2025-07-28 09:12:03] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 09:12:03] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 09:12:03] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 09:12:03] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:12:03] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:16:03] === NEW REQUEST ===
+[2025-07-28 09:16:03] REQUEST_URI: /
+[2025-07-28 09:16:03] Processing URI: '/'
+[2025-07-28 09:16:03] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:16:03] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:16:03] === NEW REQUEST ===
+[2025-07-28 09:16:03] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 09:16:03] Processing URI: '/assets/css/Home.css'
+[2025-07-28 09:16:03] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 09:16:03] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:16:03] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:16:03] === NEW REQUEST ===
+[2025-07-28 09:16:03] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 09:16:03] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 09:16:03] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 09:16:03] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:16:03] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:16:03] === NEW REQUEST ===
+[2025-07-28 09:16:03] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 09:16:03] Processing URI: '/assets/js/Home.js'
+[2025-07-28 09:16:03] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 09:16:03] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:16:03] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:16:06] === NEW REQUEST ===
+[2025-07-28 09:16:06] REQUEST_URI: /pages/contact.html
+[2025-07-28 09:16:06] Processing URI: '/pages/contact.html'
+[2025-07-28 09:16:06] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/contact.html
+[2025-07-28 09:16:06] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\pages\contact.html
+[2025-07-28 09:16:06] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\pages\contact.html
+[2025-07-28 09:16:06] === NEW REQUEST ===
+[2025-07-28 09:16:06] REQUEST_URI: /pages/images/Header--Transparent.png
+[2025-07-28 09:16:06] Processing URI: '/pages/images/Header--Transparent.png'
+[2025-07-28 09:16:06] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/images/Header--Transparent.png
+[2025-07-28 09:16:06] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:16:06] 404 - No route found for: /pages/images/Header--Transparent.png
+[2025-07-28 09:16:08] === NEW REQUEST ===
+[2025-07-28 09:16:08] REQUEST_URI: /pages/sectors.html
+[2025-07-28 09:16:08] Processing URI: '/pages/sectors.html'
+[2025-07-28 09:16:08] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/sectors.html
+[2025-07-28 09:16:08] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\pages\sectors.html
+[2025-07-28 09:16:08] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\pages\sectors.html
+[2025-07-28 09:16:08] === NEW REQUEST ===
+[2025-07-28 09:16:08] REQUEST_URI: /public/pages/images/Header--Transparent.png
+[2025-07-28 09:16:08] Processing URI: '/public/pages/images/Header--Transparent.png'
+[2025-07-28 09:16:08] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/public/pages/images/Header--Transparent.png
+[2025-07-28 09:16:08] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:16:08] 404 - No route found for: /public/pages/images/Header--Transparent.png
+[2025-07-28 09:16:08] === NEW REQUEST ===
+[2025-07-28 09:16:08] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 09:16:08] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 09:16:08] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 09:16:08] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:16:08] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:16:11] === NEW REQUEST ===
+[2025-07-28 09:16:11] REQUEST_URI: /pages/services.html
+[2025-07-28 09:16:11] Processing URI: '/pages/services.html'
+[2025-07-28 09:16:11] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/services.html
+[2025-07-28 09:16:11] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\pages\services.html
+[2025-07-28 09:16:11] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\pages\services.html
+[2025-07-28 09:16:11] === NEW REQUEST ===
+[2025-07-28 09:16:11] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 09:16:11] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 09:16:11] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 09:16:11] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:16:11] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:16:11] === NEW REQUEST ===
+[2025-07-28 09:16:11] REQUEST_URI: /assets/css/services.css
+[2025-07-28 09:16:11] Processing URI: '/assets/css/services.css'
+[2025-07-28 09:16:11] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/services.css
+[2025-07-28 09:16:11] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\services.css
+[2025-07-28 09:16:11] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\services.css
+[2025-07-28 09:16:11] === NEW REQUEST ===
+[2025-07-28 09:16:11] REQUEST_URI: /assets/js/services.js
+[2025-07-28 09:16:11] Processing URI: '/assets/js/services.js'
+[2025-07-28 09:16:11] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/services.js
+[2025-07-28 09:16:11] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\services.js
+[2025-07-28 09:16:11] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\services.js
+[2025-07-28 09:16:11] === NEW REQUEST ===
+[2025-07-28 09:16:11] REQUEST_URI: /assets/data/service.json
+[2025-07-28 09:16:11] Processing URI: '/assets/data/service.json'
+[2025-07-28 09:16:11] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/data/service.json
+[2025-07-28 09:16:11] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\data\service.json
+[2025-07-28 09:16:11] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\data\service.json
+[2025-07-28 09:16:13] === NEW REQUEST ===
+[2025-07-28 09:16:13] REQUEST_URI: /pages/services.html
+[2025-07-28 09:16:13] Processing URI: '/pages/services.html'
+[2025-07-28 09:16:13] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/services.html
+[2025-07-28 09:16:13] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\pages\services.html
+[2025-07-28 09:16:13] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\pages\services.html
+[2025-07-28 09:16:13] === NEW REQUEST ===
+[2025-07-28 09:16:13] REQUEST_URI: /assets/css/services.css
+[2025-07-28 09:16:13] Processing URI: '/assets/css/services.css'
+[2025-07-28 09:16:13] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/services.css
+[2025-07-28 09:16:13] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\services.css
+[2025-07-28 09:16:13] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\services.css
+[2025-07-28 09:16:13] === NEW REQUEST ===
+[2025-07-28 09:16:13] REQUEST_URI: /assets/js/services.js
+[2025-07-28 09:16:13] Processing URI: '/assets/js/services.js'
+[2025-07-28 09:16:13] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/services.js
+[2025-07-28 09:16:13] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\services.js
+[2025-07-28 09:16:13] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\services.js
+[2025-07-28 09:16:13] === NEW REQUEST ===
+[2025-07-28 09:16:13] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 09:16:13] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 09:16:13] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 09:16:13] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:16:13] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:16:13] === NEW REQUEST ===
+[2025-07-28 09:16:13] REQUEST_URI: /assets/data/service.json
+[2025-07-28 09:16:13] Processing URI: '/assets/data/service.json'
+[2025-07-28 09:16:13] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/data/service.json
+[2025-07-28 09:16:13] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\data\service.json
+[2025-07-28 09:16:13] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\data\service.json
+[2025-07-28 09:16:14] === NEW REQUEST ===
+[2025-07-28 09:16:14] REQUEST_URI: /pages/about.html
+[2025-07-28 09:16:14] Processing URI: '/pages/about.html'
+[2025-07-28 09:16:14] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/about.html
+[2025-07-28 09:16:14] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\pages\about.html
+[2025-07-28 09:16:14] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\pages\about.html
+[2025-07-28 09:16:14] === NEW REQUEST ===
+[2025-07-28 09:16:14] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 09:16:14] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 09:16:14] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 09:16:14] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:16:14] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:16:16] === NEW REQUEST ===
+[2025-07-28 09:16:16] REQUEST_URI: /
+[2025-07-28 09:16:16] Processing URI: '/'
+[2025-07-28 09:16:16] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:16:16] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:16:17] === NEW REQUEST ===
+[2025-07-28 09:16:17] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 09:16:17] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 09:16:17] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 09:16:17] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:16:17] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:16:17] === NEW REQUEST ===
+[2025-07-28 09:16:17] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 09:16:17] Processing URI: '/assets/css/Home.css'
+[2025-07-28 09:16:17] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 09:16:17] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:16:17] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:16:17] === NEW REQUEST ===
+[2025-07-28 09:16:17] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 09:16:17] Processing URI: '/assets/js/Home.js'
+[2025-07-28 09:16:17] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 09:16:17] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:16:17] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:16:17] === NEW REQUEST ===
+[2025-07-28 09:16:17] REQUEST_URI: /pages/contact.html
+[2025-07-28 09:16:17] Processing URI: '/pages/contact.html'
+[2025-07-28 09:16:17] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/contact.html
+[2025-07-28 09:16:17] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\pages\contact.html
+[2025-07-28 09:16:17] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\pages\contact.html
+[2025-07-28 09:16:17] === NEW REQUEST ===
+[2025-07-28 09:16:17] REQUEST_URI: /pages/images/Header--Transparent.png
+[2025-07-28 09:16:17] Processing URI: '/pages/images/Header--Transparent.png'
+[2025-07-28 09:16:17] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/images/Header--Transparent.png
+[2025-07-28 09:16:17] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:16:17] 404 - No route found for: /pages/images/Header--Transparent.png
+[2025-07-28 09:17:00] === NEW REQUEST ===
+[2025-07-28 09:17:00] REQUEST_URI: /backend/submit.php
+[2025-07-28 09:17:00] Processing URI: '/backend/submit.php'
+[2025-07-28 09:17:00] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/submit.php
+[2025-07-28 09:17:00] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:17:00] 404 - No route found for: /backend/submit.php
+[2025-07-28 09:18:04] === NEW REQUEST ===
+[2025-07-28 09:18:04] REQUEST_URI: /backend/submit.php
+[2025-07-28 09:18:04] Processing URI: '/backend/submit.php'
+[2025-07-28 09:18:04] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/submit.php
+[2025-07-28 09:18:04] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:18:04] 404 - No route found for: /backend/submit.php
+[2025-07-28 09:18:11] === NEW REQUEST ===
+[2025-07-28 09:18:11] REQUEST_URI: /backend/submit.php
+[2025-07-28 09:18:11] Processing URI: '/backend/submit.php'
+[2025-07-28 09:18:11] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/submit.php
+[2025-07-28 09:18:11] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:18:11] 404 - No route found for: /backend/submit.php
+[2025-07-28 09:18:18] === NEW REQUEST ===
+[2025-07-28 09:18:18] REQUEST_URI: /
+[2025-07-28 09:18:18] Processing URI: '/'
+[2025-07-28 09:18:18] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:18:18] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:18:18] === NEW REQUEST ===
+[2025-07-28 09:18:18] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 09:18:18] Processing URI: '/assets/css/Home.css'
+[2025-07-28 09:18:18] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 09:18:18] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:18:18] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:18:18] === NEW REQUEST ===
+[2025-07-28 09:18:18] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 09:18:18] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 09:18:18] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 09:18:18] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:18:18] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:18:18] === NEW REQUEST ===
+[2025-07-28 09:18:18] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 09:18:18] Processing URI: '/assets/js/Home.js'
+[2025-07-28 09:18:18] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 09:18:18] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:18:18] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:18:22] === NEW REQUEST ===
+[2025-07-28 09:18:22] REQUEST_URI: /pages/contact.html
+[2025-07-28 09:18:22] Processing URI: '/pages/contact.html'
+[2025-07-28 09:18:22] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/contact.html
+[2025-07-28 09:18:22] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\pages\contact.html
+[2025-07-28 09:18:22] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\pages\contact.html
+[2025-07-28 09:18:22] === NEW REQUEST ===
+[2025-07-28 09:18:22] REQUEST_URI: /pages/images/Header--Transparent.png
+[2025-07-28 09:18:22] Processing URI: '/pages/images/Header--Transparent.png'
+[2025-07-28 09:18:22] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/images/Header--Transparent.png
+[2025-07-28 09:18:22] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:18:22] 404 - No route found for: /pages/images/Header--Transparent.png
+[2025-07-28 09:18:47] === NEW REQUEST ===
+[2025-07-28 09:18:47] REQUEST_URI: /backend/upload/submit.php
+[2025-07-28 09:18:47] Processing URI: '/backend/upload/submit.php'
+[2025-07-28 09:18:47] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/upload/submit.php
+[2025-07-28 09:18:47] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:18:47] 404 - No route found for: /backend/upload/submit.php
+[2025-07-28 09:18:51] === NEW REQUEST ===
+[2025-07-28 09:18:51] REQUEST_URI: /backend/upload/submit.php
+[2025-07-28 09:18:51] Processing URI: '/backend/upload/submit.php'
+[2025-07-28 09:18:51] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/upload/submit.php
+[2025-07-28 09:18:51] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:18:51] 404 - No route found for: /backend/upload/submit.php
+[2025-07-28 09:19:24] === NEW REQUEST ===
+[2025-07-28 09:19:24] REQUEST_URI: /backend/login.php
+[2025-07-28 09:19:24] Processing URI: '/backend/login.php'
+[2025-07-28 09:19:24] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/login.php
+[2025-07-28 09:19:24] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:19:24] 404 - No route found for: /backend/login.php
+[2025-07-28 09:19:25] === NEW REQUEST ===
+[2025-07-28 09:19:25] REQUEST_URI: /backend/upload/submit.php
+[2025-07-28 09:19:25] Processing URI: '/backend/upload/submit.php'
+[2025-07-28 09:19:25] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/upload/submit.php
+[2025-07-28 09:19:25] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:19:25] 404 - No route found for: /backend/upload/submit.php
+[2025-07-28 09:19:26] === NEW REQUEST ===
+[2025-07-28 09:19:26] REQUEST_URI: /backend/upload/submit.php
+[2025-07-28 09:19:26] Processing URI: '/backend/upload/submit.php'
+[2025-07-28 09:19:26] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/upload/submit.php
+[2025-07-28 09:19:26] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:19:26] 404 - No route found for: /backend/upload/submit.php
+[2025-07-28 09:19:26] === NEW REQUEST ===
+[2025-07-28 09:19:26] REQUEST_URI: /backend/upload/submit.php
+[2025-07-28 09:19:26] Processing URI: '/backend/upload/submit.php'
+[2025-07-28 09:19:26] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/upload/submit.php
+[2025-07-28 09:19:26] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:19:26] 404 - No route found for: /backend/upload/submit.php
+[2025-07-28 09:19:27] === NEW REQUEST ===
+[2025-07-28 09:19:27] REQUEST_URI: /backend/upload/submit.php
+[2025-07-28 09:19:27] Processing URI: '/backend/upload/submit.php'
+[2025-07-28 09:19:27] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/upload/submit.php
+[2025-07-28 09:19:27] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:19:27] 404 - No route found for: /backend/upload/submit.php
+[2025-07-28 09:19:27] === NEW REQUEST ===
+[2025-07-28 09:19:27] REQUEST_URI: /backend/upload/submit.php
+[2025-07-28 09:19:27] Processing URI: '/backend/upload/submit.php'
+[2025-07-28 09:19:27] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/upload/submit.php
+[2025-07-28 09:19:27] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:19:27] 404 - No route found for: /backend/upload/submit.php
+[2025-07-28 09:19:29] === NEW REQUEST ===
+[2025-07-28 09:19:29] REQUEST_URI: /backend/upload/submit.php
+[2025-07-28 09:19:29] Processing URI: '/backend/upload/submit.php'
+[2025-07-28 09:19:29] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/upload/submit.php
+[2025-07-28 09:19:29] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:19:29] 404 - No route found for: /backend/upload/submit.php
+[2025-07-28 09:19:35] === NEW REQUEST ===
+[2025-07-28 09:19:35] REQUEST_URI: /backend/upload/submit.php
+[2025-07-28 09:19:35] Processing URI: '/backend/upload/submit.php'
+[2025-07-28 09:19:35] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/upload/submit.php
+[2025-07-28 09:19:35] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:19:35] 404 - No route found for: /backend/upload/submit.php
+[2025-07-28 09:20:31] === NEW REQUEST ===
+[2025-07-28 09:20:31] REQUEST_URI: /backend/upload/submit.php
+[2025-07-28 09:20:31] Processing URI: '/backend/upload/submit.php'
+[2025-07-28 09:20:31] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/upload/submit.php
+[2025-07-28 09:20:31] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:20:31] 404 - No route found for: /backend/upload/submit.php
+[2025-07-28 09:21:05] === NEW REQUEST ===
+[2025-07-28 09:21:05] REQUEST_URI: /backend/upload/submit.php
+[2025-07-28 09:21:05] Processing URI: '/backend/upload/submit.php'
+[2025-07-28 09:21:05] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/upload/submit.php
+[2025-07-28 09:21:05] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:21:05] 404 - No route found for: /backend/upload/submit.php
+[2025-07-28 09:21:16] === NEW REQUEST ===
+[2025-07-28 09:21:16] REQUEST_URI: /upload/submit.php
+[2025-07-28 09:21:16] Processing URI: '/upload/submit.php'
+[2025-07-28 09:21:16] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/upload/submit.php
+[2025-07-28 09:21:16] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:21:16] 404 - No route found for: /upload/submit.php
+[2025-07-28 09:22:51] === NEW REQUEST ===
+[2025-07-28 09:22:51] REQUEST_URI: /upload/submit.php
+[2025-07-28 09:22:51] Processing URI: '/upload/submit.php'
+[2025-07-28 09:22:51] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/upload/submit.php
+[2025-07-28 09:22:51] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:22:51] 404 - No route found for: /upload/submit.php
+[2025-07-28 09:22:52] === NEW REQUEST ===
+[2025-07-28 09:22:52] REQUEST_URI: /upload/submit.php
+[2025-07-28 09:22:52] Processing URI: '/upload/submit.php'
+[2025-07-28 09:22:52] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/upload/submit.php
+[2025-07-28 09:22:52] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:22:52] 404 - No route found for: /upload/submit.php
+[2025-07-28 09:23:34] === NEW REQUEST ===
+[2025-07-28 09:23:34] REQUEST_URI: /backend/upload/submit.php
+[2025-07-28 09:23:34] Processing URI: '/backend/upload/submit.php'
+[2025-07-28 09:23:34] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/upload/submit.php
+[2025-07-28 09:23:34] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:23:34] 404 - No route found for: /backend/upload/submit.php
+[2025-07-28 09:23:50] === NEW REQUEST ===
+[2025-07-28 09:23:50] REQUEST_URI: /
+[2025-07-28 09:23:50] Processing URI: '/'
+[2025-07-28 09:23:50] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:23:50] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:23:50] === NEW REQUEST ===
+[2025-07-28 09:23:50] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 09:23:50] Processing URI: '/assets/css/Home.css'
+[2025-07-28 09:23:50] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 09:23:50] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:23:50] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:23:50] === NEW REQUEST ===
+[2025-07-28 09:23:50] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 09:23:50] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 09:23:50] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 09:23:50] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:23:50] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:23:51] === NEW REQUEST ===
+[2025-07-28 09:23:51] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 09:23:51] Processing URI: '/assets/js/Home.js'
+[2025-07-28 09:23:51] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 09:23:51] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:23:51] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:23:53] === NEW REQUEST ===
+[2025-07-28 09:23:53] REQUEST_URI: /pages/contact.html
+[2025-07-28 09:23:53] Processing URI: '/pages/contact.html'
+[2025-07-28 09:23:53] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/contact.html
+[2025-07-28 09:23:53] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\pages\contact.html
+[2025-07-28 09:23:53] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\pages\contact.html
+[2025-07-28 09:23:53] === NEW REQUEST ===
+[2025-07-28 09:23:53] REQUEST_URI: /pages/images/Header--Transparent.png
+[2025-07-28 09:23:53] Processing URI: '/pages/images/Header--Transparent.png'
+[2025-07-28 09:23:53] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/images/Header--Transparent.png
+[2025-07-28 09:23:53] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:23:53] 404 - No route found for: /pages/images/Header--Transparent.png
+[2025-07-28 09:24:17] === NEW REQUEST ===
+[2025-07-28 09:24:17] REQUEST_URI: /submit
+[2025-07-28 09:24:17] Processing URI: '/submit'
+[2025-07-28 09:24:17] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/upload/submit.php
+[2025-07-28 09:24:17] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/upload/submit.php
+[2025-07-28 09:24:17] === NEW REQUEST ===
+[2025-07-28 09:24:17] REQUEST_URI: /pages/thank-you.html
+[2025-07-28 09:24:17] Processing URI: '/pages/thank-you.html'
+[2025-07-28 09:24:17] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/pages/thank-you.html
+[2025-07-28 09:24:17] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\pages\thank-you.html
+[2025-07-28 09:24:17] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\pages\thank-you.html
+[2025-07-28 09:24:20] === NEW REQUEST ===
+[2025-07-28 09:24:20] REQUEST_URI: /index.html
+[2025-07-28 09:24:20] Processing URI: '/index.html'
+[2025-07-28 09:24:20] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:24:20] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\index.html
+[2025-07-28 09:24:20] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\index.html
+[2025-07-28 09:24:20] === NEW REQUEST ===
+[2025-07-28 09:24:20] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 09:24:20] Processing URI: '/assets/css/Home.css'
+[2025-07-28 09:24:20] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 09:24:20] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:24:20] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:24:20] === NEW REQUEST ===
+[2025-07-28 09:24:20] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 09:24:20] Processing URI: '/assets/js/Home.js'
+[2025-07-28 09:24:20] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 09:24:20] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:24:20] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:24:20] === NEW REQUEST ===
+[2025-07-28 09:24:20] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 09:24:20] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 09:24:20] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 09:24:20] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:24:20] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:24:26] === NEW REQUEST ===
+[2025-07-28 09:24:26] REQUEST_URI: /admin
+[2025-07-28 09:24:26] Processing URI: '/admin'
+[2025-07-28 09:24:26] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:24:26] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:24:26] === NEW REQUEST ===
+[2025-07-28 09:24:26] REQUEST_URI: /backend/auth/login.php
+[2025-07-28 09:24:26] Processing URI: '/backend/auth/login.php'
+[2025-07-28 09:24:26] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/auth/login.php
+[2025-07-28 09:24:26] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:24:26] 404 - No route found for: /backend/auth/login.php
+[2025-07-28 09:25:26] === NEW REQUEST ===
+[2025-07-28 09:25:26] REQUEST_URI: /admin
+[2025-07-28 09:25:26] Processing URI: '/admin'
+[2025-07-28 09:25:26] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:25:26] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:25:26] === NEW REQUEST ===
+[2025-07-28 09:25:26] REQUEST_URI: /login
+[2025-07-28 09:25:26] Processing URI: '/login'
+[2025-07-28 09:25:26] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:25:26] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:25:36] === NEW REQUEST ===
+[2025-07-28 09:25:36] REQUEST_URI: /login
+[2025-07-28 09:25:36] Processing URI: '/login'
+[2025-07-28 09:25:36] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:25:36] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:25:47] === NEW REQUEST ===
+[2025-07-28 09:25:47] REQUEST_URI: /login
+[2025-07-28 09:25:47] Processing URI: '/login'
+[2025-07-28 09:25:47] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:25:47] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:25:47] === NEW REQUEST ===
+[2025-07-28 09:25:47] REQUEST_URI: /backend/admin/admin.php
+[2025-07-28 09:25:47] Processing URI: '/backend/admin/admin.php'
+[2025-07-28 09:25:47] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/admin/admin.php
+[2025-07-28 09:25:47] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:25:47] 404 - No route found for: /backend/admin/admin.php
+[2025-07-28 09:26:52] === NEW REQUEST ===
+[2025-07-28 09:26:52] REQUEST_URI: /login
+[2025-07-28 09:26:52] Processing URI: '/login'
+[2025-07-28 09:26:52] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:26:52] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:27:01] === NEW REQUEST ===
+[2025-07-28 09:27:01] REQUEST_URI: /login
+[2025-07-28 09:27:01] Processing URI: '/login'
+[2025-07-28 09:27:01] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:27:01] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:27:01] === NEW REQUEST ===
+[2025-07-28 09:27:01] REQUEST_URI: /admin
+[2025-07-28 09:27:01] Processing URI: '/admin'
+[2025-07-28 09:27:01] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:27:01] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:31:12] === NEW REQUEST ===
+[2025-07-28 09:31:12] REQUEST_URI: /
+[2025-07-28 09:31:12] Processing URI: '/'
+[2025-07-28 09:31:12] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:31:12] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:31:12] === NEW REQUEST ===
+[2025-07-28 09:31:12] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 09:31:12] Processing URI: '/assets/css/Home.css'
+[2025-07-28 09:31:12] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 09:31:12] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:31:12] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:31:12] === NEW REQUEST ===
+[2025-07-28 09:31:12] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 09:31:12] Processing URI: '/assets/js/Home.js'
+[2025-07-28 09:31:12] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 09:31:12] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:31:12] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:31:12] === NEW REQUEST ===
+[2025-07-28 09:31:12] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 09:31:12] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 09:31:12] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 09:31:12] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:31:12] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:31:15] === NEW REQUEST ===
+[2025-07-28 09:31:15] REQUEST_URI: /admin
+[2025-07-28 09:31:15] Processing URI: '/admin'
+[2025-07-28 09:31:15] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:31:15] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:31:15] === NEW REQUEST ===
+[2025-07-28 09:31:15] REQUEST_URI: /login
+[2025-07-28 09:31:15] Processing URI: '/login'
+[2025-07-28 09:31:15] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:31:15] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:31:21] === NEW REQUEST ===
+[2025-07-28 09:31:21] REQUEST_URI: /logout
+[2025-07-28 09:31:21] Processing URI: '/logout'
+[2025-07-28 09:31:21] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/logout.php
+[2025-07-28 09:31:21] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/logout.php
+[2025-07-28 09:31:21] === NEW REQUEST ===
+[2025-07-28 09:31:21] REQUEST_URI: /login
+[2025-07-28 09:31:21] Processing URI: '/login'
+[2025-07-28 09:31:21] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:31:21] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:31:31] === NEW REQUEST ===
+[2025-07-28 09:31:31] REQUEST_URI: /login
+[2025-07-28 09:31:31] Processing URI: '/login'
+[2025-07-28 09:31:31] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:31:31] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:31:31] === NEW REQUEST ===
+[2025-07-28 09:31:31] REQUEST_URI: /admin
+[2025-07-28 09:31:31] Processing URI: '/admin'
+[2025-07-28 09:31:31] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:31:31] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:31:36] === NEW REQUEST ===
+[2025-07-28 09:31:36] REQUEST_URI: /Users_list.php
+[2025-07-28 09:31:36] Processing URI: '/Users_list.php'
+[2025-07-28 09:31:36] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/Users_list.php
+[2025-07-28 09:31:36] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:31:36] 404 - No route found for: /Users_list.php
+[2025-07-28 09:31:40] === NEW REQUEST ===
+[2025-07-28 09:31:40] REQUEST_URI: /admin
+[2025-07-28 09:31:40] Processing URI: '/admin'
+[2025-07-28 09:31:40] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:31:40] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:32:29] === NEW REQUEST ===
+[2025-07-28 09:32:29] REQUEST_URI: /admin
+[2025-07-28 09:32:29] Processing URI: '/admin'
+[2025-07-28 09:32:29] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:32:29] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:32:31] === NEW REQUEST ===
+[2025-07-28 09:32:31] REQUEST_URI: /Upload_Files
+[2025-07-28 09:32:31] Processing URI: '/Upload_Files'
+[2025-07-28 09:32:31] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/Upload_Files
+[2025-07-28 09:32:31] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:32:31] 404 - No route found for: /Upload_Files
+[2025-07-28 09:32:47] === NEW REQUEST ===
+[2025-07-28 09:32:47] REQUEST_URI: /admin
+[2025-07-28 09:32:47] Processing URI: '/admin'
+[2025-07-28 09:32:47] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:32:47] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:33:46] === NEW REQUEST ===
+[2025-07-28 09:33:46] REQUEST_URI: /admin
+[2025-07-28 09:33:46] Processing URI: '/admin'
+[2025-07-28 09:33:46] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:33:46] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:33:48] === NEW REQUEST ===
+[2025-07-28 09:33:48] REQUEST_URI: /upload
+[2025-07-28 09:33:48] Processing URI: '/upload'
+[2025-07-28 09:33:48] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/upload/Upload_Files.php
+[2025-07-28 09:33:48] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/upload/Upload_Files.php
+[2025-07-28 09:33:53] === NEW REQUEST ===
+[2025-07-28 09:33:53] REQUEST_URI: /admin
+[2025-07-28 09:33:53] Processing URI: '/admin'
+[2025-07-28 09:33:53] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:33:53] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:33:56] === NEW REQUEST ===
+[2025-07-28 09:33:56] REQUEST_URI: /users
+[2025-07-28 09:33:56] Processing URI: '/users'
+[2025-07-28 09:33:56] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/data/Users_list.php
+[2025-07-28 09:33:56] ERROR: File not found - C:\Users\gsais\Downloads\ICSPL-P/backend/data/Users_list.php
+[2025-07-28 09:34:19] === NEW REQUEST ===
+[2025-07-28 09:34:19] REQUEST_URI: /admin
+[2025-07-28 09:34:19] Processing URI: '/admin'
+[2025-07-28 09:34:19] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:34:19] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:34:22] === NEW REQUEST ===
+[2025-07-28 09:34:22] REQUEST_URI: /admin
+[2025-07-28 09:34:22] Processing URI: '/admin'
+[2025-07-28 09:34:22] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:34:22] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:34:24] === NEW REQUEST ===
+[2025-07-28 09:34:24] REQUEST_URI: /users
+[2025-07-28 09:34:24] Processing URI: '/users'
+[2025-07-28 09:34:24] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/data/Users_list.php
+[2025-07-28 09:34:24] ERROR: File not found - C:\Users\gsais\Downloads\ICSPL-P/backend/data/Users_list.php
+[2025-07-28 09:35:01] === NEW REQUEST ===
+[2025-07-28 09:35:01] REQUEST_URI: /admin
+[2025-07-28 09:35:01] Processing URI: '/admin'
+[2025-07-28 09:35:01] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:35:01] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:35:03] === NEW REQUEST ===
+[2025-07-28 09:35:03] REQUEST_URI: /users
+[2025-07-28 09:35:03] Processing URI: '/users'
+[2025-07-28 09:35:03] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/Users_list.php
+[2025-07-28 09:35:03] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/Users_list.php
+[2025-07-28 09:35:08] === NEW REQUEST ===
+[2025-07-28 09:35:08] REQUEST_URI: /users?/logout=true
+[2025-07-28 09:35:08] Processing URI: '/users'
+[2025-07-28 09:35:08] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/Users_list.php
+[2025-07-28 09:35:08] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/Users_list.php
+[2025-07-28 09:35:10] === NEW REQUEST ===
+[2025-07-28 09:35:10] REQUEST_URI: /users?/logout=true
+[2025-07-28 09:35:10] Processing URI: '/users'
+[2025-07-28 09:35:10] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/Users_list.php
+[2025-07-28 09:35:10] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/Users_list.php
+[2025-07-28 09:35:40] === NEW REQUEST ===
+[2025-07-28 09:35:40] REQUEST_URI: /users?/logout=true
+[2025-07-28 09:35:40] Processing URI: '/users'
+[2025-07-28 09:35:40] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/Users_list.php
+[2025-07-28 09:35:40] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/Users_list.php
+[2025-07-28 09:35:46] === NEW REQUEST ===
+[2025-07-28 09:35:46] REQUEST_URI: /users?logout=true
+[2025-07-28 09:35:46] Processing URI: '/users'
+[2025-07-28 09:35:46] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/Users_list.php
+[2025-07-28 09:35:46] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/Users_list.php
+[2025-07-28 09:35:46] === NEW REQUEST ===
+[2025-07-28 09:35:46] REQUEST_URI: /logout
+[2025-07-28 09:35:46] Processing URI: '/logout'
+[2025-07-28 09:35:46] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/logout.php
+[2025-07-28 09:35:46] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/logout.php
+[2025-07-28 09:35:46] === NEW REQUEST ===
+[2025-07-28 09:35:46] REQUEST_URI: /login
+[2025-07-28 09:35:46] Processing URI: '/login'
+[2025-07-28 09:35:46] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:35:46] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:35:58] === NEW REQUEST ===
+[2025-07-28 09:35:58] REQUEST_URI: /forgot_password
+[2025-07-28 09:35:58] Processing URI: '/forgot_password'
+[2025-07-28 09:35:58] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/forgot_password
+[2025-07-28 09:35:58] Static file check - Resolved: NOT FOUND
+[2025-07-28 09:35:58] 404 - No route found for: /forgot_password
+[2025-07-28 09:37:01] === NEW REQUEST ===
+[2025-07-28 09:37:01] REQUEST_URI: /forgot-password
+[2025-07-28 09:37:01] Processing URI: '/forgot-password'
+[2025-07-28 09:37:01] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:37:01] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:37:04] === NEW REQUEST ===
+[2025-07-28 09:37:04] REQUEST_URI: /login
+[2025-07-28 09:37:04] Processing URI: '/login'
+[2025-07-28 09:37:04] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:37:04] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:37:06] === NEW REQUEST ===
+[2025-07-28 09:37:06] REQUEST_URI: /forgot-password
+[2025-07-28 09:37:06] Processing URI: '/forgot-password'
+[2025-07-28 09:37:06] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:37:06] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:39:02] === NEW REQUEST ===
+[2025-07-28 09:39:02] REQUEST_URI: /forgot-password
+[2025-07-28 09:39:02] Processing URI: '/forgot-password'
+[2025-07-28 09:39:02] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:39:02] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:39:04] === NEW REQUEST ===
+[2025-07-28 09:39:04] REQUEST_URI: /forgot-password
+[2025-07-28 09:39:04] Processing URI: '/forgot-password'
+[2025-07-28 09:39:04] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:39:04] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:43:04] === NEW REQUEST ===
+[2025-07-28 09:43:04] REQUEST_URI: /forgot-password
+[2025-07-28 09:43:04] Processing URI: '/forgot-password'
+[2025-07-28 09:43:04] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:43:04] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:43:11] === NEW REQUEST ===
+[2025-07-28 09:43:11] REQUEST_URI: /forgot-password
+[2025-07-28 09:43:11] Processing URI: '/forgot-password'
+[2025-07-28 09:43:11] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:43:11] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:43:42] === NEW REQUEST ===
+[2025-07-28 09:43:42] REQUEST_URI: /forgot-password
+[2025-07-28 09:43:42] Processing URI: '/forgot-password'
+[2025-07-28 09:43:42] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:43:42] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:43:47] === NEW REQUEST ===
+[2025-07-28 09:43:47] REQUEST_URI: /forgot-password
+[2025-07-28 09:43:47] Processing URI: '/forgot-password'
+[2025-07-28 09:43:47] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:43:47] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:46:25] === NEW REQUEST ===
+[2025-07-28 09:46:25] REQUEST_URI: /forgot-password
+[2025-07-28 09:46:25] Processing URI: '/forgot-password'
+[2025-07-28 09:46:25] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:46:25] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:46:31] === NEW REQUEST ===
+[2025-07-28 09:46:31] REQUEST_URI: /forgot-password
+[2025-07-28 09:46:31] Processing URI: '/forgot-password'
+[2025-07-28 09:46:31] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:46:31] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:48:40] === NEW REQUEST ===
+[2025-07-28 09:48:40] REQUEST_URI: /forgot-password
+[2025-07-28 09:48:40] Processing URI: '/forgot-password'
+[2025-07-28 09:48:40] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:48:40] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:48:44] === NEW REQUEST ===
+[2025-07-28 09:48:44] REQUEST_URI: /forgot-password
+[2025-07-28 09:48:44] Processing URI: '/forgot-password'
+[2025-07-28 09:48:44] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:48:44] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:50:22] === NEW REQUEST ===
+[2025-07-28 09:50:22] REQUEST_URI: /forgot-password
+[2025-07-28 09:50:22] Processing URI: '/forgot-password'
+[2025-07-28 09:50:22] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:50:22] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:50:25] === NEW REQUEST ===
+[2025-07-28 09:50:25] REQUEST_URI: /forgot-password
+[2025-07-28 09:50:25] Processing URI: '/forgot-password'
+[2025-07-28 09:50:25] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:50:25] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:52:18] === NEW REQUEST ===
+[2025-07-28 09:52:18] REQUEST_URI: /
+[2025-07-28 09:52:18] Processing URI: '/'
+[2025-07-28 09:52:18] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:52:18] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 09:52:18] === NEW REQUEST ===
+[2025-07-28 09:52:18] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 09:52:18] Processing URI: '/assets/css/Home.css'
+[2025-07-28 09:52:18] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 09:52:18] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:52:18] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 09:52:18] === NEW REQUEST ===
+[2025-07-28 09:52:18] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 09:52:18] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 09:52:18] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 09:52:18] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:52:18] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 09:52:18] === NEW REQUEST ===
+[2025-07-28 09:52:18] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 09:52:18] Processing URI: '/assets/js/Home.js'
+[2025-07-28 09:52:18] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 09:52:18] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:52:18] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 09:52:26] === NEW REQUEST ===
+[2025-07-28 09:52:26] REQUEST_URI: /admin
+[2025-07-28 09:52:26] Processing URI: '/admin'
+[2025-07-28 09:52:26] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:52:26] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 09:52:26] === NEW REQUEST ===
+[2025-07-28 09:52:26] REQUEST_URI: /login
+[2025-07-28 09:52:26] Processing URI: '/login'
+[2025-07-28 09:52:26] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:52:26] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 09:52:28] === NEW REQUEST ===
+[2025-07-28 09:52:28] REQUEST_URI: /forgot-password
+[2025-07-28 09:52:28] Processing URI: '/forgot-password'
+[2025-07-28 09:52:28] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:52:28] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:52:32] === NEW REQUEST ===
+[2025-07-28 09:52:32] REQUEST_URI: /forgot-password
+[2025-07-28 09:52:32] Processing URI: '/forgot-password'
+[2025-07-28 09:52:32] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 09:52:32] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:19:13] === NEW REQUEST ===
+[2025-07-28 10:19:13] REQUEST_URI: /forgot-password
+[2025-07-28 10:19:13] Processing URI: '/forgot-password'
+[2025-07-28 10:19:13] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:19:13] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:19:16] === NEW REQUEST ===
+[2025-07-28 10:19:16] REQUEST_URI: /forgot-password
+[2025-07-28 10:19:16] Processing URI: '/forgot-password'
+[2025-07-28 10:19:16] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:19:16] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:20:10] === NEW REQUEST ===
+[2025-07-28 10:20:10] REQUEST_URI: /forgot-password
+[2025-07-28 10:20:10] Processing URI: '/forgot-password'
+[2025-07-28 10:20:10] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:20:10] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:20:12] === NEW REQUEST ===
+[2025-07-28 10:20:12] REQUEST_URI: /forgot-password
+[2025-07-28 10:20:12] Processing URI: '/forgot-password'
+[2025-07-28 10:20:12] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:20:12] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:20:16] === NEW REQUEST ===
+[2025-07-28 10:20:16] REQUEST_URI: /
+[2025-07-28 10:20:16] Processing URI: '/'
+[2025-07-28 10:20:16] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 10:20:16] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 10:20:16] === NEW REQUEST ===
+[2025-07-28 10:20:16] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 10:20:16] Processing URI: '/assets/css/Home.css'
+[2025-07-28 10:20:16] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 10:20:16] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 10:20:16] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 10:20:16] === NEW REQUEST ===
+[2025-07-28 10:20:16] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 10:20:16] Processing URI: '/assets/js/Home.js'
+[2025-07-28 10:20:16] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 10:20:16] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 10:20:16] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 10:20:17] === NEW REQUEST ===
+[2025-07-28 10:20:17] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 10:20:17] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 10:20:17] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 10:20:17] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 10:20:17] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 10:20:21] === NEW REQUEST ===
+[2025-07-28 10:20:21] REQUEST_URI: /forgot-password
+[2025-07-28 10:20:21] Processing URI: '/forgot-password'
+[2025-07-28 10:20:21] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:20:21] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:21:09] === NEW REQUEST ===
+[2025-07-28 10:21:09] REQUEST_URI: /forgot-password
+[2025-07-28 10:21:09] Processing URI: '/forgot-password'
+[2025-07-28 10:21:09] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:21:09] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:21:14] === NEW REQUEST ===
+[2025-07-28 10:21:14] REQUEST_URI: /forgot-password
+[2025-07-28 10:21:14] Processing URI: '/forgot-password'
+[2025-07-28 10:21:14] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:21:14] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:21:45] === NEW REQUEST ===
+[2025-07-28 10:21:45] REQUEST_URI: /forgot-password
+[2025-07-28 10:21:45] Processing URI: '/forgot-password'
+[2025-07-28 10:21:45] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:21:45] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:21:49] === NEW REQUEST ===
+[2025-07-28 10:21:49] REQUEST_URI: /forgot-password
+[2025-07-28 10:21:49] Processing URI: '/forgot-password'
+[2025-07-28 10:21:49] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:21:49] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:38:50] === NEW REQUEST ===
+[2025-07-28 10:38:50] REQUEST_URI: /forgot-password
+[2025-07-28 10:38:50] Processing URI: '/forgot-password'
+[2025-07-28 10:38:50] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:38:50] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:38:54] === NEW REQUEST ===
+[2025-07-28 10:38:54] REQUEST_URI: /forgot-password
+[2025-07-28 10:38:54] Processing URI: '/forgot-password'
+[2025-07-28 10:38:54] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:38:54] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/forgot_password.php
+[2025-07-28 10:38:59] === NEW REQUEST ===
+[2025-07-28 10:38:59] REQUEST_URI: /verify-otp
+[2025-07-28 10:38:59] Processing URI: '/verify-otp'
+[2025-07-28 10:38:59] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/verify_otp.php
+[2025-07-28 10:38:59] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/verify_otp.php
+[2025-07-28 10:39:20] === NEW REQUEST ===
+[2025-07-28 10:39:20] REQUEST_URI: /verify-otp
+[2025-07-28 10:39:20] Processing URI: '/verify-otp'
+[2025-07-28 10:39:20] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/verify_otp.php
+[2025-07-28 10:39:20] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/verify_otp.php
+[2025-07-28 10:39:20] === NEW REQUEST ===
+[2025-07-28 10:39:20] REQUEST_URI: /reset-password
+[2025-07-28 10:39:20] Processing URI: '/reset-password'
+[2025-07-28 10:39:20] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/reset_password.php
+[2025-07-28 10:39:20] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/reset/reset_password.php
+[2025-07-28 10:39:30] === NEW REQUEST ===
+[2025-07-28 10:39:30] REQUEST_URI: //
+[2025-07-28 10:39:30] Processing URI: '/'
+[2025-07-28 10:39:30] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 10:39:30] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 10:39:30] === NEW REQUEST ===
+[2025-07-28 10:39:30] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 10:39:30] Processing URI: '/assets/css/Home.css'
+[2025-07-28 10:39:30] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 10:39:30] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 10:39:30] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 10:39:30] === NEW REQUEST ===
+[2025-07-28 10:39:30] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 10:39:30] Processing URI: '/assets/js/Home.js'
+[2025-07-28 10:39:30] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 10:39:30] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 10:39:30] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 10:39:30] === NEW REQUEST ===
+[2025-07-28 10:39:30] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 10:39:30] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 10:39:30] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 10:39:30] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 10:39:30] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 10:40:22] === NEW REQUEST ===
+[2025-07-28 10:40:22] REQUEST_URI: /admin
+[2025-07-28 10:40:22] Processing URI: '/admin'
+[2025-07-28 10:40:22] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:40:22] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:40:22] === NEW REQUEST ===
+[2025-07-28 10:40:22] REQUEST_URI: /login?timeout=1
+[2025-07-28 10:40:22] Processing URI: '/login'
+[2025-07-28 10:40:22] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 10:40:22] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 10:40:34] === NEW REQUEST ===
+[2025-07-28 10:40:34] REQUEST_URI: /login?timeout=1
+[2025-07-28 10:40:34] Processing URI: '/login'
+[2025-07-28 10:40:34] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 10:40:34] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/auth/login.php
+[2025-07-28 10:40:34] === NEW REQUEST ===
+[2025-07-28 10:40:34] REQUEST_URI: /admin
+[2025-07-28 10:40:34] Processing URI: '/admin'
+[2025-07-28 10:40:34] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:40:34] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:40:37] === NEW REQUEST ===
+[2025-07-28 10:40:37] REQUEST_URI: /admin
+[2025-07-28 10:40:37] Processing URI: '/admin'
+[2025-07-28 10:40:37] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:40:37] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:40:38] === NEW REQUEST ===
+[2025-07-28 10:40:38] REQUEST_URI: /upload
+[2025-07-28 10:40:38] Processing URI: '/upload'
+[2025-07-28 10:40:38] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/upload/Upload_Files.php
+[2025-07-28 10:40:38] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/upload/Upload_Files.php
+[2025-07-28 10:40:39] === NEW REQUEST ===
+[2025-07-28 10:40:39] REQUEST_URI: /Upload_Files
+[2025-07-28 10:40:39] Processing URI: '/Upload_Files'
+[2025-07-28 10:40:39] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/Upload_Files
+[2025-07-28 10:40:39] Static file check - Resolved: NOT FOUND
+[2025-07-28 10:40:39] 404 - No route found for: /Upload_Files
+[2025-07-28 10:40:59] === NEW REQUEST ===
+[2025-07-28 10:40:59] REQUEST_URI: /upload
+[2025-07-28 10:40:59] Processing URI: '/upload'
+[2025-07-28 10:40:59] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/upload/Upload_Files.php
+[2025-07-28 10:40:59] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/upload/Upload_Files.php
+[2025-07-28 10:41:01] === NEW REQUEST ===
+[2025-07-28 10:41:01] REQUEST_URI: /Upload_Files
+[2025-07-28 10:41:01] Processing URI: '/Upload_Files'
+[2025-07-28 10:41:01] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/Upload_Files
+[2025-07-28 10:41:01] Static file check - Resolved: NOT FOUND
+[2025-07-28 10:41:01] 404 - No route found for: /Upload_Files
+[2025-07-28 10:42:15] === NEW REQUEST ===
+[2025-07-28 10:42:15] REQUEST_URI: /
+[2025-07-28 10:42:15] Processing URI: '/'
+[2025-07-28 10:42:15] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 10:42:15] File found - including: C:\Users\gsais\Downloads\ICSPL-P/public/index.html
+[2025-07-28 10:42:16] === NEW REQUEST ===
+[2025-07-28 10:42:16] REQUEST_URI: /assets/css/Home.css?v=1.1
+[2025-07-28 10:42:16] Processing URI: '/assets/css/Home.css'
+[2025-07-28 10:42:16] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/css/Home.css
+[2025-07-28 10:42:16] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 10:42:16] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\css\Home.css
+[2025-07-28 10:42:16] === NEW REQUEST ===
+[2025-07-28 10:42:16] REQUEST_URI: /assets/images/Header--Transparent.png
+[2025-07-28 10:42:16] Processing URI: '/assets/images/Header--Transparent.png'
+[2025-07-28 10:42:16] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/images/Header--Transparent.png
+[2025-07-28 10:42:16] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 10:42:16] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\images\Header--Transparent.png
+[2025-07-28 10:42:16] === NEW REQUEST ===
+[2025-07-28 10:42:16] REQUEST_URI: /assets/js/Home.js?v=1.1
+[2025-07-28 10:42:16] Processing URI: '/assets/js/Home.js'
+[2025-07-28 10:42:16] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/assets/js/Home.js
+[2025-07-28 10:42:16] Static file check - Resolved: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 10:42:16] Serving static file: C:\Users\gsais\Downloads\ICSPL-P\public\assets\js\Home.js
+[2025-07-28 10:42:21] === NEW REQUEST ===
+[2025-07-28 10:42:21] REQUEST_URI: /admin
+[2025-07-28 10:42:21] Processing URI: '/admin'
+[2025-07-28 10:42:21] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:42:21] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:42:25] === NEW REQUEST ===
+[2025-07-28 10:42:25] REQUEST_URI: /admin_users
+[2025-07-28 10:42:25] Processing URI: '/admin_users'
+[2025-07-28 10:42:25] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/admin_users
+[2025-07-28 10:42:25] Static file check - Resolved: NOT FOUND
+[2025-07-28 10:42:25] 404 - No route found for: /admin_users
+[2025-07-28 10:43:17] === NEW REQUEST ===
+[2025-07-28 10:43:17] REQUEST_URI: /admin
+[2025-07-28 10:43:17] Processing URI: '/admin'
+[2025-07-28 10:43:17] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:43:17] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:43:19] === NEW REQUEST ===
+[2025-07-28 10:43:19] REQUEST_URI: /users
+[2025-07-28 10:43:19] Processing URI: '/users'
+[2025-07-28 10:43:19] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/Users_list.php
+[2025-07-28 10:43:19] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/Users_list.php
+[2025-07-28 10:43:22] === NEW REQUEST ===
+[2025-07-28 10:43:22] REQUEST_URI: /upload
+[2025-07-28 10:43:22] Processing URI: '/upload'
+[2025-07-28 10:43:22] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/upload/Upload_Files.php
+[2025-07-28 10:43:22] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/upload/Upload_Files.php
+[2025-07-28 10:43:24] === NEW REQUEST ===
+[2025-07-28 10:43:24] REQUEST_URI: /admin
+[2025-07-28 10:43:24] Processing URI: '/admin'
+[2025-07-28 10:43:24] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:43:24] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:43:59] === NEW REQUEST ===
+[2025-07-28 10:43:59] REQUEST_URI: /admin_users
+[2025-07-28 10:43:59] Processing URI: '/admin_users'
+[2025-07-28 10:43:59] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/admin_users
+[2025-07-28 10:43:59] Static file check - Resolved: NOT FOUND
+[2025-07-28 10:43:59] 404 - No route found for: /admin_users
+[2025-07-28 10:44:05] === NEW REQUEST ===
+[2025-07-28 10:44:05] REQUEST_URI: /admin
+[2025-07-28 10:44:05] Processing URI: '/admin'
+[2025-07-28 10:44:05] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:44:05] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:44:07] === NEW REQUEST ===
+[2025-07-28 10:44:07] REQUEST_URI: /admin
+[2025-07-28 10:44:07] Processing URI: '/admin'
+[2025-07-28 10:44:07] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:44:07] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:44:10] === NEW REQUEST ===
+[2025-07-28 10:44:10] REQUEST_URI: /backend/admin/admin_users.php
+[2025-07-28 10:44:10] Processing URI: '/backend/admin/admin_users.php'
+[2025-07-28 10:44:10] Static file check - Requested: C:\Users\gsais\Downloads\ICSPL-P/public/backend/admin/admin_users.php
+[2025-07-28 10:44:10] Static file check - Resolved: NOT FOUND
+[2025-07-28 10:44:10] 404 - No route found for: /backend/admin/admin_users.php
+[2025-07-28 10:46:11] === NEW REQUEST ===
+[2025-07-28 10:46:11] REQUEST_URI: /admin
+[2025-07-28 10:46:11] Processing URI: '/admin'
+[2025-07-28 10:46:11] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:46:11] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin.php
+[2025-07-28 10:46:14] === NEW REQUEST ===
+[2025-07-28 10:46:14] REQUEST_URI: /admin-users
+[2025-07-28 10:46:14] Processing URI: '/admin-users'
+[2025-07-28 10:46:14] Attempting to load: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin_users.php
+[2025-07-28 10:46:14] File found - including: C:\Users\gsais\Downloads\ICSPL-P/backend/admin/admin_users.php

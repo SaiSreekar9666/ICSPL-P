@@ -13,12 +13,12 @@ $_SESSION['LAST_ACTIVITY'] = time();
 
 // Check login
 if (!isset($_SESSION["admin"])) {
-    header("Location: backend/login.php");
+    header("Location: login");
     exit();
 }
 if (isset($_GET["logout"])) {
     session_destroy();
-    header("Location: logout.php");
+    header("Location: /logout");
     exit();
 }
 
@@ -201,10 +201,10 @@ if (isset($_POST['upload']) && isset($_FILES['file'])) {
         <strong>Welcome, <?php echo htmlspecialchars($_SESSION["admin"] ?? 'Admin'); ?></strong>
     </div>
     <nav class="nav-links">
-        <a href="./admin.php">Dashboard</a>
-        <a href="./Upload_Files.php">Uploaded Files</a>
-        <a href="./Users_list.php">User List</a>
-        <a href="?logout=true" class="logout-btn">Logout</a>
+        <a href="/admin">Dashboard</a>
+        <a href="/upload">Uploaded Files</a>
+        <a href="/users">User List</a>
+        <a href="?/logout=true" class="logout-btn">Logout</a>
     </nav>
 </div>
 

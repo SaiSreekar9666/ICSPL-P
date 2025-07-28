@@ -5,7 +5,7 @@ $conn = new mysqli("localhost", "root", "root", "icspl");
 $message = "";
 
 if (!isset($_SESSION['reset_email'])) {
-    header("Location: forgot_password.php");
+    header("Location: /forgot-password");
     exit();
 }
 
@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($entered_otp == $stored_otp && $current_time <= $otp_expiry) {
         $_SESSION['otp_verified'] = true;
-        header("Location: reset_password.php");
+        header("Location: /reset-password");
         exit();
     } else {
         $message = "❌ Invalid or expired OTP. Please try again.";
