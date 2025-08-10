@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message = "❌ Passwords do not match.";
     } else {
         $hashed_password = password_hash($new_password, PASSWORD_BCRYPT);
-        $stmt = $conn->prepare("UPDATE admin_users SET password = ?, otp = NULL, otp_expiry = NULL WHERE email = ?");
+        $stmt = $conn->prepare("UPDATE admin_users12 SET password = ?, otp = NULL, otp_expiry = NULL WHERE email = ?");
         $stmt->bind_param("ss", $hashed_password, $email);
         $stmt->execute();
         $stmt->close();
@@ -91,9 +91,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <div class="reset-box">
         <h2>Reset Your Password</h2>
-        <form method="post">
-            <input type="password" name="password" placeholder="🔒 New Password" required>
-            <input type="password" name="confirm_password" placeholder="🔒 Confirm Password" required>
+        <form method="post" autocomplete="off">
+            <input type="password" name="password" placeholder="🔒 New Password" required autocomplete="new-password">
+            <input type="password" name="confirm_password" placeholder="🔒 Confirm Password" required autocomplete="new-password">
             <button type="submit">Update Password</button>
         </form>
         <?php if ($message) echo "<div class='message'>$message</div>"; ?>

@@ -7,7 +7,7 @@ require_once __DIR__ . '/../../vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-$conn = new mysqli("localhost", "root", "root", "icspl");
+$conn = new mysqli("localhost", "root", "root", "icspl1");
 $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -15,13 +15,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $otp = rand(100000, 999999);
     $expiry = date("Y-m-d H:i:s", strtotime("+10 minutes"));
 
-    $stmt = $conn->prepare("SELECT id FROM admin_users WHERE email = ?");
+    $stmt = $conn->prepare("SELECT id FROM admin_users12 WHERE email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $stmt->store_result();
 
     if ($stmt->num_rows === 1) {
-        $stmt = $conn->prepare("UPDATE admin_users SET otp = ?, otp_expiry = ? WHERE email = ?");
+        $stmt = $conn->prepare("UPDATE admin_users12 SET otp = ?, otp_expiry = ? WHERE email = ?");
         $stmt->bind_param("sss", $otp, $expiry, $email);
         $stmt->execute();
 

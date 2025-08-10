@@ -26,6 +26,7 @@ $routes = [
     '/forgot-password'   => '/backend/reset/forgot_password.php',
     '/reset-password'    => '/backend/reset/reset_password.php',
     '/verify-otp'        => '/backend/reset/verify_otp.php',
+    '/unauthorized'      => '/backend/auth/unauthorized.php',
     
     // Admin and user routes
     '/admin'             => '/backend/admin/admin.php',

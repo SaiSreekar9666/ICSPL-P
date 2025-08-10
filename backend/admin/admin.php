@@ -23,7 +23,7 @@ if (isset($_GET["logout"])) {
 }
 
 // DB Connection
-$conn = new mysqli("localhost", "root", "root", "icspl");
+$conn = new mysqli("localhost", "root", "root", "icspl1");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -32,9 +32,21 @@ if ($conn->connect_error) {
 $sql = "SELECT id, name, phone_number, gmail, services, sectors, additional_message FROM users";
 $result = $conn->query($sql);
 
-// Fetch login logs
-$sql_logs = "SELECT id, email, login_time FROM admin_login_logs ORDER BY login_time DESC";
+// Pagination for login logs
+$logs_per_page = 10;
+$current_page = isset($_GET['log_page']) ? max(1, intval($_GET['log_page'])) : 1;
+$offset = ($current_page - 1) * $logs_per_page;
+
+// Fetch login logs with pagination
+$sql_logs = "SELECT SQL_CALC_FOUND_ROWS id, email, login_time, ip_address, user_agent 
+             FROM admin_login_logs12 
+             ORDER BY login_time DESC 
+             LIMIT $offset, $logs_per_page";
 $result_logs = $conn->query($sql_logs);
+
+// Get total logs count
+$total_logs = $conn->query("SELECT FOUND_ROWS()")->fetch_row()[0];
+$total_pages = ceil($total_logs / $logs_per_page);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -171,6 +183,60 @@ $result_logs = $conn->query($sql_logs);
         td {
             color: #f1f5f9;
         }
+        /* Previous styles remain the same... */
+
+        /* Pagination Styles */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        
+        .pagination a, .pagination span {
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .pagination a {
+            background-color: #1e293b;
+            color: #f8fafc;
+            border: 1px solid #334155;
+        }
+        
+        .pagination a:hover {
+            background-color: #334155;
+        }
+        
+        .pagination .current {
+            background-color: #3b82f6;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .pagination .disabled {
+            color: #64748b;
+            pointer-events: none;
+        }
+        
+        .logs-per-page {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 10px;
+            padding-right: 20px;
+        }
+        
+        .logs-per-page select {
+            padding: 8px;
+            border-radius: 5px;
+            background-color: #1e293b;
+            color: white;
+            border: 1px solid #334155;
+        }
+
         @media screen and (max-width: 768px) {
             .nav-links {
                 justify-content: center;
@@ -255,10 +321,17 @@ $result_logs = $conn->query($sql_logs);
         </tbody>
     </table>
 </div>
-
-<h2>🗕️ Admin Login Logs</h2>
+<h2>Admin Login Logs</h2>
 <div class="search-container">
     <input type="date" id="logDatePicker" />
+    <div class="logs-per-page">
+        <select id="logsPerPage" onchange="updateLogsPerPage()">
+            <option value="10" <?= $logs_per_page == 10 ? 'selected' : '' ?>>10 per page</option>
+            <option value="25" <?= $logs_per_page == 25 ? 'selected' : '' ?>>25 per page</option>
+            <option value="50" <?= $logs_per_page == 50 ? 'selected' : '' ?>>50 per page</option>
+            <option value="100" <?= $logs_per_page == 100 ? 'selected' : '' ?>>100 per page</option>
+        </select>
+    </div>
 </div>
 <div class="table-container">
     <table id="logTable">
@@ -267,6 +340,8 @@ $result_logs = $conn->query($sql_logs);
                 <th>Log ID</th>
                 <th>Admin Email</th>
                 <th>Login Time</th>
+                <th>IP Address</th>
+                <th>User Agent</th>
             </tr>
         </thead>
         <tbody>
@@ -277,15 +352,63 @@ $result_logs = $conn->query($sql_logs);
                             <td>" . htmlspecialchars($log["id"]) . "</td>
                             <td>" . htmlspecialchars($log["email"]) . "</td>
                             <td>" . htmlspecialchars($log["login_time"]) . "</td>
+                            <td>" . htmlspecialchars($log["ip_address"]) . "</td>
+                            <td>" . htmlspecialchars($log["user_agent"]) . "</td>
                           </tr>";
                 }
             } else {
-                echo "<tr><td colspan='3' style='text-align:center;'>No login logs found.</td></tr>";
+                echo "<tr><td colspan='5' style='text-align:center;'>No login logs found.</td></tr>";
             }
             ?>
         </tbody>
     </table>
+    
+    <!-- Pagination -->
+    <div class="pagination">
+        <?php if ($current_page > 1): ?>
+            <a href="?log_page=1">« First</a>
+            <a href="?log_page=<?= $current_page - 1 ?>">‹ Previous</a>
+        <?php else: ?>
+            <span class="disabled">« First</span>
+            <span class="disabled">‹ Previous</span>
+        <?php endif; ?>
+        
+        <?php
+        // Show page numbers
+        $start_page = max(1, $current_page - 2);
+        $end_page = min($total_pages, $current_page + 2);
+        
+        if ($start_page > 1) {
+            echo '<span>...</span>';
+        }
+        
+        for ($i = $start_page; $i <= $end_page; $i++): ?>
+            <?php if ($i == $current_page): ?>
+                <span class="current"><?= $i ?></span>
+            <?php else: ?>
+                <a href="?log_page=<?= $i ?>"><?= $i ?></a>
+            <?php endif; ?>
+        <?php endfor;
+        
+        if ($end_page < $total_pages) {
+            echo '<span>...</span>';
+        }
+        ?>
+        
+        <?php if ($current_page < $total_pages): ?>
+            <a href="?log_page=<?= $current_page + 1 ?>">Next ›</a>
+            <a href="?log_page=<?= $total_pages ?>">Last »</a>
+        <?php else: ?>
+            <span class="disabled">Next ›</span>
+            <span class="disabled">Last »</span>
+        <?php endif; ?>
+    </div>
+    
+    <div style="text-align: center; margin-top: 10px; color: #94a3b8;">
+        Showing <?= ($offset + 1) ?> to <?= min($offset + $logs_per_page, $total_logs) ?> of <?= $total_logs ?> entries
+    </div>
 </div>
+
 
 <script>
     document.getElementById("searchInput").addEventListener("keyup", function () {
@@ -308,6 +431,26 @@ $result_logs = $conn->query($sql_logs);
             const logDate = loginTime.split(" ")[0];
             row.style.display = (!selectedDate || logDate === selectedDate) ? "" : "none";
         });
+    });
+        // Previous JavaScript remains the same...
+
+    function updateLogsPerPage() {
+        const perPage = document.getElementById('logsPerPage').value;
+        window.location.href = `?log_page=1&per_page=${perPage}`;
+    }
+
+    document.getElementById("logDatePicker").addEventListener("change", function () {
+        const selectedDate = this.value;
+        const rows = document.querySelectorAll("#logTable tbody tr");
+
+        rows.forEach(row => {
+            const loginTime = row.cells[2]?.textContent || "";
+            const logDate = loginTime.split(" ")[0];
+            row.style.display = (!selectedDate || logDate === selectedDate) ? "" : "none";
+        });
+        
+        // Hide pagination when filtering by date
+        document.querySelector('.pagination').style.display = selectedDate ? 'none' : 'flex';
     });
 </script>
 

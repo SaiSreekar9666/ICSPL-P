@@ -1,6 +1,6 @@
 <?php
 // Connect to MySQL
-$conn = mysqli_connect("localhost", "root", "root", "icspl");
+$conn = mysqli_connect("localhost", "root", "root", "icspl1");
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
