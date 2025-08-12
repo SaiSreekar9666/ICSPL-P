@@ -11,15 +11,300 @@
     <link rel="manifest" href="/site.webmanifest">
     <title>ICSPL - Intelligent Connect Solutions</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/Home.css?v=1.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      :root {
+        --bg-primary: #121212;
+        --bg-secondary: #1e1e1e;
+        --text-primary: #ffffff;
+        --text-secondary: #b3b3b3;
+        --accent-color: #4a6baf;
+        --card-bg: #242424;
+        --border-color: #333;
+      }
+      
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      
+      header {
+        transition: all 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+      
+      header.scrolled {
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+      }
+      
+      #mobile-menu {
+        transition: max-height 0.3s ease-out;
+        max-height: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.95);
+      }
+      
+      #mobile-menu.show {
+        max-height: 500px;
+      }
+      
+      section {
+        scroll-margin-top: 100px;
+      }
+      
+      .form-input {
+        background-color: rgba(30, 30, 30, 0.8);
+        color: white;
+        border-color: #444;
+      }
+      
+      .form-input:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+        border-color: #666;
+      }
+      
+      .logo {
+        height: 70px;
+        width: auto;
+      }
+      
+      .footer-logo {
+        height: 30px;
+        width: auto;
+        opacity: 0.8;
+      }
+      
+      /* Uploads Section */
+      .latest-uploads {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px 20px;
+      }
+      
+      .latest-uploads h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+        color: var(--text-primary);
+        text-align: center;
+      }
+      
+      /* Slider Container */
+      .uploads-slider {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 20px 10px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+      }
+      
+      .uploads-slider::-webkit-scrollbar {
+        height: 8px;
+      }
+      
+      .uploads-slider::-webkit-scrollbar-thumb {
+        background: var(--accent-color);
+        border-radius: 4px;
+      }
+      
+      /* Upload Cards */
+      .upload-card {
+        min-width: 280px;
+        max-width: 300px;
+        background: var(--card-bg);
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        overflow: hidden;
+        transition: transform 0.2s ease;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        border: 1px solid var(--border-color);
+      }
+      
+      .upload-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+      }
+      
+      /* Fixed Image Container */
+      .image-container {
+        width: 100%;
+        height: 160px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--bg-secondary);
+        border-bottom: 1px solid var(--border-color);
+      }
+      
+      .file-preview {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+      
+      .file-icon {
+        padding: 30px 0;
+        text-align: center;
+        color: var(--accent-color);
+        font-size: 48px;
+      }
+      
+      .file-info {
+        padding: 15px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .file-info h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+        color: var(--text-primary);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+      .description {
+        color: var(--text-secondary);
+        font-size: 14px;
+        margin: 0 0 12px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        min-height: 40px;
+        flex-grow: 1;
+      }
+      
+      .file-meta {
+        display: flex;
+        gap: 10px;
+        font-size: 12px;
+        color: var(--text-secondary);
+        flex-wrap: wrap;
+      }
+      
+      .file-meta span {
+        background: rgba(255,255,255,0.1);
+        padding: 3px 8px;
+        border-radius: 4px;
+        white-space: nowrap;
+      }
+      
+      /* Empty and Error States */
+      .no-files, .error-message {
+        text-align: center;
+        padding: 40px;
+        color: var(--text-secondary);
+        width: 100%;
+      }
+      
+      .no-files i, .error-message i {
+        font-size: 48px;
+        margin-bottom: 15px;
+        color: rgba(255,255,255,0.2);
+      }
+      
+      .error-message i {
+        color: #f44336;
+      }
+      
+      .error-message p {
+        color: #d9534f;
+      }
+      
+      /* Blog Slider */
+      .blog-slider {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+      }
+      
+      .blog-slide {
+        min-width: 100%;
+        transition: transform 0.5s ease;
+      }
+      
+      .blog-slide-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+      
+      .slide-indicator {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,0.5);
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      .slide-indicator.active {
+        background-color: white;
+      }
+      
+      /* Scroll Box */
+      .scroll-box {
+        max-height: 150px;
+        overflow-y: auto;
+        background-color: #1f2937;
+        border: 1px solid #4b5563;
+        border-radius: 0.5rem;
+        padding: 0.75rem;
+      }
+      
+      .scroll-box::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      .scroll-box::-webkit-scrollbar-track {
+        background: #374151;
+      }
+      
+      .scroll-box::-webkit-scrollbar-thumb {
+        background: #6b7280;
+        border-radius: 4px;
+      }
+      
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .upload-card {
+          min-width: 240px;
+        }
+        
+        .latest-uploads h2 {
+          font-size: 24px;
+        }
+        
+        .logo {
+          width: 300px;
+        }
+      }
+    </style>
   </head>
   <body class="scroll-smooth">  
     <!-- Header / Navigation -->
     <header class="fixed w-full text-white z-50">
       <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div class="flex items-center"><a href="/public/index.html">
-          <img src="/assets/images/Header--Transparent.png" alt="ICSPL Logo" class="logo mr-2" style="width:550px" height="auto"></a>
-          <!-- <span class="text-xl font-bold tracking-wide hidden sm:inline">ICSPL</span> -->
+        <div class="flex items-center">
+          <a href="/">
+            <img src="/assets/images/Header--Transparent.png" alt="ICSPL Logo" class="logo mr-2" style="width:550px" height="auto">
+          </a>
         </div>
         <button class="md:hidden text-white focus:outline-none" onclick="toggleMenu()" aria-label="Toggle navigation menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -35,11 +320,11 @@
         </nav>
       </div>
       <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
-        <a href="/public/index.html" class="block py-2 hover:bg-gray-900 px-2 rounded transition-colors">Home</a>
-        <a href="/public/pages/about.html" class="block py-2 hover:bg-gray-900 px-2 rounded transition-colors">About</a>
-        <a href="/public/pages/services.html" class="block py-2 hover:bg-gray-900 px-2 rounded transition-colors">Services</a>
-        <a href="/public/pages/sectors.html" class="block py-2 hover:bg-gray-900 px-2 rounded transition-colors">Sectors</a>
-        <a href="/public/pages/contact.html" class="block py-2 hover:bg-gray-900 px-2 rounded transition-colors">Contact</a>
+        <a href="/" class="block py-2 hover:bg-gray-900 px-2 rounded transition-colors">Home</a>
+        <a href="/pages/about.html" class="block py-2 hover:bg-gray-900 px-2 rounded transition-colors">About</a>
+        <a href="/pages/services.html" class="block py-2 hover:bg-gray-900 px-2 rounded transition-colors">Services</a>
+        <a href="/pages/sectors.html" class="block py-2 hover:bg-gray-900 px-2 rounded transition-colors">Sectors</a>
+        <a href="/pages/contact.html" class="block py-2 hover:bg-gray-900 px-2 rounded transition-colors">Contact</a>
       </div>
     </header>
 
@@ -73,66 +358,44 @@
         </div>
       </div>
     </section>
-        <!-- Blogs Section -->
-    <section id="blogs" class="py-20 bg-gray-900">
-      <h2 class="text-3xl font-semibold mb-12 text-center text-white">Latest Updates</h2>
-      
-      <div class="blog-slider overflow-hidden relative">
-        <div class="flex transition-transform duration-500" id="blog-slides">
-          <!-- Blog Slide 1 -->
+
+    <!-- Latest Uploads Section -->
+    <section class="latest-uploads">
+      <h2>Latest Uploads</h2>
+      <div class="uploads-slider" id="uploadsSlider">
+        <!-- Dynamic content will load here -->
+      </div>
+    </section>
+
+    <!-- Blog Slider Section -->
+    <section class="blog-slider py-16">
+      <div class="relative overflow-hidden" id="blog-slides">
+        <div class="flex transition-transform duration-500">
           <div class="blog-slide flex-shrink-0 w-full">
-            <div class="blog-slide-content grid md:grid-cols-2 gap-8 items-center py-12">
-              <div class="px-4">
-                <img src="https://tse3.mm.bing.net/th/id/OIP.V9jj53M-1aBfncUqaKGLpgHaEJ?pid=Api&P=0&h=180" alt="Blog Image" class="rounded-lg shadow-xl w-full h-auto">
-              </div>
-              <div class="px-4 text-white">
-                <h3 class="text-2xl font-bold mb-4">The Future of Smart Transportation Systems</h3>
-                <p class="text-gray-300 mb-4">Explore how ICSPL is revolutionizing transportation infrastructure with cutting-edge IoT solutions and AI-powered traffic management systems that reduce congestion and improve safety.</p>
-                <div class="flex items-center text-sm text-gray-400 mb-4">
-                  <span>Published: June 15, 2023</span>
-                  <span class="mx-2">•</span>
-                  <span>5 min read</span>
-                </div>
-                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors">Read More</a>
-              </div>
+            <div class="blog-slide-content">
+              <h2 class="text-3xl font-bold mb-4">Our Latest Projects</h2>
+              <p class="text-lg mb-6">Discover how we're transforming infrastructure with smart engineering solutions.</p>
+              <a href="/pages/services.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors">
+                Learn More
+              </a>
             </div>
           </div>
-          
-          <!-- Blog Slide 2 -->
           <div class="blog-slide flex-shrink-0 w-full">
-            <div class="blog-slide-content grid md:grid-cols-2 gap-8 items-center py-12">
-              <div class="px-4">
-                <img src="https://www.businesswest.co.uk/sites/default/files/styles/event_image/public/blog/featured/blog_images.jpg?itok=uv1yW4hI" alt="Blog Image" class="rounded-lg shadow-xl w-full h-auto">
-              </div>
-              <div class="px-4 text-white">
-                <h3 class="text-2xl font-bold mb-4">Advancements in Military Training Technologies</h3>
-                <p class="text-gray-300 mb-4">Discover how ICSPL's innovative military training systems are enhancing defense preparedness through realistic simulation environments and advanced wire harness solutions.</p>
-                <div class="flex items-center text-sm text-gray-400 mb-4">
-                  <span>Published: May 28, 2023</span>
-                  <span class="mx-2">•</span>
-                  <span>7 min read</span>
-                </div>
-                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors">Read More</a>
-              </div>
+            <div class="blog-slide-content">
+              <h2 class="text-3xl font-bold mb-4">Innovative Technologies</h2>
+              <p class="text-lg mb-6">Exploring the cutting-edge technologies that power our solutions.</p>
+              <a href="/pages/services.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors">
+                View Technologies
+              </a>
             </div>
           </div>
-          
-          <!-- Blog Slide 3 -->
           <div class="blog-slide flex-shrink-0 w-full">
-            <div class="blog-slide-content grid md:grid-cols-2 gap-8 items-center py-12">
-              <div class="px-4">
-                <img src="https://wallpaperaccess.com/full/2433830.jpg" alt="Blog Image" class="rounded-lg shadow-xl w-full h-auto">
-              </div>
-              <div class="px-4 text-white">
-                <h3 class="text-2xl font-bold mb-4">Data-Driven Decision Making for Smart Cities</h3>
-                <p class="text-gray-300 mb-4">Learn how ICSPL's data analytics platforms are helping urban planners make informed decisions to create more sustainable and efficient smart city ecosystems.</p>
-                <div class="flex items-center text-sm text-gray-400 mb-4">
-                  <span>Published: April 10, 2023</span>
-                  <span class="mx-2">•</span>
-                  <span>6 min read</span>
-                </div>
-                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors">Read More</a>
-              </div>
+            <div class="blog-slide-content">
+              <h2 class="text-3xl font-bold mb-4">Sustainability Focus</h2>
+              <p class="text-lg mb-6">How we're building a more sustainable future through engineering.</p>
+              <a href="/pages/services.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors">
+                Our Approach
+              </a>
             </div>
           </div>
         </div>
@@ -158,101 +421,133 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="px-4 py-20 bg-gray-900">
-      <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl font-semibold mb-6 text-center">Contact Us</h2>
-        <p class="mb-8 text-center max-w-2xl mx-auto text-gray-400">We'd love to hear from you! Fill out the form below or reach out through our contact details.</p>
+<!-- Connection Hub Section -->
+<section id="connect" class="px-4 py-20 bg-gray-900">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">Let's Chat on WhatsApp</h2>
+    <p class="mb-8 text-center max-w-2xl mx-auto text-gray-400">Choose how you'd like to connect with us on WhatsApp</p>
 
-        <div class="grid md:grid-cols-2 gap-12">
-          <form class="p-8 rounded-lg border border-gray-800">
-            <div>
-              <label class="block font-medium mb-2">Name</label>
-              <input type="text" class="w-full border border-gray-700 p-3 rounded-lg form-input" placeholder="Your Name" required />
-            </div>
-            <div>
-              <label class="block font-medium mb-2">Email</label>
-              <input type="email" class="w-full border border-gray-700 p-3 rounded-lg form-input" placeholder="you@example.com" required />
-            </div>
-            <div>
-              <label class="block font-medium mb-2">Message</label>
-              <textarea class="w-full border border-gray-700 p-3 rounded-lg form-input" rows="5" placeholder="Your message..." required></textarea>
-            </div>
-            <button type="submit" class="w-full bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition-colors">Send Message</button>
-          </form>
+    <div class="grid md:grid-cols-2 gap-12">
+      <!-- WhatsApp Connection Cards -->
+      <div class="grid grid-cols-2 gap-4">
+        <!-- General Inquiry -->
+        <a href="https://wa.me/YOUR_WHATSAPP_NUMBER?text=Hi%20ICS%20team,%20I%20have%20a%20general%20inquiry" class="p-6 rounded-xl border border-gray-800 bg-gray-800/50 hover:bg-gray-800 transition-all cursor-pointer group">
+          <div class="text-green-400 mb-3 group-hover:text-green-300 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+          </div>
+          <h3 class="font-medium mb-1">General Inquiry</h3>
+          <p class="text-sm text-gray-400">Chat about our services</p>
+        </a>
 
-          <div class="p-8 rounded-lg border border-gray-800">
-            <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
-            <div class="space-y-4">
-              <div class="flex items-start">
-                <div class="text-gray-500 mr-4 mt-1">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+        <!-- Quick Question -->
+        <a href="https://wa.me/YOUR_WHATSAPP_NUMBER?text=Hi%20ICS%20team,%20I%20have%20a%20quick%20question" class="p-6 rounded-xl border border-gray-800 bg-gray-800/50 hover:bg-gray-800 transition-all cursor-pointer group">
+          <div class="text-blue-400 mb-3 group-hover:text-blue-300 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <h3 class="font-medium mb-1">Quick Question</h3>
+          <p class="text-sm text-gray-400">Get fast answers</p>
+        </a>
+
+        <!-- Project Discussion -->
+        <a href="https://wa.me/YOUR_WHATSAPP_NUMBER?text=Hi%20ICS%20team,%20I%20want%20to%20discuss%20a%20project" class="p-6 rounded-xl border border-gray-800 bg-gray-800/50 hover:bg-gray-800 transition-all cursor-pointer group">
+          <div class="text-purple-400 mb-3 group-hover:text-purple-300 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+            </svg>
+          </div>
+          <h3 class="font-medium mb-1">Project Discussion</h3>
+          <p class="text-sm text-gray-400">Let's talk business</p>
+        </a>
+
+        <!-- Support Help -->
+        <a href="https://wa.me/919381651067?text=Hi%20ICS%20team,%20I%20need%20support%20with..." class="p-6 rounded-xl border border-gray-800 bg-gray-800/50 hover:bg-gray-800 transition-all cursor-pointer group">
+          <div class="text-yellow-400 mb-3 group-hover:text-yellow-300 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 3v3m0-6v.01" />
+            </svg>
+          </div>
+          <h3 class="font-medium mb-1">Support Help</h3>
+          <p class="text-sm text-gray-400">Get technical assistance</p>
+        </a>
+      </div>
+
+      <!-- Your Original Contact Information -->
+      <div class="p-8 rounded-lg border border-gray-800">
+        <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <div class="text-gray-500 mr-4 mt-1">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-medium">Address</h4>
+              <p class="text-gray-400">26/31-A,Ganigalli street ,Opposite Small Market,Kurnool-518001,Andhra-Pradesh,India</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="text-gray-500 mr-4 mt-1">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-medium">Email</h4>
+              <p class="text-gray-400">services@icspl.com</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="text-gray-500 mr-4 mt-1">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-medium">Phone</h4>
+              <p class="text-gray-400">+91-XXXXXXXXXX</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="text-gray-500 mr-4 mt-1">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-medium">Follow Us</h4>
+              <div class="flex space-x-4 mt-2">
+                <a href="#" class="text-blue-400 hover:text-blue-300">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                   </svg>
-                </div>
-                <div>
-                  <h4 class="font-medium">Address</h4>
-                  <p class="text-gray-400">Intelligent Connect Solutions Pvt. Ltd., Kurnool, Andhra Pradesh – 518001, India</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start">
-                <div class="text-gray-500 mr-4 mt-1">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </a>
+                <a href="#" class="text-blue-300 hover:text-blue-200">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
                   </svg>
-                </div>
-                <div>
-                  <h4 class="font-medium">Email</h4>
-                  <p class="text-gray-400">info@icspl.com</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start">
-                <div class="text-gray-500 mr-4 mt-1">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </a>
+                <a href="#" class="text-blue-500 hover:text-blue-400">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
                   </svg>
-                </div>
-                <div>
-                  <h4 class="font-medium">Phone</h4>
-                  <p class="text-gray-400">+91-XXXXXXXXXX</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start">
-                <div class="text-gray-500 mr-4 mt-1">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-medium">Follow Us</h4>
-                  <div class="flex space-x-4 mt-2">
-                    <a href="#" class="text-blue-400 hover:text-blue-300">
-                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                      </svg>
-                    </a>
-                    <a href="#" class="text-blue-300 hover:text-blue-200">
-                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                      </svg>
-                    </a>
-                    <a href="#" class="text-blue-500 hover:text-blue-400">
-                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- Footer -->
     <footer class="p-8 bg-black text-white border-t border-gray-900">
@@ -260,10 +555,6 @@
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="mb-4 md:mb-0 flex items-center">
             <img src="/assets/images/Header--Transparent.png" alt="ICSPL Logo" class="footer-logo mr-3">
-            <div>
-              <!-- <div class="text-lg font-bold tracking-wide"></div>
-              <p class="text-gray-500 text-sm">Intelligent Connect Solutions Pvt. Ltd.</p> -->
-            </div>
           </div>
           <div class="text-gray-500 text-sm">
             &copy; <span id="year"></span> ICSPL. All rights reserved.
@@ -271,6 +562,220 @@
         </div>
       </div>
     </footer>
-    <script src="/assets/js/Home.js?v=1.1"></script>
-  </body>
-</html>
+    <script href="/public/assets/js/Home.js"></script>
+    </body>
+    </html>
+<script>
+// ======== DOM Elements ========
+const mobileMenu = document.getElementById("mobile-menu");
+const header = document.querySelector("header");
+const blogSlides = document.querySelector('#blog-slides > .flex');
+const slides = document.querySelectorAll('#blog-slides .blog-slide');
+const indicators = document.querySelectorAll('#blog-slides .slide-indicator');
+const uploadsSlider = document.getElementById('uploadsSlider');
+const form = document.querySelector('form');
+
+// ======== Mobile Menu Functions ========
+function toggleMenu() {
+    mobileMenu.classList.toggle("show");
+    mobileMenu.classList.toggle("hidden");
+    mobileMenu.setAttribute('aria-expanded', mobileMenu.classList.contains("show"));
+}
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove("show");
+        mobileMenu.classList.add("hidden");
+        mobileMenu.setAttribute('aria-expanded', 'false');
+    });
+});
+
+// ======== Header scroll effect ========
+let isScrolling;
+function handleScroll() {
+    clearTimeout(isScrolling);
+    isScrolling = setTimeout(() => {
+        header.classList.toggle("scrolled", window.scrollY > 50);
+    }, 50);
+}
+
+// ======== Smooth Scrolling ========
+function smoothScroll(event) {
+    if (event.currentTarget.getAttribute('href').startsWith('#')) {
+        event.preventDefault();
+        const targetId = event.currentTarget.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: "smooth"
+            });
+        }
+    }
+}
+
+// ======== Form Handling ========
+function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const formValues = Object.fromEntries(formData.entries());
+    if (!formValues.name || !formValues.email || !formValues.message) {
+        alert("Please fill in all fields");
+        return;
+    }
+    console.log("Form submitted:", formValues);
+    alert("Thank you for your message! We'll get back to you soon.");
+    form.reset();
+}
+
+// ======== Blog Slider Setup ========
+let currentSlide = 0;
+let slideInterval;
+
+function updateSlider() {
+    blogSlides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === currentSlide);
+    });
+}
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateSlider();
+    resetAutoSlide();
+}
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateSlider();
+    resetAutoSlide();
+}
+function goToSlide(index) {
+    currentSlide = index;
+    updateSlider();
+    resetAutoSlide();
+}
+function startSlideShow() {
+    stopSlideShow();
+    slideInterval = setInterval(nextSlide, 3000);
+}
+function stopSlideShow() {
+    if (slideInterval) clearInterval(slideInterval);
+}
+function resetAutoSlide() {
+    stopSlideShow();
+    startSlideShow();
+}
+
+// ======== Touch Support ========
+let isDragging = false;
+let startPos = 0;
+let currentTranslate = 0;
+let prevTranslate = 0;
+
+function touchStart(index) {
+    return function (event) {
+        isDragging = true;
+        startPos = getPositionX(event);
+        currentSlide = index;
+        prevTranslate = currentSlide * -100;
+        blogSlides.style.transition = 'none';
+        window.addEventListener('touchmove', touchMove);
+        window.addEventListener('touchend', touchEnd);
+        window.addEventListener('mousemove', touchMove);
+        window.addEventListener('mouseup', touchEnd);
+    }
+}
+function touchMove(event) {
+    if (isDragging) {
+        const currentPosition = getPositionX(event);
+        currentTranslate = prevTranslate + ((currentPosition - startPos) / window.innerWidth) * 100;
+        blogSlides.style.transform = `translateX(${currentTranslate}%)`;
+    }
+}
+function touchEnd() {
+    if (isDragging) {
+        isDragging = false;
+        const movedBy = currentTranslate - prevTranslate;
+        if (movedBy < -20 && currentSlide < slides.length - 1) currentSlide++;
+        if (movedBy > 20 && currentSlide > 0) currentSlide--;
+        blogSlides.style.transition = 'transform 0.5s ease';
+        updateSlider();
+        resetAutoSlide();
+        window.removeEventListener('touchmove', touchMove);
+        window.removeEventListener('touchend', touchEnd);
+        window.removeEventListener('mousemove', touchMove);
+        window.removeEventListener('mouseup', touchEnd);
+    }
+}
+function getPositionX(event) {
+    return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+}
+
+// ======== File Upload Display ========
+async function loadFileData() {
+    try {
+        const response = await fetch('/blog');
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        const data = await response.json();
+        if (!data || data.length === 0) {
+            uploadsSlider.innerHTML = '<div class="no-files"><i class="fas fa-folder-open"></i><p>No files found</p></div>';
+            return;
+        }
+        uploadsSlider.innerHTML = data.map(file => `
+            <div class="upload-card">
+                ${file.image ? 
+                    `<div class="image-container">
+                        <img src="${file.image}" alt="${file.title || 'Document'}" class="file-preview" 
+                             onerror="this.src='placeholder.png';this.onerror=null;">
+                    </div>` : 
+                    `<div class="file-icon"><i class="fas fa-file"></i></div>`
+                }
+                <div class="file-info">
+                    <h3>${file.title || 'Untitled Document'}</h3>
+                    <p class="description">${file.description || 'No description available'}</p>
+                </div>
+            </div>
+        `).join('');
+    } catch (error) {
+        console.error("Fetch error:", error);
+        uploadsSlider.innerHTML = `
+            <div class="error-message">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Failed to load documents</p>
+            </div>
+        `;
+    }
+}
+
+// ======== Init ========
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', smoothScroll);
+    });
+    if (form) {
+        form.addEventListener('submit', handleSubmit);
+    }
+    window.addEventListener('scroll', handleScroll);
+
+    if (slides.length > 0) {
+        slides.forEach((slide, index) => {
+            slide.addEventListener('touchstart', touchStart(index), { passive: true });
+            slide.addEventListener('mousedown', touchStart(index));
+        });
+        updateSlider();
+        startSlideShow();
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+        blogSlides.addEventListener('mouseenter', stopSlideShow);
+        blogSlides.addEventListener('mouseleave', startSlideShow);
+    }
+    loadFileData();
+});
+
+// ======== Make functions available globally ========
+window.toggleMenu = toggleMenu;
+window.nextSlide = nextSlide;
+window.prevSlide = prevSlide;
+window.goToSlide = goToSlide;
+</script>

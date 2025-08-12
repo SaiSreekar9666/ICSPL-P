@@ -1,2 +1,25 @@
+# Ignore environment files
+.env
 
-/vendor/
+# Ignore uploaded files
+# uploads/
+
+# Ignore Composer dependencies
+vendor/
+
+# Ignore logs
+*.log
+router_debug.log
+
+# Ignore dynamic data
+blog_data.json
+
+# Composer binary
+/composer.phar
+
+# VSCode settings
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db

@@ -1,47 +1,217 @@
- body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #000;
-        color: #fff;
+
+      :root {
+        --bg-primary: #121212;
+        --bg-secondary: #1e1e1e;
+        --text-primary: #ffffff;
+        --text-secondary: #b3b3b3;
+        --accent-color: #4a6baf;
+        --card-bg: #242424;
+        --border-color: #333;
       }
+      
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      
       header {
         transition: all 0.3s ease;
         background-color: rgba(0, 0, 0, 0.9);
       }
+      
       header.scrolled {
         box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
       }
+      
       #mobile-menu {
         transition: max-height 0.3s ease-out;
         max-height: 0;
         overflow: hidden;
         background-color: rgba(0, 0, 0, 0.95);
       }
+      
       #mobile-menu.show {
         max-height: 500px;
       }
+      
       section {
         scroll-margin-top: 100px;
       }
+      
       .form-input {
         background-color: rgba(30, 30, 30, 0.8);
         color: white;
         border-color: #444;
       }
+      
       .form-input:focus {
         outline: none;
         box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
         border-color: #666;
       }
+      
       .logo {
         height: 70px;
         width: auto;
       }
+      
       .footer-logo {
         height: 30px;
         width: auto;
         opacity: 0.8;
       }
-            .blog-slider {
+      
+      /* Uploads Section */
+      .latest-uploads {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px 20px;
+      }
+      
+      .latest-uploads h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+        color: var(--text-primary);
+        text-align: center;
+      }
+      
+      /* Slider Container */
+      .uploads-slider {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 20px 10px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+      }
+      
+      .uploads-slider::-webkit-scrollbar {
+        height: 8px;
+      }
+      
+      .uploads-slider::-webkit-scrollbar-thumb {
+        background: var(--accent-color);
+        border-radius: 4px;
+      }
+      
+      /* Upload Cards */
+      .upload-card {
+        min-width: 280px;
+        max-width: 300px;
+        background: var(--card-bg);
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        overflow: hidden;
+        transition: transform 0.2s ease;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        border: 1px solid var(--border-color);
+      }
+      
+      .upload-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+      }
+      
+      /* Fixed Image Container */
+      .image-container {
+        width: 100%;
+        height: 160px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--bg-secondary);
+        border-bottom: 1px solid var(--border-color);
+      }
+      
+      .file-preview {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+      
+      .file-icon {
+        padding: 30px 0;
+        text-align: center;
+        color: var(--accent-color);
+        font-size: 48px;
+      }
+      
+      .file-info {
+        padding: 15px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .file-info h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+        color: var(--text-primary);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+      .description {
+        color: var(--text-secondary);
+        font-size: 14px;
+        margin: 0 0 12px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        min-height: 40px;
+        flex-grow: 1;
+      }
+      
+      .file-meta {
+        display: flex;
+        gap: 10px;
+        font-size: 12px;
+        color: var(--text-secondary);
+        flex-wrap: wrap;
+      }
+      
+      .file-meta span {
+        background: rgba(255,255,255,0.1);
+        padding: 3px 8px;
+        border-radius: 4px;
+        white-space: nowrap;
+      }
+      
+      /* Empty and Error States */
+      .no-files, .error-message {
+        text-align: center;
+        padding: 40px;
+        color: var(--text-secondary);
+        width: 100%;
+      }
+      
+      .no-files i, .error-message i {
+        font-size: 48px;
+        margin-bottom: 15px;
+        color: rgba(255,255,255,0.2);
+      }
+      
+      .error-message i {
+        color: #f44336;
+      }
+      
+      .error-message p {
+        color: #d9534f;
+      }
+      
+      /* Blog Slider */
+      .blog-slider {
         width: 100vw;
         position: relative;
         left: 50%;
@@ -73,21 +243,42 @@
       .slide-indicator.active {
         background-color: white;
       }
-.scroll-box {
-  max-height: 150px;
-  overflow-y: auto;
-  background-color: #1f2937;
-  border: 1px solid #4b5563;
-  border-radius: 0.5rem;
-  padding: 0.75rem;
-}
-.scroll-box::-webkit-scrollbar {
-  width: 8px;
-}
-.scroll-box::-webkit-scrollbar-track {
-  background: #374151;
-}
-.scroll-box::-webkit-scrollbar-thumb {
-  background: #6b7280;
-  border-radius: 4px;
-}
+      
+      /* Scroll Box */
+      .scroll-box {
+        max-height: 150px;
+        overflow-y: auto;
+        background-color: #1f2937;
+        border: 1px solid #4b5563;
+        border-radius: 0.5rem;
+        padding: 0.75rem;
+      }
+      
+      .scroll-box::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      .scroll-box::-webkit-scrollbar-track {
+        background: #374151;
+      }
+      
+      .scroll-box::-webkit-scrollbar-thumb {
+        background: #6b7280;
+        border-radius: 4px;
+      }
+      
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .upload-card {
+          min-width: 240px;
+        }
+        
+        .latest-uploads h2 {
+          font-size: 24px;
+        }
+        
+        .logo {
+          width: 300px;
+        }
+      }
+  

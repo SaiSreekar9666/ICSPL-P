@@ -366,6 +366,7 @@ $conn->close();
     <div class="login-container">
         <div class="login-box">
             <div class="logo">
+                <p>Powered By</p>
                 <img src="/assets/images/Trident-1-logo.png" alt="Trident Systems">
             </div>
             

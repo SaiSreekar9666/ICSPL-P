@@ -24,6 +24,68 @@ if (isset($_GET["logout"])) {
 
 $message = "";
 
+// Helper function to extract text from different file types
+function extractFileContent($filePath, $fileType) {
+    $content = '';
+    
+    switch($fileType) {
+        case 'txt':
+        case 'md':
+            $content = file_get_contents($filePath);
+            break;
+            
+        case 'docx':
+            // Requires phpword library
+            if (class_exists('PhpOffice\PhpWord\IOFactory')) {
+                $phpWord = \PhpOffice\PhpWord\IOFactory::load($filePath);
+                $content = '';
+                foreach($phpWord->getSections() as $section) {
+                    foreach($section->getElements() as $element) {
+                        if (method_exists($element, 'getElements')) {
+                            foreach($element->getElements() as $child) {
+                                if (method_exists($child, 'getText')) {
+                                    $content .= $child->getText() . ' ';
+                                }
+                            }
+                        } elseif (method_exists($element, 'getText')) {
+                            $content .= $element->getText() . ' ';
+                        }
+                    }
+                }
+            }
+            break;
+            
+        case 'pdf':
+            // Requires pdfparser library
+            if (class_exists('Smalot\PdfParser\Parser')) {
+                $parser = new \Smalot\PdfParser\Parser();
+                $pdf = $parser->parseFile($filePath);
+                $content = $pdf->getText();
+            }
+            break;
+            
+        case 'xlsx':
+        case 'xls':
+            // Requires phpspreadsheet library
+            if (class_exists('PhpOffice\PhpSpreadsheet\IOFactory')) {
+                $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($filePath);
+                $content = '';
+                foreach ($spreadsheet->getWorksheetIterator() as $worksheet) {
+                    foreach ($worksheet->getRowIterator() as $row) {
+                        $cellIterator = $row->getCellIterator();
+                        $cellIterator->setIterateOnlyExistingCells(true);
+                        foreach ($cellIterator as $cell) {
+                            $content .= $cell->getValue() . ' ';
+                        }
+                    }
+                }
+            }
+            break;
+    }
+    
+    return trim(substr($content, 0, 200)); // Return first 200 characters
+}
+
 // Handle file deletion
 if (isset($_POST['delete_file'])) {
     $index = $_POST['file_index'];
@@ -33,9 +95,12 @@ if (isset($_POST['delete_file'])) {
         $allBlogs = json_decode(file_get_contents($jsonFile), true) ?: [];
         
         if (isset($allBlogs[$index])) {
-            // Delete associated image if exists
+            // Delete associated files if they exist
             if (!empty($allBlogs[$index]['image'])) {
                 @unlink($allBlogs[$index]['image']);
+            }
+            if (!empty($allBlogs[$index]['file_path'])) {
+                @unlink($allBlogs[$index]['file_path']);
             }
             
             array_splice($allBlogs, $index, 1);
@@ -47,9 +112,10 @@ if (isset($_POST['delete_file'])) {
 
 // Handle file upload
 if (isset($_POST['upload']) && isset($_FILES['file'])) {
-    $file = $_FILES['file']['tmp_name'];
-    $filename = $_FILES['file']['name'];
+    $file = $_FILES['file'];
+    $filename = $file['name'];
     $ext = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
+    $fileSize = $file['size'];
     
     // Create uploads directory if it doesn't exist
     if (!file_exists('uploads')) {
@@ -63,23 +129,43 @@ if (isset($_POST['upload']) && isset($_FILES['file'])) {
         $message = "❌ Unsupported file type.";
     } else {
         $title = pathinfo($filename, PATHINFO_FILENAME);
+        $uniqueId = uniqid();
+        $filePath = 'uploads/' . $uniqueId . '.' . $ext;
+        $content = '';
         $imagePath = '';
+        
+        // Move uploaded file
+        move_uploaded_file($file['tmp_name'], $filePath);
         
         // Handle image uploads
         if (in_array($ext, ['jpg', 'jpeg', 'png', 'gif'])) {
-            $imagePath = 'uploads/' . uniqid() . '.' . $ext;
-            move_uploaded_file($file, $imagePath);
+            $imagePath = $filePath;
+            // Create thumbnail for images
+            $thumbnailPath = 'uploads/thumbs/' . $uniqueId . '_thumb.' . $ext;
+            if (!file_exists('uploads/thumbs')) {
+                mkdir('uploads/thumbs', 0755, true);
+            }
+            createThumbnail($filePath, $thumbnailPath, 300, 200);
+        } else {
+            // Extract content from non-image files
+            $content = extractFileContent($filePath, $ext);
         }
         
         $blog = [
             "title" => $title,
+            "description" => $content,
             "timestamp" => date('Y-m-d H:i:s'),
             "file_type" => $ext,
             "original_filename" => $filename,
-            "image" => $imagePath
+            "file_path" => $filePath,
+            "file_size" => $fileSize,
+            "image" => $imagePath,
+            "thumbnail" => $thumbnailPath ?? ''
         ];
         
         $jsonFile = 'blog_data.json';
+
+
         $allBlogs = [];
         
         if (file_exists($jsonFile)) {
@@ -101,12 +187,75 @@ if (isset($_POST['upload']) && isset($_FILES['file'])) {
     }
 }
 
+// Helper function to create thumbnails
+function createThumbnail($src, $dest, $targetWidth, $targetHeight) {
+    $type = exif_imagetype($src);
+    
+    switch ($type) {
+        case IMAGETYPE_JPEG:
+            $image = imagecreatefromjpeg($src);
+            break;
+        case IMAGETYPE_PNG:
+            $image = imagecreatefrompng($src);
+            break;
+        case IMAGETYPE_GIF:
+            $image = imagecreatefromgif($src);
+            break;
+        default:
+            return false;
+    }
+    
+    $width = imagesx($image);
+    $height = imagesy($image);
+    
+    // Calculate aspect ratio
+    $srcRatio = $width / $height;
+    $destRatio = $targetWidth / $targetHeight;
+    
+    if ($destRatio > $srcRatio) {
+        $newHeight = $targetHeight;
+        $newWidth = $targetHeight * $srcRatio;
+    } else {
+        $newWidth = $targetWidth;
+        $newHeight = $targetWidth / $srcRatio;
+    }
+    
+    $thumb = imagecreatetruecolor($newWidth, $newHeight);
+    
+    // Preserve transparency for PNG/GIF
+    if ($type == IMAGETYPE_PNG || $type == IMAGETYPE_GIF) {
+        imagecolortransparent($thumb, imagecolorallocatealpha($thumb, 0, 0, 0, 127));
+        imagealphablending($thumb, false);
+        imagesavealpha($thumb, true);
+    }
+    
+    imagecopyresampled($thumb, $image, 0, 0, 0, 0, $newWidth, $newHeight, $width, $height);
+    
+    switch ($type) {
+        case IMAGETYPE_JPEG:
+            imagejpeg($thumb, $dest, 85);
+            break;
+        case IMAGETYPE_PNG:
+            imagepng($thumb, $dest, 8);
+            break;
+        case IMAGETYPE_GIF:
+            imagegif($thumb, $dest);
+            break;
+    }
+    
+    imagedestroy($image);
+    imagedestroy($thumb);
+    
+    return true;
+}
+
 // Read existing files for display
 $allBlogs = [];
 if (file_exists('blog_data.json')) {
     $allBlogs = json_decode(file_get_contents('blog_data.json'), true) ?: [];
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -281,6 +430,15 @@ if (file_exists('blog_data.json')) {
             margin-bottom: 10px;
             font-size: 18px;
         }
+        .file-item h3 a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .file-item h3 a:hover {
+            color: #7dd3fc;
+            text-decoration: underline;
+        }
         .file-item p {
             margin-bottom: 8px;
             color: #94a3b8;
@@ -380,8 +538,33 @@ if (file_exists('blog_data.json')) {
                                 </button>
                             </form>
                         </div>
-                        <h3><?= htmlspecialchars($blog['original_filename'] ?? 'Untitled') ?></h3>
+                        <h3>
+                            <a href="<?= htmlspecialchars($blog['file_path'] ?? '#') ?>" target="_blank">
+                                <?= htmlspecialchars($blog['title'] ?? 'Untitled') ?>
+                            </a>
+                        </h3>
+                        <?php if (!empty($blog['thumbnail'])): ?>
+                            <img src="<?= htmlspecialchars($blog['thumbnail']) ?>" alt="Thumbnail" style="max-width: 100%; margin-bottom: 10px;">
+                        <?php endif; ?>
+                        <p><strong>Description:</strong> <?= htmlspecialchars($blog['description'] ?? 'No description') ?></p>
                         <p><strong>Type:</strong> <?= strtoupper($blog['file_type'] ?? 'UNKNOWN') ?></p>
+                        <p><strong>Size:</strong> 
+                            <?php 
+                                if (isset($blog['file_size'])) {
+                                    $size = $blog['file_size'];
+                                    if ($size < 1024) {
+                                        echo $size . ' bytes';
+                                    } elseif ($size < 1048576) {
+                                        echo round($size/1024, 2) . ' KB';
+                                    } else {
+                                        echo round($size/1048576, 2) . ' MB';
+                                    }
+                                } else {
+                                    echo 'N/A';
+                                }
+                            ?>
+                        </p>
+                        <p><strong>Uploaded:</strong> <?= isset($blog['timestamp']) ? date('M d, Y H:i', strtotime($blog['timestamp'])) : 'Unknown' ?></p>
                     </div>
                 <?php endforeach; ?>
             </div>
