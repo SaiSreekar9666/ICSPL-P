@@ -6,25 +6,41 @@
   <title>Contact - ICSPL</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <style>
+    :root {
+      --primary-blue: #3B82F6;
+      --text-primary: #ffffff;
+    }
+
     body {
       background-color: #000;
       color: #fff;
     }
+
     .logo {
       height: 80px;
       width: auto;
       padding: 4px;
       border-radius: 4px;
     }
+
     .footer-logo {
       height: 30px;
       width: auto;
       padding: 2px;
       border-radius: 2px;
     }
+
     #mobile-menu {
-      transition: all 0.3s ease;
+      transition: max-height 0.3s ease-out;
+      max-height: 0;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.95);
     }
+
+    #mobile-menu.show {
+      max-height: 500px;
+    }
+
     .scroll-box {
       max-height: 150px;
       overflow-y: auto;
@@ -33,28 +49,60 @@
       border-radius: 0.5rem;
       padding: 0.75rem;
     }
+
     .scroll-box::-webkit-scrollbar {
       width: 8px;
     }
+
     .scroll-box::-webkit-scrollbar-track {
       background: #374151;
     }
+
     .scroll-box::-webkit-scrollbar-thumb {
       background: #6b7280;
       border-radius: 4px;
     }
+
+    .nav-link {
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-link:hover {
+      color: var(--text-primary);
+    }
+
+    .nav-link:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: var(--primary-blue);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover:after {
+      width: 100%;
+    }
+
+    .header-shadow {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
   </style>
   <script>
-      function toggleSubSectors(id) {
-    const sub = document.getElementById("sub-" + id);
-    if (sub) {
-      sub.classList.toggle("hidden");
+    function toggleSubSectors(id) {
+      const sub = document.getElementById("sub-" + id);
+      if (sub) {
+        sub.classList.toggle("hidden");
+      }
     }
-  }
 
     function toggleMenu() {
       const menu = document.getElementById("mobile-menu");
       menu.classList.toggle("hidden");
+      menu.classList.toggle("show");
     }
 
     function isValidEmail(email) {
@@ -72,6 +120,7 @@
           const menu = document.getElementById("mobile-menu");
           if (!menu.classList.contains('hidden')) {
             menu.classList.add('hidden');
+            menu.classList.remove('show');
           }
         });
       });
@@ -105,33 +154,33 @@
   </script>
 </head>
 <body class="scroll-smooth">
-  <!-- Header / Navigation -->
-  <header class="fixed w-full bg-black text-white z-50 shadow-md">
+  <!-- Header / Navigation - Matching about.html style -->
+  <header class="fixed w-full bg-black text-white z-50 header-shadow">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center">
         <a href="/">
-          <img src="/pages/images/Header--Transparent.png" alt="ICSPL Logo" class="logo mr-2">
+          <img src="/assets/images/Header--Transparent.png" alt="ICSPL Logo" class="logo mr-2">
         </a>
       </div>
-      <button class="md:hidden text-white focus:outline-none" onclick="toggleMenu()" aria-label="Toggle navigation menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
       <nav class="hidden md:flex space-x-6 text-sm md:text-base">
-        <a href="/" class="hover:text-gray-300">Home</a>
-        <a href="/pages/about.html" class="hover:text-gray-300">About</a>
-        <a href="/pages/services.html" class="hover:text-gray-300">Services</a>
-        <a href="/pages/sectors.html" class="hover:text-gray-300">Sectors</a>
-        <a href="/pages/contact.html" class="hover:text-gray-300">Contact</a>
+        <a href="/" class="nav-link text-gray-300">Home</a>
+        <a href="/pages/about.html" class="nav-link text-gray-300">About</a>
+        <a href="/pages/services.html" class="nav-link text-white font-medium">Services</a>
+        <a href="/pages/sectors.html" class="nav-link text-gray-300">Sectors</a>
+        <a href="/pages/contact.html" class="nav-link border-b-2 border-blue-500 text-gray-300">Contact</a>
       </nav>
     </div>
-    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-black">
-      <a href="/" class="block py-2 hover:bg-gray-900">Home</a>
-      <a href="/pages/about.html" class="block py-2 hover:bg-gray-900">About</a>
-      <a href="/pages/services.html" class="block py-2 hover:bg-gray-900">Services</a>
-      <a href="/pages/sectors.html" class="block py-2 hover:bg-gray-900">Sectors</a>
-      <a href="/pages/contact.html" class="block py-2 hover:bg-gray-900">Contact</a>
+    <div id="mobile-menu" class="md:hidden hidden px-4 bg-gray-900">
+      <a href="../index.html" class="block py-3 border-b border-gray-800 text-gray-300 hover:text-white">Home</a>
+      <a href="./about.html" class="block py-3 border-b border-gray-800 text-gray-300 hover:text-white">About</a>
+      <a href="./services.html" class="block py-3 border-b border-gray-800 text-white font-medium">Services</a>
+      <a href="./sectors.html" class="block py-3 border-b border-gray-800 text-gray-300 hover:text-white">Sectors</a>
+      <a href="./contact.html" class="block py-3 text-gray-300 hover:text-white">Contact</a>
     </div>
   </header>
 
@@ -162,7 +211,6 @@
               <option value="+971">🇦🇪 +971 (UAE)</option>
               <option value="+86">🇨🇳 +86 (China)</option>
               <option value="+7">🇷🇺 +7 (Russia)</option>
-              <!-- Add more as needed -->
             </select>
             <input type="tel" id="phoneNumber" name="phoneNumber" pattern="\d{6,15}" class="bg-gray-800 border border-gray-600 p-3 rounded-lg w-2/3" placeholder="1234567890" required />
           </div>
@@ -213,53 +261,52 @@
             </div>
           </div>
 
-<div class="mb-4">
-  <label class="block text-sm font-medium mb-2">Sectors (Select one or more):</label>
-  <div class="scroll-box space-y-2">
+          <div class="mb-4">
+            <label class="block text-sm font-medium mb-2">Sectors (Select one or more):</label>
+            <div class="scroll-box space-y-2">
+              <!-- Sector 1 -->
+              <div>
+                <label class="flex items-center space-x-2 cursor-pointer" onclick="toggleSubSectors('its')">
+                  <input type="checkbox" name="sectors[]" value="ITS and Smart Parking" class="rounded">
+                  <span>Intelligent Transportation & Mobility</span>
+                </label>
+                <div id="sub-its" class="ml-6 mt-2 hidden space-y-1 text-sm text-gray-300">
+                  <label class="block"><input type="checkbox" name="subsectors[]" value="ITS AND Smart Parking" class="mr-2">ITS AND Smart Parking</label>
+                  <label class="block"><input type="checkbox" name="subsectors[]" value="Trolling solutions" class="mr-2">Trolling Solutions</label>
+                  <label class="block"><input type="checkbox" name="subsectors[]" value="Tunnel Automation" class="mr-2">Tunnel Automation</label>
+                  <label class="block"><input type="checkbox" name="subsectors[]" value="Smart Traffic Controls" class="mr-2">Smart Traffic Controls</label>
+                  <label class="block"><input type="checkbox" name="subsectors[]" value="Vehicle Detection Systems" class="mr-2">Vehicle Detection Systems</label>
+                  <label class="block"><input type="checkbox" name="subsectors[]" value="Road Weather & Incident Detection" class="mr-2">Road Weather & Incident Detection</label>
+                </div>
+              </div>
 
-    <!-- Sector 1 -->
-    <div>
-      <label class="flex items-center space-x-2 cursor-pointer" onclick="toggleSubSectors('its')">
-        <input type="checkbox" name="sectors[]" value="ITS and Smart Parking" class="rounded">
-        <span>Intelligent Transportation & Mobility</span>
-      </label>
-      <div id="sub-its" class="ml-6 mt-2 hidden space-y-1 text-sm text-gray-300">
-        <label class="block"><input type="checkbox" name="subsectors[]" value="ITS AND Smart Parking" class="mr-2">ITS AND Smart Parking</label>
-        <label class="block"><input type="checkbox" name="subsectors[]" value="Trolling solutions" class="mr-2">Trolling Solutions</label>
-        <label class="block"><input type="checkbox" name="subsectors[]" value="Tunnel Automation" class="mr-2">Tunnel Automation</label>
-        <label class="block"><input type="checkbox" name="subsectors[]" value="Smart Traffic Controls" class="mr-2">Smart Traffic Controls</label>
-        <label class="block"><input type="checkbox" name="subsectors[]" value="Vehicle Detection Systems" class="mr-2">Vehicle Detection Systems</label>
-        <label class="block"><input type="checkbox" name="subsectors[]" value="Road Weather & Incident Detection" class="mr-2">Road Weather & Incident Detection</label>
-      </div>
-    </div>
+              <!-- Sector 2 -->
+              <div>
+                <label class="flex items-center space-x-2 cursor-pointer" onclick="toggleSubSectors('toll')">
+                  <input type="checkbox" name="sectors[]" value="Smart City & IoT" class="rounded">
+                  <span>Smart City & IoT</span>
+                </label>
+                <div id="sub-toll" class="ml-6 mt-2 hidden space-y-1 text-sm text-gray-300">
+                  <label class="block"><input type="checkbox" name="subsectors[]" value="Smart City Integration" class="mr-2">Smart City Integration</label>
+                  <label class="block"><input type="checkbox" name="subsectors[]" value="IoT Deployments" class="mr-2">IoT Deployments</label>
+                  <label class="block"><input type="checkbox" name="subsectors[]" value="V2X Communication" class="mr-2">V2X Communication</label>
+                  <label class="block"><input type="checkbox" name="subsectors[]" value="Static Weigh Stations" class="mr-2">Static Weigh Stations</label>
+                </div>
+              </div>
 
-    <!-- Sector 2 -->
-    <div>
-      <label class="flex items-center space-x-2 cursor-pointer" onclick="toggleSubSectors('toll')">
-        <input type="checkbox" name="sectors[]" value="Tolling Solutions" class="rounded">
-        <span>Smart City & IoT</span>
-      </label>
-      <div id="sub-toll" class="ml-6 mt-2 hidden space-y-1 text-sm text-gray-300">
-        <label class="block"><input type="checkbox" name="subsectors[]" value="Smart City Integration" class="mr-2">Smart City Integration</label>
-        <label class="block"><input type="checkbox" name="subsectors[]" value="IoT Deployments" class="mr-2">IoT Deployments</label>
-        <label class="block"><input type="checkbox" name="subsectors[]" value="V2X Communication" class="mr-2">V2X Communication</label>
-        <label class="block"><input type="checkbox" name="subsectors[]" value="Static Weigh Stations" class="mr-2">Static Weigh Stations</label>
-      </div>
-    </div>
-
-    <!-- Repeat for other sectors similarly -->
-         <div>
-      <label class="flex items-center space-x-2 cursor-pointer" onclick="toggleSubSectors('toll')">
-        <input type="checkbox" name="sectors[]" value="Tolling Solutions" class="rounded">
-        <span>Defense & Security</span>
-      </label>
-      <div id="sub-toll" class="ml-6 mt-2 hidden space-y-1 text-sm text-gray-300">
-        <label class="block"><input type="checkbox" name="subsectors[]" value="Military Technologies" class="mr-2">Military Technologies</label>
-        <label class="block"><input type="checkbox" name="subsectors[]" value="Security Systems" class="mr-2">Security Systems</label>
-      </div>
-    </div>
-    </div>
-    </div>
+              <!-- Sector 3 -->
+              <div>
+                <label class="flex items-center space-x-2 cursor-pointer" onclick="toggleSubSectors('defense')">
+                  <input type="checkbox" name="sectors[]" value="Defense & Security" class="rounded">
+                  <span>Defense & Security</span>
+                </label>
+                <div id="sub-defense" class="ml-6 mt-2 hidden space-y-1 text-sm text-gray-300">
+                  <label class="block"><input type="checkbox" name="subsectors[]" value="Military Technologies" class="mr-2">Military Technologies</label>
+                  <label class="block"><input type="checkbox" name="subsectors[]" value="Security Systems" class="mr-2">Security Systems</label>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <label class="block text-sm font-medium mb-2">Additional Message:</label>
           <textarea name="additional_message" class="w-full bg-gray-800 border border-gray-600 p-3 rounded-lg focus:outline-none focus:border-white" rows="3" placeholder="Any additional information..."></textarea>
@@ -281,13 +328,58 @@
     </div>
   </main>
 
-  <footer class="p-8 bg-black text-white mt-20">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
-      <div class="flex items-center mb-4 md:mb-0">
-        <img src="/pages/images/Header--Transparent.png" alt="ICSPL Logo" class="footer-logo mr-3">
+  <!-- Footer -->
+  <footer class="bg-black text-white py-12 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <img src="/assets/images/Header--Transparent.png" alt="ICSPL Logo" class="h-16 mb-4">
+        <p class="text-gray-400">
+          Intelligent Connect Solutions Pvt. Ltd. - Building the smart cities of tomorrow with AI and IoT innovation.
+        </p>
       </div>
-      <div class="text-gray-400">
-        &copy; <span id="year"></span> All rights reserved.
+      <div>
+        <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="/" class="text-gray-400 hover:text-blue-400 transition-colors">Home</a></li>
+          <li><a href="/about" class="text-gray-400 hover:text-blue-400 transition-colors">About Us</a></li>
+          <li><a href="/services" class="text-gray-400 hover:text-blue-400 transition-colors">Services</a></li>
+          <li><a href="/sectors" class="text-gray-400 hover:text-blue-400 transition-colors">Sectors</a></li>
+          <li><a href="/contact" class="text-gray-400 hover:text-blue-400 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Our Solutions</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">Smart Traffic Management</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">AI Surveillance Systems</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">IoT Environmental Monitoring</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">Urban Data Analytics</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">Integrated Command Centers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Connect With Us</h3>
+        <div class="flex space-x-4 mb-4">
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-linkedin-in fa-lg"></i></a>
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-facebook-f fa-lg"></i></a>
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-youtube fa-lg"></i></a>
+        </div>
+        <address class="text-gray-400 not-italic">
+          <p class="mb-1">ICSPL Headquarters</p>
+          <p class="mb-1">Tech Park Tower, Floor 12</p>
+          <p class="mb-1">Bangalore 560001, India</p>
+          <p class="mt-2"><i class="fas fa-phone-alt mr-2"></i> +91 80 1234 5678</p>
+          <p><i class="fas fa-envelope mr-2"></i> info@icspl.com</p>
+        </address>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+      <p>&copy; <span id="year"></span> Intelligent Connect Solutions Pvt. Ltd. All rights reserved.</p>
+      <div class="mt-2">
+        <a href="#" class="hover:text-blue-400 transition-colors">Privacy Policy</a> | 
+        <a href="#" class="hover:text-blue-400 transition-colors">Terms of Service</a> | 
+        <a href="#" class="hover:text-blue-400 transition-colors">Cookie Policy</a>
       </div>
     </div>
   </footer>

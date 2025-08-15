@@ -1,14 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICSPL Services</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.8/glider.min.css">  
-    <link rel="stylesheet" href="/assets/css/services.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICSPL Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.8/glider.min.css">  
+  <link rel="stylesheet" href="/assets/css/services.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <style>
+    /* Custom styles for the black theme */
+    :root {
+      --primary-blue: #3B82F6;
+      --dark-bg: #0a0a0a;
+      --content-bg: rgba(20, 20, 20, 0.9);
+      --card-bg: rgba(30, 30, 30, 0.8);
+      --text-primary: #ffffff;
+      --text-secondary: #d1d5db;
+      --text-tertiary: #9ca3af;
+      --border-color: #333333;
+      --neon-glow: #00ffff;
+      --particle-color: #3B82F6;
+    }
+    
+    body {
+      background-color: var(--dark-bg);
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    .logo {
+      height: 80px;
+      width: auto;
+      padding: 4px;
+      border-radius: 4px;
+      transition: transform 0.3s ease;
+    }
+    
+    .logo:hover {
+      transform: scale(1.05);
+    }
+    
+    .footer-logo {
+      height: 30px;
+      width: auto;
+      padding: 2px;
+      border-radius: 2px;
+      opacity: 0.9;
+    }
+    
+    #mobile-menu {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      max-height: 0;
+      overflow: hidden;
+    }
+    
+    #mobile-menu.show {
+      max-height: 500px;
+    }
+    
+    .content-box {
+      background-color: var(--content-bg);
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+    }
+    
+    .nav-link {
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .nav-link:hover {
+      color: var(--text-primary);
+    }
+    
+    .nav-link:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: var(--primary-blue);
+      transition: width 0.3s ease;
+    }
+    
+    .nav-link:hover:after {
+      width: 100%;
+    }
+    
+    .header-shadow {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Futuristic Service Card Styles */
+    .service-card {
+      background: linear-gradient(135deg, var(--card-bg), rgba(59, 130, 246, 0.1));
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      position: relative;
+    }
+    
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(59,130,246,0.1) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    
+    .service-card:hover::before {
+      opacity: 1;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+      box-shadow: 0 20px 40px rgba(59,130,246,0.2);
+      border-color: var(--neon-glow);
+    }
+    
+    .service-card img {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.5s ease;
+      filter: brightness(0.8);
+    }
+    
+    .service-card:hover img {
+      transform: scale(1.1);
+      filter: brightness(1);
+    }
+    
+    .service-content h3 {
+      color: white;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 5px rgba(59,130,246,0.3);
+    }
+    
+    .service-content p {
+      color: var(--text-tertiary);
+      margin-bottom: 1.5rem;
+      transition: color 0.3s ease;
+    }
+    
+    .service-card:hover .service-content p {
+      color: var(--text-secondary);
+    }
+    
+    .key-offerings {
+      margin-top: 1rem;
+    }
+    
+    .key-offerings li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-secondary);
+      transition: transform 0.3s ease;
+    }
+    
+    .key-offerings li:hover {
+      transform: translateX(5px);
+    }
+    
+    .key-offerings li:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 8px;
+      background: var(--neon-glow);
+      border-radius: 50%;
+      box-shadow: 0 0 5px var(--neon-glow);
+    }
+    
+    /* 3D Background Canvas */
+    #background-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.2;
+    }
+    
+    /* Particle Effect */
+    #particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+    
+    .particle {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: var(--particle-color);
+      border-radius: 50%;
+      opacity: 0.3;
+      animation: float 10s infinite linear;
+    }
+    
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 0.3; }
+      50% { opacity: 0.5; }
+      100% { transform: translateY(-100vh); opacity: 0; }
+    }
+    
+    /* Glider customization */
+    .glider-contain {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    .glider {
+      margin: 0 auto;
+      position: relative;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      transform: translateZ(0);
+    }
+    
+    .glider-slide {
+      min-width: 150px;
+    }
+    
+    .glider-next, .glider-prev {
+      position: absolute;
+      z-index: 2;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: none;
+      opacity: 1;
+      transition: opacity 0.5s cubic-bezier(.17,.67,.83,.67);
+    }
+    
+    .glider-dots {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 15px;
+    }
+    
+    .glider-dots button {
+      background-color: #374151;
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      border-radius: 50%;
+      margin: 0 5px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .glider-dots button.active {
+      background-color: var(--primary-blue);
+      border-color: var(--primary-blue);
+    }
+  </style>
 </head>
 <body class="scroll-smooth">
     <!-- Header / Navigation - Matching about.html style -->
@@ -26,24 +299,26 @@
             </button>
             <nav class="hidden md:flex space-x-6 text-sm md:text-base">
                 <a href="/" class="nav-link text-gray-300">Home</a>
-                <a href="/pages/about.html" class="nav-link text-gray-300">About</a>
-                <a href="/pages/services.html" class="nav-link text-white font-medium">Services</a>
-                <a href="/pages/sectors.html" class="nav-link text-gray-300">Sectors</a>
-                <a href="/pages/contact.html" class="nav-link text-gray-300">Contact</a>
+                <a href="/about" class="nav-link text-gray-300">About</a>
+                <a href="/services" class="nav-link text-white  border-b-2 border-blue-500 font-medium">Services</a>
+                <a href="/sectors" class="nav-link text-gray-300">Sectors</a>
+                <a href="/contact" class="nav-link  text-gray-300">Contact</a>
             </nav>
         </div>
         <div id="mobile-menu" class="md:hidden px-4 bg-gray-900">
-            <a href="../index.html" class="block py-3 border-b border-gray-800 text-gray-300 hover:text-white">Home</a>
-            <a href="./about.html" class="block py-3 border-b border-gray-800 text-gray-300 hover:text-white">About</a>
-            <a href="./services.html" class="block py-3 border-b border-gray-800 text-white font-medium">Services</a>
-            <a href="./sectors.html" class="block py-3 border-b border-gray-800 text-gray-300 hover:text-white">Sectors</a>
-            <a href="./contact.html" class="block py-3 text-gray-300 hover:text-white">Contact</a>
+            <a href="/" class="block py-3 border-b border-gray-800 text-gray-300 hover:text-white">Home</a>
+            <a href="/about" class="block py-3 border-b border-gray-800 text-gray-300 hover:text-white">About</a>
+            <a href="/services" class="block py-3 border-b border-gray-800 text-white font-medium">Services</a>
+            <a href="/sectors" class="block py-3 border-b border-gray-800 text-gray-300 hover:text-white">Sectors</a>
+            <a href="/contact" class="block py-3 text-gray-300 hover:text-white">Contact</a>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="pt-28 px-4 py-16 max-w-7xl mx-auto">
-        <div class="content-box p-6 md:p-10 rounded-lg">
+    <main class="pt-28 px-4 py-16 max-w-7xl mx-auto relative">
+        <canvas id="background-canvas"></canvas>
+        <div id="particles"></div>
+        <div class="content-box p-6 md:p-10 rounded-lg relative z-10">
             <h1 class="text-3xl md:text-4xl font-bold mb-8 text-white animate__animated animate__fadeIn">Our Services</h1>
             <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto animate__animated animate__fadeIn animate__delay-1s">
                 Comprehensive solutions tailored to your business needs
@@ -51,37 +326,302 @@
 
             <!-- Services will be loaded here dynamically -->
             <div id="services-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+
+            <!-- Interactive 3D Feature -->
+            <div class="mt-16 text-center">
+                <h2 class="text-2xl font-bold mb-8 text-white">Explore Our Services in 3D</h2>
+                <div id="three-container" class="w-full h-96 rounded-lg overflow-hidden bg-gray-900"></div>
+            </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="p-8 bg-black text-white mt-20 border-t border-gray-900">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
-            <div class="flex items-center mb-4 md:mb-0">
-                <img src="/assets/images/Header--Transparent.png" alt="ICSPL Logo" class="footer-logo mr-3">
-                <div>
-                    <div class="text-lg font-bold text-gray-100">ICSPL</div>
-                    <div class="text-sm text-gray-500">Intelligent Connect Solutions Pvt. Ltd.</div>
-                </div>
-            </div>
-            <div class="flex space-x-6">
-                <a href="#" class="hover:text-white transition-colors">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
-                </a>
-                <a href="#" class="hover:text-white transition-colors">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                </a>
-                <a href="#" class="hover:text-white transition-colors">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                </a>
-            </div>
+    <footer class="bg-black text-white py-12 px-4">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <img src="/assets/images/Header--Transparent.png" alt="ICSPL Logo" class="h-16 mb-4">
+          <p class="text-gray-400">
+            Intelligent Connect Solutions Pvt. Ltd. - Building the smart cities of tomorrow with AI and IoT innovation.
+          </p>
         </div>
-        <div class="mt-8 pt-8 border-t border-gray-800 text-center text-sm">
-            <p>&copy; <span id="year"></span> ICSPL. All rights reserved.</p>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="/index.html" class="text-gray-400 hover:text-blue-400 transition-colors">Home</a></li>
+            <li><a href="/pages/about.html" class="text-gray-400 hover:text-blue-400 transition-colors">About Us</a></li>
+            <li><a href="/pages/services.html" class="text-gray-400 border-b-2 border-blue-500 hover:text-blue-400 transition-colors">Solutions</a></li>
+            <li><a href="/pages/sectors.html" class="text-gray-400 hover:text-blue-400 transition-colors">Industries</a></li>
+            <li><a href="/pages/contact.html" class="text-gray-400 hover:text-blue-400 transition-colors">Contact</a></li>
+          </ul>
         </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Our Solutions</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">Smart Traffic Management</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">AI Surveillance Systems</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">IoT Environmental Monitoring</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">Urban Data Analytics</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">Integrated Command Centers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Connect With Us</h3>
+          <div class="flex space-x-4 mb-4">
+            <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-linkedin-in fa-lg"></i></a>
+            <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="fab fa-youtube fa-lg"></i></a>
+          </div>
+          <address class="text-gray-400 not-italic">
+            <p class="mb-1">ICSPL Headquarters</p>
+            <p class="mb-1">Tech Park Tower, Floor 12</p>
+            <p class="mb-1">Bangalore 560001, India</p>
+            <p class="mt-2"><i class="fas fa-phone-alt mr-2"></i> +91 80 1234 5678</p>
+            <p><i class="fas fa-envelope mr-2"></i> info@icspl.com</p>
+          </address>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+        <p>&copy; <span id="year"></span> Intelligent Connect Solutions Pvt. Ltd. All rights reserved.</p>
+        <div class="mt-2">
+          <a href="#" class="hover:text-blue-400 transition-colors">Privacy Policy</a> | 
+          <a href="#" class="hover:text-blue-400 transition-colors">Terms of Service</a> | 
+          <a href="#" class="hover:text-blue-400 transition-colors">Cookie Policy</a>
+        </div>
+      </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.8/glider.min.js"></script>
-    <script src="/assets/js/services.js"></script>
+    <script>
+      // Toggle mobile menu
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("show");
+      }
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        // Close mobile menu when link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+          link.addEventListener('click', () => {
+            const menu = document.getElementById("mobile-menu");
+            if (menu.classList.contains("show")) {
+              menu.classList.remove("show");
+            }
+          });
+        });
+        
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Add scroll effect to header
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 10) {
+            header.classList.add('header-shadow');
+            header.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
+            header.style.backdropFilter = 'blur(8px)';
+          } else {
+            header.classList.remove('header-shadow');
+            header.style.backgroundColor = '#000';
+            header.style.backdropFilter = 'none';
+          }
+        });
+        
+        // Load services data
+        fetch('/assets/data/service.json')
+            .then(response => response.json())
+            .then(data => {
+                renderServices(data.services);
+                initSliders();
+            })
+            .catch(error => {
+                console.error('Error loading services:', error);
+            });
+
+        // Render services
+        function renderServices(services) {
+            const container = document.getElementById('services-container');
+            
+            // First 6 services displayed normally
+            const firstSix = services.slice(0, 6);
+            firstSix.forEach((service, index) => {
+                const serviceCard = document.createElement('div');
+                serviceCard.className = `service-card animate__animated animate__fadeInUp animate__delay-${index % 3}s`;
+                serviceCard.innerHTML = createServiceCardHTML(service);
+                container.appendChild(serviceCard);
+            });
+
+            // Remaining services in slider
+            const remainingServices = services.slice(6);
+            if (remainingServices.length > 0) {
+                const sliderContainer = document.createElement('div');
+                sliderContainer.className = 'slider-container col-span-full mt-12';
+                sliderContainer.innerHTML = `
+                    <h2 class="text-2xl font-bold mb-8 text-white">More Services</h2>
+                    <div class="glider-contain relative">
+                        <div class="glider" id="services-slider">
+                            ${remainingServices.map(service => `
+                                <div class="glider-slide px-2">
+                                    ${createServiceCardHTML(service)}
+                                </div>
+                            `).join('')}
+                        </div>
+                        <button aria-label="Previous" class="glider-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button aria-label="Next" class="glider-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                        <div class="glider-dots text-center mt-4" id="services-dots"></div>
+                    </div>
+                `;
+                container.appendChild(sliderContainer);
+            }
+        }
+
+        // Helper function to create service card HTML
+        function createServiceCardHTML(service) {
+            return `
+                <div class="service-card h-full">
+                    <img src="${service.image}" alt="${service.category}" class="w-full h-48 object-cover">
+                    <div class="service-content p-4">
+                        <h3 class="text-xl font-semibold mb-2 text-white">${service.category}</h3>
+                        <p class="text-gray-400 mb-4">${service.description}</p>
+                        <div class="key-offerings">
+                            <h4 class="text-blue-400 font-medium mb-2">Key Offerings:</h4>
+                            <ul class="space-y-1 text-gray-300">
+                                ${service.keyOfferings.map(offering => `<li class="flex items-start">
+                                    <svg class="w-4 h-4 mt-1 mr-2 text-blue-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>${offering}</span>
+                                </li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Initialize sliders
+        function initSliders() {
+            // Only initialize if Glider is available
+            if (typeof Glider !== 'undefined') {
+                new Glider(document.querySelector('#services-slider'), {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    draggable: true,
+                    dots: '#services-dots',
+                    arrows: {
+                        prev: '.glider-prev',
+                        next: '.glider-next'
+                    },
+                    responsive: [
+                        {
+                            breakpoint: 640,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2
+                            }
+                        },
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 3
+                            }
+                        }
+                    ]
+                });
+            }
+        }
+
+        // Initialize 3D background
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('background-canvas'), alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        const geometry = new THREE.TorusKnotGeometry(10, 3, 100, 16);
+        const material = new THREE.MeshBasicMaterial({ color: 0x3B82F6, wireframe: true });
+        const torusKnot = new THREE.Mesh(geometry, material);
+        scene.add(torusKnot);
+
+        camera.position.z = 30;
+
+        function animate() {
+          requestAnimationFrame(animate);
+          torusKnot.rotation.x += 0.01;
+          torusKnot.rotation.y += 0.01;
+          renderer.render(scene, camera);
+        }
+        animate();
+
+        window.addEventListener('resize', () => {
+          camera.aspect = window.innerWidth / window.innerHeight;
+          camera.updateProjectionMatrix();
+          renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        // Initialize particles
+        function createParticles() {
+          const particles = document.getElementById('particles');
+          for (let i = 0; i < 100; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = `${Math.random() * 100}%`;
+            particle.style.animationDelay = `${Math.random() * 5}s`;
+            particle.style.animationDuration = `${Math.random() * 5 + 5}s`;
+            particles.appendChild(particle);
+          }
+        }
+        createParticles();
+
+        // 3D Interactive Services
+        const threeContainer = document.getElementById('three-container');
+        const threeScene = new THREE.Scene();
+        const threeCamera = new THREE.PerspectiveCamera(75, threeContainer.clientWidth / threeContainer.clientHeight, 0.1, 1000);
+        const threeRenderer = new THREE.WebGLRenderer({ antialias: true });
+        threeRenderer.setSize(threeContainer.clientWidth, threeContainer.clientHeight);
+        threeContainer.appendChild(threeRenderer.domElement);
+
+        const threeGeometry = new THREE.BoxGeometry(1, 1, 1);
+        const threeMaterial = new THREE.MeshPhongMaterial({ color: 0x3B82F6, shininess: 100 });
+        const cube = new THREE.Mesh(threeGeometry, threeMaterial);
+        threeScene.add(cube);
+
+        const light = new THREE.PointLight(0xffffff, 1, 100);
+        light.position.set(10, 10, 10);
+        threeScene.add(light);
+
+        threeCamera.position.z = 5;
+
+        let mouseX = 0, mouseY = 0;
+        document.addEventListener('mousemove', (e) => {
+          mouseX = (e.clientX / window.innerWidth) * 2 - 1;
+          mouseY = -(e.clientY / window.innerHeight) * 2 + 1;
+        });
+
+        function threeAnimate() {
+          requestAnimationFrame(threeAnimate);
+          cube.rotation.x = mouseY;
+          cube.rotation.y = mouseX;
+          threeRenderer.render(threeScene, threeCamera);
+        }
+        threeAnimate();
+
+        window.addEventListener('resize', () => {
+          threeCamera.aspect = threeContainer.clientWidth / threeContainer.clientHeight;
+          threeCamera.updateProjectionMatrix();
+          threeRenderer.setSize(threeContainer.clientWidth, threeContainer.clientHeight);
+        });
+      });
+    </script>
 </body>
 </html>
