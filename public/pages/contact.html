@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact - ICSPL</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <style>
     :root {
       --primary-blue: #3B82F6;
       --text-primary: #ffffff;
+      --form-bg: rgba(31, 41, 55, 0.95); /* Semi-transparent dark background for forms */
     }
 
     body {
       background-color: #000;
       color: #fff;
+      position: relative;
+      overflow-x: hidden;
     }
 
     .logo {
@@ -90,6 +94,100 @@
     .header-shadow {
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     }
+
+    /* 3D Background Canvas */
+    #background-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.2;
+    }
+    
+    /* Particle Effect */
+    #particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+    
+    .particle {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: var(--primary-blue);
+      border-radius: 50%;
+      opacity: 0.3;
+      animation: float 10s infinite linear;
+    }
+    
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 0.3; }
+      50% { opacity: 0.5; }
+      100% { transform: translateY(-100vh); opacity: 0; }
+    }
+
+    /* Form Styling with 3D Background */
+    .form-container {
+      background: var(--form-bg);
+      border: 1px solid rgba(75, 85, 99, 0.5);
+      border-radius: 0.75rem;
+      padding: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+    }
+
+    .form-input {
+      background-color: #1f2937;
+      border: 1px solid #4b5563;
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+      color: #fff;
+      width: 100%;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: #fff;
+    }
+
+    .form-textarea {
+      background-color: #1f2937;
+      border: 1px solid #4b5563;
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+      color: #fff;
+      width: 100%;
+      resize: vertical;
+    }
+
+    .form-textarea:focus {
+      outline: none;
+      border-color: #fff;
+    }
+
+    .form-button {
+      background-color: #fff;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .form-button:hover {
+      background-color: #e5e7eb;
+      transform: translateY(-2px);
+    }
   </style>
   <script>
     function toggleSubSectors(id) {
@@ -150,10 +248,55 @@
 
         document.getElementById("fullPhone").value = fullPhone;
       });
+
+      // Initialize 3D background
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('background-canvas'), alpha: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+      const geometry = new THREE.TorusKnotGeometry(10, 3, 100, 16);
+      const material = new THREE.MeshBasicMaterial({ color: 0x3b82f6, wireframe: true });
+      const torusKnot = new THREE.Mesh(geometry, material);
+      scene.add(torusKnot);
+
+      camera.position.z = 30;
+
+      function animate() {
+        requestAnimationFrame(animate);
+        torusKnot.rotation.x += 0.01;
+        torusKnot.rotation.y += 0.01;
+        renderer.render(scene, camera);
+      }
+      animate();
+
+      window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      });
+
+      // Initialize particles
+      function createParticles() {
+        const particles = document.getElementById('particles');
+        for (let i = 0; i < 100; i++) {
+          const particle = document.createElement('div');
+          particle.className = 'particle';
+          particle.style.left = `${Math.random() * 100}%`;
+          particle.style.top = `${Math.random() * 100}%`;
+          particle.style.animationDelay = `${Math.random() * 5}s`;
+          particle.style.animationDuration = `${Math.random() * 5 + 5}s`;
+          particles.appendChild(particle);
+        }
+      }
+      createParticles();
     });
   </script>
 </head>
 <body class="scroll-smooth">
+  <canvas id="background-canvas"></canvas>
+  <div id="particles"></div>
   <!-- Header / Navigation - Matching about.html style -->
   <header class="fixed w-full bg-black text-white z-50 header-shadow">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -189,131 +332,133 @@
       <h2 class="text-4xl font-semibold mb-8 border-b border-gray-700 pb-3">Contact Us</h2>
       <p class="mb-8 text-lg text-gray-300 max-w-3xl mx-auto">We'd love to hear from you! Fill out the form below or reach out through our contact details.</p>
 
-      <form class="max-w-xl mx-auto bg-gray-700 p-8 rounded-lg space-y-6" action="/submit" method="post">
-        <div>
-          <label class="block font-medium mb-2">Name</label>
-          <input type="text" name="name" class="w-full bg-gray-800 border border-gray-600 p-3 rounded-lg focus:outline-none focus:border-white" placeholder="Your Name" required />
-        </div>
-        <div>
-          <label class="block font-medium mb-2">Email</label>
-          <input type="email" name="gmail" class="w-full bg-gray-800 border border-gray-600 p-3 rounded-lg focus:outline-none focus:border-white" placeholder="you@example.com" required />
-        </div>
-        <div>
-          <label class="block font-medium mb-2">Phone Number</label>
-          <div class="flex space-x-2">
-            <select id="countryCode" name="countryCode" class="bg-gray-800 border border-gray-600 p-3 rounded-lg w-1/3" required>
-              <option value="+91" selected>🇮🇳 +91 (India)</option>
-              <option value="+1">🇺🇸 +1 (USA)</option>
-              <option value="+44">🇬🇧 +44 (UK)</option>
-              <option value="+61">🇦🇺 +61 (Australia)</option>
-              <option value="+81">🇯🇵 +81 (Japan)</option>
-              <option value="+49">🇩🇪 +49 (Germany)</option>
-              <option value="+971">🇦🇪 +971 (UAE)</option>
-              <option value="+86">🇨🇳 +86 (China)</option>
-              <option value="+7">🇷🇺 +7 (Russia)</option>
-            </select>
-            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="\d{6,15}" class="bg-gray-800 border border-gray-600 p-3 rounded-lg w-2/3" placeholder="1234567890" required />
+      <div class="form-container">
+        <form class="max-w-xl mx-auto bg-transparent space-y-6" action="/submit" method="post">
+          <div>
+            <label class="block font-medium mb-2">Name</label>
+            <input type="text" name="name" class="form-input" placeholder="Your Name" required />
           </div>
-        </div>
-
-        <input type="hidden" name="phone" id="fullPhone" />
-
-        <div>
-          <label class="block font-medium mb-2">Requirements</label>
-          
-          <div class="mb-4">
-            <label class="block text-sm font-medium mb-2">Services (Select one or more):</label>
-            <div class="scroll-box">
-              <div class="space-y-2">
-                <label class="flex items-center space-x-2">
-                  <input type="checkbox" name="services[]" value="IT Consulting" class="rounded">
-                  <span>IT Consulting</span>
-                </label>
-                <label class="flex items-center space-x-2">
-                  <input type="checkbox" name="services[]" value="Software Development" class="rounded">
-                  <span>Software Development</span>
-                </label>
-                <label class="flex items-center space-x-2">
-                  <input type="checkbox" name="services[]" value="Cloud Solutions" class="rounded">
-                  <span>Cloud Solutions</span>
-                </label>
-                <label class="flex items-center space-x-2">
-                  <input type="checkbox" name="services[]" value="Cybersecurity" class="rounded">
-                  <span>Cybersecurity</span>
-                </label>
-                <label class="flex items-center space-x-2">
-                  <input type="checkbox" name="services[]" value="Data Analytics" class="rounded">
-                  <span>Data Analytics</span>
-                </label>
-                <label class="flex items-center space-x-2">
-                  <input type="checkbox" name="services[]" value="AI/ML Solutions" class="rounded">
-                  <span>AI/ML Solutions</span>
-                </label>
-                <label class="flex items-center space-x-2">
-                  <input type="checkbox" name="services[]" value="IoT Development" class="rounded">
-                  <span>IoT Development</span>
-                </label>
-                <label class="flex items-center space-x-2">
-                  <input type="checkbox" name="services[]" value="Blockchain Solutions" class="rounded">
-                  <span>Blockchain Solutions</span>
-                </label>
-              </div>
+          <div>
+            <label class="block font-medium mb-2">Email</label>
+            <input type="email" name="gmail" class="form-input" placeholder="you@example.com" required />
+          </div>
+          <div>
+            <label class="block font-medium mb-2">Phone Number</label>
+            <div class="flex space-x-2">
+              <select id="countryCode" name="countryCode" class="form-input w-1/3" required>
+                <option value="+91" selected>🇮🇳 +91 (India)</option>
+                <option value="+1">🇺🇸 +1 (USA)</option>
+                <option value="+44">🇬🇧 +44 (UK)</option>
+                <option value="+61">🇦🇺 +61 (Australia)</option>
+                <option value="+81">🇯🇵 +81 (Japan)</option>
+                <option value="+49">🇩🇪 +49 (Germany)</option>
+                <option value="+971">🇦🇪 +971 (UAE)</option>
+                <option value="+86">🇨🇳 +86 (China)</option>
+                <option value="+7">🇷🇺 +7 (Russia)</option>
+              </select>
+              <input type="tel" id="phoneNumber" name="phoneNumber" pattern="\d{6,15}" class="form-input w-2/3" placeholder="1234567890" required />
             </div>
           </div>
 
-          <div class="mb-4">
-            <label class="block text-sm font-medium mb-2">Sectors (Select one or more):</label>
-            <div class="scroll-box space-y-2">
-              <!-- Sector 1 -->
-              <div>
-                <label class="flex items-center space-x-2 cursor-pointer" onclick="toggleSubSectors('its')">
-                  <input type="checkbox" name="sectors[]" value="ITS and Smart Parking" class="rounded">
-                  <span>Intelligent Transportation & Mobility</span>
-                </label>
-                <div id="sub-its" class="ml-6 mt-2 hidden space-y-1 text-sm text-gray-300">
-                  <label class="block"><input type="checkbox" name="subsectors[]" value="ITS AND Smart Parking" class="mr-2">ITS AND Smart Parking</label>
-                  <label class="block"><input type="checkbox" name="subsectors[]" value="Trolling solutions" class="mr-2">Trolling Solutions</label>
-                  <label class="block"><input type="checkbox" name="subsectors[]" value="Tunnel Automation" class="mr-2">Tunnel Automation</label>
-                  <label class="block"><input type="checkbox" name="subsectors[]" value="Smart Traffic Controls" class="mr-2">Smart Traffic Controls</label>
-                  <label class="block"><input type="checkbox" name="subsectors[]" value="Vehicle Detection Systems" class="mr-2">Vehicle Detection Systems</label>
-                  <label class="block"><input type="checkbox" name="subsectors[]" value="Road Weather & Incident Detection" class="mr-2">Road Weather & Incident Detection</label>
-                </div>
-              </div>
+          <input type="hidden" name="phone" id="fullPhone" />
 
-              <!-- Sector 2 -->
-              <div>
-                <label class="flex items-center space-x-2 cursor-pointer" onclick="toggleSubSectors('toll')">
-                  <input type="checkbox" name="sectors[]" value="Smart City & IoT" class="rounded">
-                  <span>Smart City & IoT</span>
-                </label>
-                <div id="sub-toll" class="ml-6 mt-2 hidden space-y-1 text-sm text-gray-300">
-                  <label class="block"><input type="checkbox" name="subsectors[]" value="Smart City Integration" class="mr-2">Smart City Integration</label>
-                  <label class="block"><input type="checkbox" name="subsectors[]" value="IoT Deployments" class="mr-2">IoT Deployments</label>
-                  <label class="block"><input type="checkbox" name="subsectors[]" value="V2X Communication" class="mr-2">V2X Communication</label>
-                  <label class="block"><input type="checkbox" name="subsectors[]" value="Static Weigh Stations" class="mr-2">Static Weigh Stations</label>
-                </div>
-              </div>
-
-              <!-- Sector 3 -->
-              <div>
-                <label class="flex items-center space-x-2 cursor-pointer" onclick="toggleSubSectors('defense')">
-                  <input type="checkbox" name="sectors[]" value="Defense & Security" class="rounded">
-                  <span>Defense & Security</span>
-                </label>
-                <div id="sub-defense" class="ml-6 mt-2 hidden space-y-1 text-sm text-gray-300">
-                  <label class="block"><input type="checkbox" name="subsectors[]" value="Military Technologies" class="mr-2">Military Technologies</label>
-                  <label class="block"><input type="checkbox" name="subsectors[]" value="Security Systems" class="mr-2">Security Systems</label>
+          <div>
+            <label class="block font-medium mb-2">Requirements</label>
+            
+            <div class="mb-4">
+              <label class="block text-sm font-medium mb-2">Services (Select one or more):</label>
+              <div class="scroll-box">
+                <div class="space-y-2">
+                  <label class="flex items-center space-x-2">
+                    <input type="checkbox" name="services[]" value="IT Consulting" class="rounded">
+                    <span>IT Consulting</span>
+                  </label>
+                  <label class="flex items-center space-x-2">
+                    <input type="checkbox" name="services[]" value="Software Development" class="rounded">
+                    <span>Software Development</span>
+                  </label>
+                  <label class="flex items-center space-x-2">
+                    <input type="checkbox" name="services[]" value="Cloud Solutions" class="rounded">
+                    <span>Cloud Solutions</span>
+                  </label>
+                  <label class="flex items-center space-x-2">
+                    <input type="checkbox" name="services[]" value="Cybersecurity" class="rounded">
+                    <span>Cybersecurity</span>
+                  </label>
+                  <label class="flex items-center space-x-2">
+                    <input type="checkbox" name="services[]" value="Data Analytics" class="rounded">
+                    <span>Data Analytics</span>
+                  </label>
+                  <label class="flex items-center space-x-2">
+                    <input type="checkbox" name="services[]" value="AI/ML Solutions" class="rounded">
+                    <span>AI/ML Solutions</span>
+                  </label>
+                  <label class="flex items-center space-x-2">
+                    <input type="checkbox" name="services[]" value="IoT Development" class="rounded">
+                    <span>IoT Development</span>
+                  </label>
+                  <label class="flex items-center space-x-2">
+                    <input type="checkbox" name="services[]" value="Blockchain Solutions" class="rounded">
+                    <span>Blockchain Solutions</span>
+                  </label>
                 </div>
               </div>
             </div>
+
+            <div class="mb-4">
+              <label class="block text-sm font-medium mb-2">Sectors (Select one or more):</label>
+              <div class="scroll-box space-y-2">
+                <!-- Sector 1 -->
+                <div>
+                  <label class="flex items-center space-x-2 cursor-pointer" onclick="toggleSubSectors('its')">
+                    <input type="checkbox" name="sectors[]" value="ITS and Smart Parking" class="rounded">
+                    <span>Intelligent Transportation & Mobility</span>
+                  </label>
+                  <div id="sub-its" class="ml-6 mt-2 hidden space-y-1 text-sm text-gray-300">
+                    <label class="block"><input type="checkbox" name="subsectors[]" value="ITS AND Smart Parking" class="mr-2">ITS AND Smart Parking</label>
+                    <label class="block"><input type="checkbox" name="subsectors[]" value="Trolling solutions" class="mr-2">Trolling Solutions</label>
+                    <label class="block"><input type="checkbox" name="subsectors[]" value="Tunnel Automation" class="mr-2">Tunnel Automation</label>
+                    <label class="block"><input type="checkbox" name="subsectors[]" value="Smart Traffic Controls" class="mr-2">Smart Traffic Controls</label>
+                    <label class="block"><input type="checkbox" name="subsectors[]" value="Vehicle Detection Systems" class="mr-2">Vehicle Detection Systems</label>
+                    <label class="block"><input type="checkbox" name="subsectors[]" value="Road Weather & Incident Detection" class="mr-2">Road Weather & Incident Detection</label>
+                  </div>
+                </div>
+
+                <!-- Sector 2 -->
+                <div>
+                  <label class="flex items-center space-x-2 cursor-pointer" onclick="toggleSubSectors('toll')">
+                    <input type="checkbox" name="sectors[]" value="Smart City & IoT" class="rounded">
+                    <span>Smart City & IoT</span>
+                  </label>
+                  <div id="sub-toll" class="ml-6 mt-2 hidden space-y-1 text-sm text-gray-300">
+                    <label class="block"><input type="checkbox" name="subsectors[]" value="Smart City Integration" class="mr-2">Smart City Integration</label>
+                    <label class="block"><input type="checkbox" name="subsectors[]" value="IoT Deployments" class="mr-2">IoT Deployments</label>
+                    <label class="block"><input type="checkbox" name="subsectors[]" value="V2X Communication" class="mr-2">V2X Communication</label>
+                    <label class="block"><input type="checkbox" name="subsectors[]" value="Static Weigh Stations" class="mr-2">Static Weigh Stations</label>
+                  </div>
+                </div>
+
+                <!-- Sector 3 -->
+                <div>
+                  <label class="flex items-center space-x-2 cursor-pointer" onclick="toggleSubSectors('defense')">
+                    <input type="checkbox" name="sectors[]" value="Defense & Security" class="rounded">
+                    <span>Defense & Security</span>
+                  </label>
+                  <div id="sub-defense" class="ml-6 mt-2 hidden space-y-1 text-sm text-gray-300">
+                    <label class="block"><input type="checkbox" name="subsectors[]" value="Military Technologies" class="mr-2">Military Technologies</label>
+                    <label class="block"><input type="checkbox" name="subsectors[]" value="Security Systems" class="mr-2">Security Systems</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <label class="block text-sm font-medium mb-2">Additional Message:</label>
+            <textarea name="additional_message" class="form-textarea" rows="3" placeholder="Any additional information..."></textarea>
           </div>
 
-          <label class="block text-sm font-medium mb-2">Additional Message:</label>
-          <textarea name="additional_message" class="w-full bg-gray-800 border border-gray-600 p-3 rounded-lg focus:outline-none focus:border-white" rows="3" placeholder="Any additional information..."></textarea>
-        </div>
-
-        <button type="submit" class="bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-200">Send Message</button>
-      </form>
+          <button type="submit" class="form-button">Send Message</button>
+        </form>
+      </div>
 
       <div class="mt-12 text-center text-gray-300 space-y-2">
         <p><strong>Address:</strong> Intelligent Connect Solutions Pvt. Ltd., Kurnool, Andhra Pradesh – 518001, India</p>
